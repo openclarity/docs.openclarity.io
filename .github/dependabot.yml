@@ -1,0 +1,31 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: "weekly"
+  groups:
+    npm-packages:
+      patterns:
+        - "*"
+    time: '20:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: gomod
+  directory: "/"
+  groups:
+    go-modules:
+      patterns:
+        - "*"
+  schedule:
+    interval: "weekly"
+  open-pull-requests-limit: 10
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
+  groups:
+    github:
+      patterns:
+        - "actions/*"
+        - "github/*"
+  open-pull-requests-limit: 10
