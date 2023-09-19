@@ -16,21 +16,6 @@ Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, 
 
 Join [VMClarity's Slack channel](https://outshift.slack.com/messages/vmclarity) to hear about the latest announcements and upcoming activities. We would love to get your feedback!
 
-# Table of Contents<!-- omit in toc -->
-
-- [Why VMClarity?](#why-vmclarity)
-- [Quick start](#quick-start)
-  - [Install VMClarity](#install-vmclarity)
-    - [AWS](#aws)
-    - [Azure](#azure)
-    - [GCP](#gcp)
-  - [Access VMClarity UI](#access-vmclarity-ui)
-- [Overview](#overview)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Code of Conduct](#code-of-conduct)
-- [License](#license)
-
 # Why VMClarity?
 
 Virtual machines (VMs) are the most used service across all hyperscalers. AWS,

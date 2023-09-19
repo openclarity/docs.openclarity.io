@@ -3,11 +3,6 @@ title: Troubleshooting and Debugging
 weight: 490
 ---
 
-<!---## Table of Contents
-
-- [How to debug the Scanner VMs](#how-to-debug-the-scanner-vms)
-  - [Debug Scanner VM on AWS](#debug-scanner-vm-on-aws)
---->
 ## How to debug the Scanner VMs
 
 How to debug the Scanner VMs can differ per provider these are documented

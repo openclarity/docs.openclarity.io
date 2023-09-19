@@ -16,22 +16,6 @@ Please note that all of your interactions in the project are subject to our [Cod
 includes creation of issues or pull requests, commenting on issues or pull requests, and extends to all interactions in
 any real-time space e.g., Slack, Discord, etc.
 
-## Table Of Contents
-
-- [How to Contribute](#how-to-contribute)
-  - [Table Of Contents](#table-of-contents)
-  - [Troubleshooting and Debugging](#troubleshooting-and-debugging)
-  - [Reporting Issues](#reporting-issues)
-  - [Development](#development)
-    - [Building VMClarity Binaries](#building-vmclarity-binaries)
-    - [Building VMClarity Containers](#building-vmclarity-containers)
-    - [Linting](#linting)
-    - [Unit tests](#unit-tests)
-    - [Generating API code](#generating-api-code)
-    - [Testing End to End](#testing-end-to-end)
-  - [Sending Pull Requests](#sending-pull-requests)
-  - [Other Ways to Contribute](#other-ways-to-contribute)
-
 ## Troubleshooting and Debugging
 
 Please see the troubleshooting and debugging guide [here](docs/troubleshooting.md).

@@ -3,15 +3,6 @@ title: End-to-End Testing Guide
 weight: 420
 ---
 
-<!---## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Installing a specific VMClarity build on AWS](#installing-a-specific-vmclarity-build-on-aws)
-  - [1. Build the containers and publish them to your docker registry](#1-build-the-containers-and-publish-them-to-your-docker-registry)
-  - [2. Install VMClarity cloudformation](#2-install-vmclarity-cloudformation)
-  - [3. Ensure that VMClarity backend is working correctly](#3-ensure-that-vmclarity-backend-is-working-correctly)
-- [Performing an end to end test](#performing-an-end-to-end-test)--->
-
 ## Installing a specific VMClarity build on AWS
 
 ### 1. Build the containers and publish them to your docker registry
