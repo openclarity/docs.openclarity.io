@@ -50,7 +50,7 @@ The VMClarity project is focused on unifying detection and management of VM secu
 2. Specify the SSH key to be used to connect to VMClarity under 'KeyName'
 3. Once deployed, copy VmClarity SSH Address from the "Outputs" tab
 
-For a detailed installation guide, please see [AWS](installation/aws/README.md).
+For a detailed installation guide, please see [AWS](https://github.com/openclarity/vmclarity/tree/main/installation/aws).
 
 ### Azure
 
@@ -77,7 +77,7 @@ For a detailed installation guide, please see [AWS](installation/aws/README.md).
 2. Access VMClarity UI in the browser: http://localhost:8080/
 3. Access the [API](api/openapi.yaml) via http://localhost:8080/api
 
-For a detailed UI tour, please see [tour](TOUR.md).
+For a detailed UI tour, see {{% xref "/docs/tour/TOUR.md" %}}.
 
 ## Overview
 
@@ -114,7 +114,7 @@ These tools include:
 - Rootkits
   - [Chkrootkit](https://github.com/Magentron/chkrootkit)
 
-A high-level architecture overview is available [here](ARCHITECTURE.md)
+A high-level architecture overview is available in {{% xref "/docs/architecture/ARCHITECTURE.md" %}}.
 
 ## Roadmap
 VMClarity project roadmap is available [here](https://github.com/orgs/openclarity/projects/2/views/7).
@@ -122,12 +122,12 @@ VMClarity project roadmap is available [here](https://github.com/orgs/openclarit
 ## Contributing
 
 If you are ready to jump in and test, add code, or help with documentation,
-please follow the instructions on our [contributing guide](CONTRIBUTING.md)
+please follow the instructions in {{% xref "/docs/contributing.md" %}}
 for details on how to open issues, setup VMClarity for development and test.
 
 ## Code of Conduct
 
-You can view our code of conduct [here](CODE_OF_CONDUCT.md).
+See {{% xref "/docs/code-of-conduct/code-of-conduct.md" %}}.
 
 ## License
 
