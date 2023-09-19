@@ -45,3 +45,7 @@ h3[class*="type-"]::before {
 .main-lead {
   line-height: 1.5;
 }
+
+.td-main * .td-card-group {
+  max-width: 100%;
+}

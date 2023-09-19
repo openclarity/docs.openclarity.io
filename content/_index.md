@@ -20,56 +20,19 @@ OpenClarity is a suite of open source tools for cloud native security and observ
 </div>
 {{% /blocks/lead %}}
 
-<section id="pageContent">
-  <div class="container">
-    <div class="card-deck">
-      <div class="card">
-        <img
-          src="./img/logos/kube-clarity-android-chrome-192x192.png"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;"
-          alt="KubeClarity logo"
-        />
-        <div class="card-body">
-          <h5 class="card-title">KubeClarity</h5>
-          <p class="card-text">
-		  KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities in container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.
-         </p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./img/logos/vm-clarity-android-chrome-192x192.png"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;"
-          alt="VMClarity logo"
-        />
-        <div class="card-body">
-          <h5 class="card-title">VMClarity</h5>
-          <p class="card-text">
-           VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./img/logos/api-clarity-android-chrome-192x192.png"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;"
-          alt="APIClarity logo"
-        />
-        <div class="card-body">
-          <h5 class="card-title">APIClarity</h5>
-          <p class="card-text">
-            APIClarity, an open source cloud native visibility tool for APIs, utilizes a service-mesh framework to capture and analyze API traffic, and identify potential risks.
-          </p>
-        </div>
-      </div>
-    </div>
-</section>
+{{< blocks/section color="light" type="row">}}
+{{< cardpane >}}
+  {{< card header="KubeClarity" footer="![KubeClarity logo](./img/logos/kube-clarity-android-chrome-192x192.png)" >}}
+  KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities in container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.
+  {{< /card >}}
+  {{< card header="VMClarity" footer="![VMClarity logo](./img/logos/vm-clarity-android-chrome-192x192.png)" >}}
+  VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
+  {{< /card >}}
+  {{< card header="APIClarity" footer="![APIClarity logo](./img/logos/api-clarity-android-chrome-192x192.png)" >}}
+  APIClarity, an open source cloud native visibility tool for APIs, utilizes a service-mesh framework to capture and analyze API traffic, and identify potential risks.
+  {{< /card >}}
+{{< /cardpane >}}
+{{< /blocks/section >}}
 
 {{% blocks/lead image_anchor="top" width="min" %}}
 <div class="main-lead">Interested? Come join us on Slack or check out our Github page!</div>
