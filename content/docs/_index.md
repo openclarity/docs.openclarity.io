@@ -16,7 +16,7 @@ Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, 
 
 Join [VMClarity's Slack channel](https://outshift.slack.com/messages/vmclarity) to hear about the latest announcements and upcoming activities. We would love to get your feedback!
 
-# Why VMClarity?
+## Why VMClarity?
 
 Virtual machines (VMs) are the most used service across all hyperscalers. AWS,
 Azure, GCP, and others have virtual computing services that are used not only
@@ -40,7 +40,7 @@ However, there are challenges with assembling and managing these tools yourself:
 
 The VMClarity project is focused on unifying detection and management of VM security threats in an agentless manner.
 
-# Quick start
+## Quick start
 
 ## Install VMClarity
 
@@ -79,7 +79,7 @@ For a detailed installation guide, please see [AWS](installation/aws/README.md).
 
 For a detailed UI tour, please see [tour](TOUR.md).
 
-# Overview
+## Overview
 
 VMClarity uses a pluggable scanning infrastructure to provide:
 - SBOM analysis
@@ -116,19 +116,19 @@ These tools include:
 
 A high-level architecture overview is available [here](ARCHITECTURE.md)
 
-# Roadmap
+## Roadmap
 VMClarity project roadmap is available [here](https://github.com/orgs/openclarity/projects/2/views/7).
 
-# Contributing
+## Contributing
 
 If you are ready to jump in and test, add code, or help with documentation,
 please follow the instructions on our [contributing guide](CONTRIBUTING.md)
 for details on how to open issues, setup VMClarity for development and test.
 
-# Code of Conduct
+## Code of Conduct
 
 You can view our code of conduct [here](CODE_OF_CONDUCT.md).
 
-# License
+## License
 
 [Apache License, Version 2.0](LICENSE)

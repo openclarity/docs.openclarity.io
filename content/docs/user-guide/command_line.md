@@ -3,7 +3,7 @@ title: VMClarity CLI
 weight: 410
 ---
 
-# Initiate a scan using the CLI
+## Initiate a scan using the CLI
 
 ## Reporting results into file:
 ```

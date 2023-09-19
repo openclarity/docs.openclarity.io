@@ -3,7 +3,7 @@ title: Contributing guide
 weight: 150
 ---
 
-# How to Contribute
+## How to Contribute
 
 Thanks for your interest in contributing to VMClarity! Here are a few general guidelines on contributing and
 reporting bugs that we ask you to review. Following these guidelines helps to communicate that you respect the time of
