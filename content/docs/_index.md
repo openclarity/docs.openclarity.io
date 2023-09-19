@@ -131,4 +131,4 @@ See {{% xref "/docs/code-of-conduct/code-of-conduct.md" %}}.
 
 ## License
 
-[Apache License, Version 2.0](LICENSE)
+[Apache License, Version 2.0](https://github.com/openclarity/vmclarity/blob/main/LICENSE)
