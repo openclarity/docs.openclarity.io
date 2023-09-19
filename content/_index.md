@@ -75,7 +75,7 @@ OpenClarity is a suite of open source tools for cloud native security and observ
 <div class="main-lead">Interested? Come join us on Slack or check out our Github page!</div>
 {{% /blocks/lead %}}
 
-{{< blocks/section color="light" type="features">}}
+{{< blocks/section color="light" type="row">}}
 {{% blocks/feature icon="fa-lightbulb" title="Learn more about Openclarity!" url="/docs/" %}}
 Read the Openclarity documentation.
 {{% /blocks/feature %}}
