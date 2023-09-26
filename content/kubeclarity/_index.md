@@ -277,35 +277,6 @@ kubeclarity scan registry/nginx:private --config $HOME/own-kubeclarity-config
 ANALYZER_LIST="syft" kubeclarity-cli analyze nginx:latest -o nginx.sbom --merge-sbom inputsbom.xml
 ```
 
-### Output Different SBOM Formats
-
-The kubeclarity-cli analyze command can format the resulting SBOM into
-different formats if required to integrate with another system. The supported
-formats are:
-
-| Format | Configuration Name |
-| --- | --- |
-| CycloneDX JSON (default) | cyclonedx-json |
-| CycloneDX XML | cyclonedx-xml |
-| SPDX JSON | spdx-json |
-| SPDX Tag Value | spdx-tv |
-| Syft JSON | syft-json |
-
-
-> ***WARNING***  
-> KubeClarity processes CycloneDX internally, the other formats are supported
-> through a conversion. The conversion process can be lossy due to
-> incompatibilities between formats, therefore not all fields/information are
-> promised to be present in the resulting output.
-
-To configure the kubeclarity-cli to use a format other than the default, the
-ANALYZER\_OUTPUT\_FORMAT environment variable can be used with the
-configuration name from above:
-```
-ANALYZER_OUTPUT_FORMAT="spdx-json" kubeclarity-cli analyze nginx:latest -o nginx.sbom
-```
-
-
 ## Limitations
 
 1. Supports Docker Image Manifest V2, Schema 2 (https://docs.docker.com/registry/spec/manifest-v2-2/). It will fail to scan earlier versions.
