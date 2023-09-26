@@ -514,15 +514,3 @@ See example configuration [here](shared/pkg/scanner/dependency_track/example/REA
 * CI/CD metadata signing and attestation using [Cosign](https://github.com/sigstore/cosign) and [in-toto](https://github.com/in-toto/in-toto) (supply chain security)
 * System settings and user management
 
-# Contributing
-
-Pull requests and bug reports are welcome.
-
-For larger changes please create an Issue in GitHub first to discuss your
-proposed changes and possible implications.
-
-More more details please see the [Contribution guidelines for this project](CONTRIBUTING.md)
-
-## License
-
-[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
