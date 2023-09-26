@@ -10,7 +10,7 @@ cascade:
 
 KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime K8s clusters and CI/CD pipelines for enhanced software supply chain security.
 
-![](dashboard-screen.png)
+![KubeClarity dashboard screenshot](dashboard.png)
 
 ## Why?
 ### SBOM & Vulnerability Detection Challenges
@@ -39,7 +39,7 @@ KubeClarity is a tool for detection and management of Software Bill Of Materials
 
 ## Architecture
 
-![](architecture.png)
+![KubeClarity architecture diagram](architecture.png)
 
 ## Getting Started
 ### KubeClarity Backend
