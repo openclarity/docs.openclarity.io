@@ -240,23 +240,6 @@ SCANNERS_LIST="grype" BACKEND_HOST=localhost:9999 BACKEND_DISABLE_TLS=true kubec
 ```
 
 ## Advanced Configuration
-### SBOM generation using local docker image as input
-
-```
-## Local docker images can be analyzed using the LOCAL_IMAGE_SCAN env variable
-
-## For example:
-LOCAL_IMAGE_SCAN=true kubeclarity-cli analyze nginx:latest -o nginx.sbom
-```
-
-### Vulnerability scanning using local docker image as input
-
-```
-## Local docker images can be scanned using the LOCAL_IMAGE_SCAN env variable
-
-## For example:
-LOCAL_IMAGE_SCAN=true kubeclarity-cli scan nginx.sbom
-```
 
 ### Specify config file for CLI
 
@@ -267,7 +250,6 @@ LOCAL_IMAGE_SCAN=true kubeclarity-cli scan nginx.sbom
 ## For example:
 kubeclarity scan registry/nginx:private --config $HOME/own-kubeclarity-config
 ```
-
 
 ### Merging of SBOM and vulnerabilities across different CI/CD stages
 
