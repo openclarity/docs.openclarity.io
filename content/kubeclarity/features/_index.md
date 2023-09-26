@@ -45,7 +45,7 @@ weight: 200
   - Merging of SBOM and vulnerabilities across different CI/CD stages
   - Export results to KubeClarity backend
 - API
-  - The API for KubeClarity can be found [here](https://github.com/openclarity/kubeclarity/blob/master/api/swagger.yaml)
+  - See {{% xref "/kubeclarity/api/_index.md" %}}.
 
 ## Integrated SBOM generators and vulnerability scanners
 
