@@ -241,16 +241,6 @@ SCANNERS_LIST="grype" BACKEND_HOST=localhost:9999 BACKEND_DISABLE_TLS=true kubec
 
 ## Advanced Configuration
 
-### Specify config file for CLI
-
-```
-## The default config path is $HOME/.kubeclarity or it can be specified by `--config` command line flag.
-## kubeclarity <scan/analyze> <image name> --config <kubeclarity config path>
-
-## For example:
-kubeclarity scan registry/nginx:private --config $HOME/own-kubeclarity-config
-```
-
 ### Merging of SBOM and vulnerabilities across different CI/CD stages
 
 ```
