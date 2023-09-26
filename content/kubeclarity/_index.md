@@ -258,30 +258,7 @@ LOCAL_IMAGE_SCAN=true kubeclarity-cli analyze nginx:latest -o nginx.sbom
 LOCAL_IMAGE_SCAN=true kubeclarity-cli scan nginx.sbom
 ```
 
-### Private registry support For CLI
-
-The KubeClarity cli can read a config file that stores credentials for private registries.
-
-Example registry section of the config file:
-```
-registry:
-  auths:
-    - authority: <registry 1>
-      username: <username for registry 1>
-      password: <password for registry 1>
-    - authority: <registry 2>
-      token: <token for registry 2>
-```
-
-Example registry config without authority: (in this case these credentials will be used for all registries)
-```
-registry:
-  auths:
-    - username: <username>
-      password: <password>
-```
-
-#### Specify config file for CLI
+### Specify config file for CLI
 
 ```
 ## The default config path is $HOME/.kubeclarity or it can be specified by `--config` command line flag.
@@ -291,53 +268,6 @@ registry:
 kubeclarity scan registry/nginx:private --config $HOME/own-kubeclarity-config
 ```
 
-### Private registries support for K8s runtime scan
-
-Kubeclarity is using [k8schain](https://github.com/google/go-containerregistry/tree/main/pkg/authn/k8schain#k8schain) of google/go-containerregistry for authenticating to the registries.
-If the necessary service credentials are not discoverable by the k8schain, they can be defined via secrets described below.
-
-In addition, if service credentials are not located in "kubeclarity" Namespace, please set CREDS_SECRET_NAMESPACE to kubeclarity Deployment.
-When using helm [charts](/charts), CREDS_SECRET_NAMESPACE is set to the release namespace installed kubeclarity.
-
-#### Amazon ECR
-
-Create an [AWS IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console) with `AmazonEC2ContainerRegistryFullAccess` permissions.
-
-Use the user credentials (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION`) to create the following secret:
-
-```
-cat <<EOF | kubectl apply -f -
-apiVersion: v1
-kind: Secret
-metadata:
-  name: ecr-sa
-  namespace: kubeclarity
-type: Opaque
-data:
-  AWS_ACCESS_KEY_ID: $(echo -n 'XXXX'| base64 -w0)
-  AWS_SECRET_ACCESS_KEY: $(echo -n 'XXXX'| base64 -w0)
-  AWS_DEFAULT_REGION: $(echo -n 'XXXX'| base64 -w0)
-EOF
-```
-
-Note:
-1. Secret name must be `ecr-sa`
-2. Secret data keys must be set to `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and `AWS_DEFAULT_REGION`
-
-#### Google GCR
-
-Create a [Google service account](https://cloud.google.com/docs/authentication/getting-started#creating_a_service_account) with `Artifact Registry Reader` permissions.
-
-Use the service account json file to create the following secret
-
-```
-kubectl -n kubeclarity create secret generic --from-file=sa.json gcr-sa
-```
-
-Note:
-1. Secret name must be `gcr-sa`
-1. `sa.json` must be the name of the service account json file when generating the secret
-2. KubeClarity is using [application default credentials](https://developers.google.com/identity/protocols/application-default-credentials). These only work when running KubeClarity from GCP.
 
 ### Merging of SBOM and vulnerabilities across different CI/CD stages
 
