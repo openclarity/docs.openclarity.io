@@ -1,43 +1,16 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./images/logos/KubeClarity-logo-dark-bg-horizontal@4x.png">
-  <source media="(prefers-color-scheme: light)" srcset="./images/logos/KubeClarity-logo-light-bg-horizontal@4x.png">
-  <img alt="KubeClarity Logo" src="./images/logos/KubeClarity-logo-light-bg-horizontal@4x.png">
-</picture>
+---
+title: "KubeClarity"
+weight: 200
+type: docs
+cascade:
+    type: docs
+---
+
+<img alt="KubeClarity Logo" src="/img/logos/KubeClarity-logo-light-bg-horizontal@4x.png">
 
 KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime K8s clusters and CI/CD pipelines for enhanced software supply chain security.
 
-![](images/dashboard-screen.png)
-
-# Table of Contents
-
-- [Why?](#why)
-  - [SBOM & Vulnerability detection challenges](#sbom--vulnerability-detection-challenges)
-  - [Solution](#solution)
-- [Features](#features)
-  - [Integrated SBOM generators and vulnerability scanners](#integrated-sbom-generators-and-vulnerability-scanners)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [KubeClarity Backend](#kubeclarity-backend)
-    - [Install using Helm](#install-using-helm)
-    - [Uninstall using Helm](#uninstall-using-helm)
-    - [Build and Run Locally with Demo Data](#build-and-run-locally-with-demo-data)
-  - [CLI](#cli)
-    - [Installation](#installation)
-    - [SBOM Generation](#sbom-generation)
-    - [Vulnerability Scanning](#vulnerability-scanning)
-    - [Exporting results to KubeClarity Backend](#exporting-results-to-kubeclarity-backend)
-- [Advanced Configuration](#advanced-configuration)
-  - [SBOM generation using local docker image as input](#sbom-generation-using-local-docker-image-as-input)
-  - [Vulnerability scanning using local docker image as input](#vulnerability-scanning-using-local-docker-image-as-input)
-  - [Private Registry Support For CLI](#private-registry-support-for-cli)
-  - [Private Registry Support For K8s Runtime Scan](#private-registries-support-for-k8s-runtime-scan)
-  - [Merging of SBOM and vulnerabilities across different CI/CD stages](#merging-of-sbom-and-vulnerabilities-across-different-cicd-stages)
-  - [Output Different SBOM Formats](#output-different-sbom-formats)
-  - [Remote Scanner Servers For CLI](#remote-scanner-servers-for-cli)
-- [Limitations](#limitations)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+![](dashboard-screen.png)
 
 # Why?
 ## SBOM & Vulnerability Detection Challenges
