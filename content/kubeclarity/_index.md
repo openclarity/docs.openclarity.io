@@ -12,38 +12,38 @@ KubeClarity is a tool for detection and management of Software Bill Of Materials
 
 ![](dashboard-screen.png)
 
-# Why?
-## SBOM & Vulnerability Detection Challenges
+## Why?
+### SBOM & Vulnerability Detection Challenges
 
-* Effective vulnerability scanning requires an accurate Software Bill Of Materials (SBOM) detection:
-  * Various programming languages and package managers
-  * Various OS distributions
-  * Package dependency information is usually stripped upon build
-* Which one is the best scanner/SBOM analyzer?
-* What should we scan: Git repos, builds, container images or runtime?
-* Each scanner/analyzer has its own format - how to compare the results?
-* How to manage the discovered SBOM and vulnerabilities?
-* How are my applications affected by a newly discovered vulnerability?
+- Effective vulnerability scanning requires an accurate Software Bill Of Materials (SBOM) detection:
+  - Various programming languages and package managers
+  - Various OS distributions
+  - Package dependency information is usually stripped upon build
+- Which one is the best scanner/SBOM analyzer?
+- What should we scan: Git repos, builds, container images or runtime?
+- Each scanner/analyzer has its own format - how to compare the results?
+- How to manage the discovered SBOM and vulnerabilities?
+- How are my applications affected by a newly discovered vulnerability?
 
-## Solution
+### Solution
 
-* Separate vulnerability scanning into 2 phases:
-  * Content analysis to generate SBOM
-  * Scan the SBOM for vulnerabilities
-* Create a pluggable infrastructure to:
-  * Run several content analyzers in parallel
-  * Run several vulnerability scanners in parallel
-* Scan and merge results between different CI stages using KubeClarity CLI
-* Runtime K8s scan to detect vulnerabilities discovered post-deployment
-* Group scanned resources (images/directories) under defined applications to navigate the object tree dependencies (applications, resources, packages, vulnerabilities)
+- Separate vulnerability scanning into 2 phases:
+  - Content analysis to generate SBOM
+  - Scan the SBOM for vulnerabilities
+- Create a pluggable infrastructure to:
+  - Run several content analyzers in parallel
+  - Run several vulnerability scanners in parallel
+- Scan and merge results between different CI stages using KubeClarity CLI
+- Runtime K8s scan to detect vulnerabilities discovered post-deployment
+- Group scanned resources (images/directories) under defined applications to navigate the object tree dependencies (applications, resources, packages, vulnerabilities)
 
-# Architecture
+## Architecture
 
-![](images/architecture.png)
+![](architecture.png)
 
-# Getting Started
-## KubeClarity Backend
-### Install using Helm:
+## Getting Started
+### KubeClarity Backend
+#### Install using Helm:
 
 1. Add Helm repo
 
@@ -93,7 +93,7 @@ KubeClarity is a tool for detection and management of Software Bill Of Materials
 > | List namespaces. | This is required for fetching the target namespaces to scan in K8s runtime scan UI. |
 > | Create & delete jobs in cluster scope. | This is required for managing the jobs that will scan the target pods in their namespaces. |
 
-### Uninstall using Helm:
+#### Uninstall using Helm:
 
 1. Helm uninstall
 
@@ -109,7 +109,7 @@ KubeClarity is a tool for detection and management of Software Bill Of Materials
     kubectl delete pvc -l app.kubernetes.io/instance=kubeclarity -n kubeclarity
     ```
 
-### Build and Run Locally with Demo Data
+#### Build and Run Locally with Demo Data
 
 1. Build UI & backend and start the backend locally (2 options):
     1. Using docker:
@@ -137,13 +137,13 @@ KubeClarity is a tool for detection and management of Software Bill Of Materials
 
 2. Open KubeClarity UI in the browser: <http://localhost:8080/>
 
-## CLI
+### CLI
 
 KubeClarity includes a CLI that can be run locally and especially useful for CI/CD pipelines.
 It allows to analyze images and directories to generate SBOM, and scan it for vulnerabilities.
 The results can be exported to KubeClarity backend.
 
-### Installation
+#### Installation
 
 <details><summary>Binary Distribution</summary><p>
 
@@ -171,7 +171,7 @@ Copy `./cli/bin/cli` to your PATH under `kubeclarity-cli`.
 
 </p></details>
 
-### SBOM Generation
+#### SBOM Generation
 
 Usage:
 ```
@@ -191,7 +191,7 @@ Example:
 ANALYZER_LIST="syft gomod" kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
 ```
 
-### Vulnerability Scanning
+#### Vulnerability Scanning
 
 Usage:
 ```
@@ -211,54 +211,54 @@ Example:
 SCANNERS_LIST="grype trivy" kubeclarity-cli scan nginx.sbom --input-type sbom
 ```
 
-### Exporting Results to KubeClarity Backend
+#### Exporting Results to KubeClarity Backend
 
 To export CLI results to the KubeClarity backend, need to use an application ID as defined by the KubeClarity backend.
 The application ID can be found in the Applications screen in the UI or using the KubeClarity API.
 
-#### Exporting SBOM
+##### Exporting SBOM
 
 ```
-# The SBOM can be exported to KubeClarity backend by setting the BACKEND_HOST env variable and the -e flag.
-# Note: Until TLS is supported, BACKEND_DISABLE_TLS=true should be set.
+## The SBOM can be exported to KubeClarity backend by setting the BACKEND_HOST env variable and the -e flag.
+## Note: Until TLS is supported, BACKEND_DISABLE_TLS=true should be set.
 BACKEND_HOST=<KubeClarity backend address> BACKEND_DISABLE_TLS=true kubeclarity-cli analyze <image> --application-id <application ID> -e -o <SBOM output file>
 
-# For example:
+## For example:
 BACKEND_HOST=localhost:9999 BACKEND_DISABLE_TLS=true kubeclarity-cli analyze nginx:latest --application-id 23452f9c-6e31-5845-bf53-6566b81a2906 -e -o nginx.sbom
 ```
 
-#### Exporting Vulnerability Scan Results
+##### Exporting Vulnerability Scan Results
 
 ```
-# The vulnerability scan result can be exported to KubeClarity backend by setting the BACKEND_HOST env variable and the -e flag.
-# Note: Until TLS is supported, BACKEND_DISABLE_TLS=true should be set.
+## The vulnerability scan result can be exported to KubeClarity backend by setting the BACKEND_HOST env variable and the -e flag.
+## Note: Until TLS is supported, BACKEND_DISABLE_TLS=true should be set.
 
 BACKEND_HOST=<KubeClarity backend address> BACKEND_DISABLE_TLS=true kubeclarity-cli scan <image> --application-id <application ID> -e
 
-# For example:
+## For example:
 SCANNERS_LIST="grype" BACKEND_HOST=localhost:9999 BACKEND_DISABLE_TLS=true kubeclarity-cli scan nginx.sbom --input-type sbom  --application-id 23452f9c-6e31-5845-bf53-6566b81a2906 -e
 ```
 
-# Advanced Configuration
-## SBOM generation using local docker image as input
+## Advanced Configuration
+### SBOM generation using local docker image as input
 
 ```
-# Local docker images can be analyzed using the LOCAL_IMAGE_SCAN env variable
+## Local docker images can be analyzed using the LOCAL_IMAGE_SCAN env variable
 
-# For example:
+## For example:
 LOCAL_IMAGE_SCAN=true kubeclarity-cli analyze nginx:latest -o nginx.sbom
 ```
 
-## Vulnerability scanning using local docker image as input
+### Vulnerability scanning using local docker image as input
 
 ```
-# Local docker images can be scanned using the LOCAL_IMAGE_SCAN env variable
+## Local docker images can be scanned using the LOCAL_IMAGE_SCAN env variable
 
-# For example:
+## For example:
 LOCAL_IMAGE_SCAN=true kubeclarity-cli scan nginx.sbom
 ```
 
-## Private registry support For CLI
+### Private registry support For CLI
 
 The KubeClarity cli can read a config file that stores credentials for private registries.
 
@@ -281,17 +281,17 @@ registry:
       password: <password>
 ```
 
-### Specify config file for CLI
+#### Specify config file for CLI
 
 ```
-# The default config path is $HOME/.kubeclarity or it can be specified by `--config` command line flag.
-# kubeclarity <scan/analyze> <image name> --config <kubeclarity config path>
+## The default config path is $HOME/.kubeclarity or it can be specified by `--config` command line flag.
+## kubeclarity <scan/analyze> <image name> --config <kubeclarity config path>
 
-# For example:
+## For example:
 kubeclarity scan registry/nginx:private --config $HOME/own-kubeclarity-config
 ```
 
-## Private registries support for K8s runtime scan
+### Private registries support for K8s runtime scan
 
 Kubeclarity is using [k8schain](https://github.com/google/go-containerregistry/tree/main/pkg/authn/k8schain#k8schain) of google/go-containerregistry for authenticating to the registries.
 If the necessary service credentials are not discoverable by the k8schain, they can be defined via secrets described below.
@@ -299,7 +299,7 @@ If the necessary service credentials are not discoverable by the k8schain, they 
 In addition, if service credentials are not located in "kubeclarity" Namespace, please set CREDS_SECRET_NAMESPACE to kubeclarity Deployment.
 When using helm [charts](/charts), CREDS_SECRET_NAMESPACE is set to the release namespace installed kubeclarity.
 
-### Amazon ECR
+#### Amazon ECR
 
 Create an [AWS IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console) with `AmazonEC2ContainerRegistryFullAccess` permissions.
 
@@ -324,7 +324,7 @@ Note:
 1. Secret name must be `ecr-sa`
 2. Secret data keys must be set to `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and `AWS_DEFAULT_REGION`
 
-### Google GCR
+#### Google GCR
 
 Create a [Google service account](https://cloud.google.com/docs/authentication/getting-started#creating_a_service_account) with `Artifact Registry Reader` permissions.
 
@@ -339,15 +339,15 @@ Note:
 1. `sa.json` must be the name of the service account json file when generating the secret
 2. KubeClarity is using [application default credentials](https://developers.google.com/identity/protocols/application-default-credentials). These only work when running KubeClarity from GCP.
 
-## Merging of SBOM and vulnerabilities across different CI/CD stages
+### Merging of SBOM and vulnerabilities across different CI/CD stages
 
 ```
-# Additional SBOM will be merged into the final results when '--merge-sbom' is defined during analysis. The input SBOM can be CycloneDX XML or CyclonDX json format.
-# For example:
+## Additional SBOM will be merged into the final results when '--merge-sbom' is defined during analysis. The input SBOM can be CycloneDX XML or CyclonDX json format.
+## For example:
 ANALYZER_LIST="syft" kubeclarity-cli analyze nginx:latest -o nginx.sbom --merge-sbom inputsbom.xml
 ```
 
-## Output Different SBOM Formats
+### Output Different SBOM Formats
 
 The kubeclarity-cli analyze command can format the resulting SBOM into
 different formats if required to integrate with another system. The supported
@@ -375,7 +375,7 @@ configuration name from above:
 ANALYZER_OUTPUT_FORMAT="spdx-json" kubeclarity-cli analyze nginx:latest -o nginx.sbom
 ```
 
-## Remote Scanner Servers For CLI
+### Remote Scanner Servers For CLI
 
 When running the kubeclarity CLI to scan for vulnerabilties, the CLI will need
 to download the relevant vulnerablity DBs to the location where the kubeclarity
@@ -389,7 +389,7 @@ the DB management and possibly scanning of the artifacts.
 > The examples below are for each of the scanners, but they can be combined to
 > run together the same as they can be in non-remote mode.
 
-### Trivy
+#### Trivy
 
 Trivy scanner supports remote mode using the Trivy server. The trivy server can
 be deployed as documented here: [trivy client-server mode](https://aquasecurity.github.io/trivy/v0.34/docs/references/modes/client-server/).
@@ -420,7 +420,7 @@ and passing the token to the scanner:
 SCANNERS_LIST="trivy" SCANNER_TRIVY_SERVER_ADDRESS="http://<trivy server address>:8080" SCANNER_TRIVY_SERVER_TOKEN="mytoken" ./kubeclarity_cli scan --input-type sbom nginx.sbom
 ```
 
-### Grype
+#### Grype
 
 Grype supports remote mode using [grype-server](https://github.com/portshift/grype-server)
 a RESTful grype wrapper which provides an API that receives an SBOM and returns
@@ -442,19 +442,18 @@ If Grype server is deployed with TLS you can override the default URL scheme lik
 SCANNERS_LIST="grype" SCANNER_GRYPE_MODE="remote" SCANNER_REMOTE_GRYPE_SERVER_ADDRESS="<grype server address>:9991" SCANNER_REMOTE_GRYPE_SERVER_SCHEMES="https" ./kubeclarity_cli scan --input-type sbom nginx.sbom
 ```
 
-### Dependency Track
+#### Dependency Track
 
 See example configuration [here](shared/pkg/scanner/dependency_track/example/README.md)
 
-# Limitations
+## Limitations
 
 1. Supports Docker Image Manifest V2, Schema 2 (https://docs.docker.com/registry/spec/manifest-v2-2/). It will fail to scan earlier versions.
 
-# Roadmap
-* Integration with additional content analyzers (SBOM generators)
-* Integration with additional vulnerability scanners
-* CIS Docker benchmark in UI
-* Image signing using [Cosign](https://github.com/sigstore/cosign)
-* CI/CD metadata signing and attestation using [Cosign](https://github.com/sigstore/cosign) and [in-toto](https://github.com/in-toto/in-toto) (supply chain security)
-* System settings and user management
-
+## Roadmap
+- Integration with additional content analyzers (SBOM generators)
+- Integration with additional vulnerability scanners
+- CIS Docker benchmark in UI
+- Image signing using [Cosign](https://github.com/sigstore/cosign)
+- CI/CD metadata signing and attestation using [Cosign](https://github.com/sigstore/cosign) and [in-toto](https://github.com/in-toto/in-toto) (supply chain security)
+- System settings and user management
