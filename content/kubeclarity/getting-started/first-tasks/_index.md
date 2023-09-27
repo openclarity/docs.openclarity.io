@@ -19,7 +19,7 @@ For example:
 kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
 ```
 
-You can list the content analyzers to use using the `ANALYZER_LIST` environment variable separated by a space (`ANALYZER_LIST="<analyzer 1 name> <analyzer 2 name>"`) For example:
+You can list the content analyzers to use using the `ANALYZER_LIST` environment variable separated by a space (`ANALYZER_LIST="<analyzer 1 name> <analyzer 2 name>"`). For example:
 
 ```shell
 ANALYZER_LIST="syft gomod" kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
@@ -39,9 +39,7 @@ Example:
 kubeclarity-cli scan nginx.sbom --input-type sbom
 ```
 
-You can list the vulnerability scanners to use using the `SCANNERS_LIST` environment variable separated by a space (`SCANNERS_LIST="<Scanner1 name> <Scanner2 name>"`)
-
-For example:
+You can list the vulnerability scanners to use using the `SCANNERS_LIST` environment variable separated by a space (`SCANNERS_LIST="<Scanner1 name> <Scanner2 name>"`). For example:
 
 ```shell
 SCANNERS_LIST="grype trivy" kubeclarity-cli scan nginx.sbom --input-type sbom
