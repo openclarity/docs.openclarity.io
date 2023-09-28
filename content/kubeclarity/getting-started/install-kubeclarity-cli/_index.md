@@ -23,11 +23,14 @@ available tags [here](https://github.com/openclarity/kubeclarity/pkgs/container/
 
 <details><summary>Local Compilation</summary><p>
 
-```shell
-make cli
-```
+1. Clone the project repo.
+1. Run:
 
-Copy `./cli/bin/cli` to your PATH under `kubeclarity-cli`.
+    ```shell
+    make cli
+    ```
+
+1. Copy `./cli/bin/cli` to your PATH under `kubeclarity-cli`.
 
 </p></details>
 
