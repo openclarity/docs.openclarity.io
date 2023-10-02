@@ -51,13 +51,32 @@ KubeClarity requires these Kubernetes permissions:
      --set kubeclarity-postgresql.shmVolume.chmod.enabled=false
    ```
 
+1. Wait until all the pods are in 'Running' state. Check the output of the following command:
+
+    ```shell
+    kubectl get pods --namespace kubeclarity
+    ```
+
+    The output should be similar to:
+
+    ```shell
+    NAME                                                    READY   STATUS    RESTARTS   AGE
+    kubeclarity-kubeclarity-7689c7fbb7-nlhh5                1/1     Running   0          82s
+    kubeclarity-kubeclarity-grype-server-79b6fb4b88-5xtbh   1/1     Running   0          82s
+    kubeclarity-kubeclarity-postgresql-0                    1/1     Running   0          82s
+    kubeclarity-kubeclarity-sbom-db-6895d97d5d-55jnj        1/1     Running   0          82s
+    ```
+
 1. Port-forward to the KubeClarity UI.
 
    ```shell
    kubectl port-forward --namespace kubeclarity svc/kubeclarity-kubeclarity 9999:8080
    ```
 
-1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/)
+1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/). The KubeClarity dashboard should appear.
+
+    ![KubeClarity dashboard](/img/vmclarity-ui-1.png)
+
 1. {{% xref "/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
 
 ## Uninstall using Helm
