@@ -111,7 +111,7 @@ curl -vvv -k https://dependency-track-apiserver.dependency-track/api/version
     SCANNER_DEPENDENCY_TRACK_DISABLE_TLS=false \
     SCANNER_DEPENDENCY_TRACK_HOST=dependency-track-apiserver.dependency-track \
     SCANNER_DEPENDENCY_TRACK_API_KEY=XXX \
-    kubeclarity scan sbom.cyclonedx  -i sbom -o sbom-result.json
+    kubeclarity-ctl scan sbom.cyclonedx  -i sbom -o sbom-result.json
     ```
 
 1. Create a port-forward (replace `XXX` with your API key).
@@ -122,7 +122,7 @@ curl -vvv -k https://dependency-track-apiserver.dependency-track/api/version
     SCANNER_DEPENDENCY_TRACK_DISABLE_TLS=true \
     SCANNER_DEPENDENCY_TRACK_HOST=localhost:8081 \
     SCANNER_DEPENDENCY_TRACK_API_KEY=XXX \
-    kubeclarity scan sbom.cyclonedx  -i sbom -o sbom-result.json
+    kubeclarity-ctl scan sbom.cyclonedx  -i sbom -o sbom-result.json
     ```
 
 ## Cleanup

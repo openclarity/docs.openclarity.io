@@ -39,13 +39,13 @@ KubeClarity requires these Kubernetes permissions:
 1. Deploy KubeClarity with Helm.
 
    ```shell
-   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity -n kubeclarity
+   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
    ```
 
    Alternatively, for an OpenShift Restricted SCC compatible installation, run:
 
    ```shell
-   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity -n kubeclarity --set global.openShiftRestricted=true \
+   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity --set global.openShiftRestricted=true \
      --set kubeclarity-postgresql.securityContext.enabled=false --set kubeclarity-postgresql.containerSecurityContext.enabled=false \
      --set kubeclarity-postgresql.volumePermissions.enabled=true --set kubeclarity-postgresql.volumePermissions.securityContext.runAsUser="auto" \
      --set kubeclarity-postgresql.shmVolume.chmod.enabled=false
@@ -54,7 +54,7 @@ KubeClarity requires these Kubernetes permissions:
 1. Port-forward to the KubeClarity UI.
 
    ```shell
-   kubectl port-forward -n kubeclarity svc/kubeclarity-kubeclarity 9999:8080
+   kubectl port-forward --namespace kubeclarity svc/kubeclarity-kubeclarity 9999:8080
    ```
 
 1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/)
@@ -67,13 +67,13 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
 1. Helm uninstall
 
    ```shell
-   helm uninstall kubeclarity -n kubeclarity
+   helm uninstall kubeclarity --namespace kubeclarity
    ```
 
 2. Clean the resources. By default, Helm doesn't remove the PVCs and PVs for the StatefulSets. Run the following command to delete them all:
 
     ```shell
-    kubectl delete pvc -l app.kubernetes.io/instance=kubeclarity -n kubeclarity
+    kubectl delete pvc -l app.kubernetes.io/instance=kubeclarity --namespace kubeclarity
     ```
 
 ## Build and run locally with demo data {#build-locally}

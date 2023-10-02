@@ -42,7 +42,7 @@ When using Helm [charts](https://github.com/openclarity/kubeclarity/tree/main/ch
 1. Use the service account json file to create the following secret:
 
     ```shell
-    kubectl -n kubeclarity create secret generic --from-file=sa.json gcr-sa
+    kubectl --namespace kubeclarity create secret generic --from-file=sa.json gcr-sa
     ```
 
     > Note:
