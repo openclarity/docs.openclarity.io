@@ -45,7 +45,7 @@ weight: 200
   - Merging of SBOM and vulnerabilities across different CI/CD stages
   - Export results to KubeClarity backend
 - API
-  - See {{% xref "/kubeclarity/api/_index.md" %}}.
+  - See {{% xref "/docs/kubeclarity/api/_index.md" %}}.
 
 ## Integrated SBOM generators and vulnerability scanners
 

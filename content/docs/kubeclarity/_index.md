@@ -1,9 +1,6 @@
 ---
 title: "KubeClarity"
-weight: 200
-type: docs
-cascade:
-    type: docs
+weight: 1000
 ---
 
 <img alt="KubeClarity Logo" src="/img/logos/KubeClarity-logo-light-bg-horizontal@4x.png">

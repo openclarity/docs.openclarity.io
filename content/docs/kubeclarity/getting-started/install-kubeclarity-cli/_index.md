@@ -34,4 +34,4 @@ available tags [here](https://github.com/openclarity/kubeclarity/pkgs/container/
 
 </p></details>
 
-After you have installed the CLI, complete the [first tasks]({{< relref "/kubeclarity/getting-started/first-tasks/_index.md" >}}).
+After you have installed the CLI, complete the [first tasks]({{< relref "/docs/kubeclarity/getting-started/first-tasks/_index.md" >}}).

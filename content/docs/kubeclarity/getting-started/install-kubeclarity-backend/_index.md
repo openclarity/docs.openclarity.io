@@ -77,7 +77,7 @@ KubeClarity requires these Kubernetes permissions:
 
     ![KubeClarity dashboard](/img/vmclarity-ui-1.png)
 
-1. {{% xref "/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
+1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
 
 ## Uninstall using Helm
 
@@ -132,4 +132,4 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
             ```
 
 1. Open the KubeClarity UI in your browser: [http://localhost:8080/](http://localhost:8080/)
-1. {{% xref "/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
+1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
