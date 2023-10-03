@@ -1,7 +1,7 @@
 ---
 title: Set configuration file location for the CLI
 linktitle: CLI configuration file location
-weight: 800
+weight: 700
 ---
 
 The default configuration path of the CLI is `$HOME/.kubeclarity`. To specify a different file, use the `--config` flag, like this:
