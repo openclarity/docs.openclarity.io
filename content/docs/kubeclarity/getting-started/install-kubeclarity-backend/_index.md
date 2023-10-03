@@ -73,11 +73,51 @@ KubeClarity requires these Kubernetes permissions:
    kubectl port-forward --namespace kubeclarity svc/kubeclarity-kubeclarity 9999:8080
    ```
 
-1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/). The KubeClarity dashboard should appear.
+1. (Optional) Install a sample application (sock shop) to run your scans on.
 
-    ![KubeClarity dashboard](/img/vmclarity-ui-1.png)
+    1. Create a namespace for the application.
 
-1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
+        ```shell
+        kubectl create namespace sock-shop
+        ```
+
+    1. Install the application.
+
+        ```shell
+        kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservices-demo/master/deploy/kubernetes/complete-demo.yaml
+        ```
+
+    1. Check that the installation was successful.
+
+        ```shell
+        kubectl get pods --namespace sock-shop
+        ```
+
+        Expected output:
+
+        ```shell
+        NAME                            READY   STATUS    RESTARTS   AGE
+        carts-5dc994cf5b-4rhfj          2/2     Running   0          44h
+        carts-db-556cbbd5fb-64qls       2/2     Running   0          44h
+        catalogue-b7b968c97-b9k8p       2/2     Running   0          44h
+        catalogue-db-f7547dd6-smzk2     2/2     Running   0          44h
+        front-end-848c97475d-b7sl8      2/2     Running   0          44h
+        orders-7d47794476-9fjsx         2/2     Running   0          44h
+        orders-db-bbfb8f8-7ndr6         2/2     Running   0          44h
+        payment-77bd4bbdf6-hkzh7        2/2     Running   0          44h
+        queue-master-6d4cf8c4ff-pzk68   2/2     Running   0          44h
+        rabbitmq-9dd69888f-6lzfh        3/3     Running   0          44h
+        session-db-7d9d77c495-zngsn     2/2     Running   0          44h
+        shipping-67fff9d476-t87jw       2/2     Running   0          44h
+        user-7b667cd8d-q8bg8            2/2     Running   0          44h
+        user-db-5599d45948-vxpq6        2/2     Running   0          44h
+        ```
+
+1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/). The KubeClarity dashboard should appear. KubeClarity UI has no data to report vulnerabilities after a fresh install, so there is no data on the dashboard.
+
+    ![KubeClarity dashboard](kubeclarity-dashboard-empty.png)
+
+1. If you also want to try KubeClarity using its command-line tool, {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}. Otherwise, run some [vulnerability scans using the dashboard]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
 
 ## Uninstall using Helm
 
