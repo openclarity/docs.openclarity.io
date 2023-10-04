@@ -49,11 +49,7 @@ weight: 200
 
 ## Integrated SBOM generators and vulnerability scanners
 
-KubeClarity content analyzer integrates with the following SBOM generators:
-
-- [Syft](https://github.com/anchore/syft)
-- [Cyclonedx-gomod](https://github.com/CycloneDX/cyclonedx-gomod)
-- [Trivy](https://github.com/aquasecurity/trivy)
+{{< include-headless "kubeclarity/supported-sbom-generators.md" >}}
 
 KubeClarity vulnerability scanner integrates with the following scanners:
 
