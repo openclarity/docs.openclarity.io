@@ -14,7 +14,9 @@ To schedule a runtime scan that runs at a specific time, complete the following 
 1. Select the namespace or namespaces you want to scan.
 
     ![Select namespace](schedule-scan-namespaces.png)
-    <!-- FIXME CIS benchmark -->
+
+1. (Optional) If you have already configured [CIS benchmarks]({{< relref "/docs/kubeclarity/cis-benchmark/_index.md" >}}), you can select **CIS Docker Benchmark** to enable them for the scheduled scan.
+
 1. Set the type of the scan.
 
     - **Later**: Run the scan once at the specified time.
