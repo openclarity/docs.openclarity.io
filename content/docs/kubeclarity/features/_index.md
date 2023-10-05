@@ -51,8 +51,4 @@ weight: 200
 
 {{< include-headless "kubeclarity/supported-sbom-generators.md" >}}
 
-KubeClarity vulnerability scanner integrates with the following scanners:
-
-- [Grype](https://github.com/anchore/grype)
-- [Dependency-Track](https://github.com/DependencyTrack/dependency-track)
-- [Trivy](https://github.com/aquasecurity/trivy)
+{{< include-headless "kubeclarity/supported-vulnerability-scanners.md" >}}
