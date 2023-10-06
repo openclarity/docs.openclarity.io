@@ -34,7 +34,7 @@ KubeClarity requires these Kubernetes permissions:
 
 1. Check the configuration in the `values.yaml` file and update the required values if needed.
 
-    - To enable and configure the supported SBOM generators and vulnerability scanners, check the `analyzer` and `scanner` configurations under the `vulnerability-scanner` section.
+    - To enable and configure the supported SBOM generators and vulnerability scanners, check the `analyzer` and `scanner` configurations under the `vulnerability-scanner` section. You can skip this step to use the default configuration settings.
 
 1. Deploy KubeClarity with Helm.
 
