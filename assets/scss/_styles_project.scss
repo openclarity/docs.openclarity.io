@@ -49,3 +49,7 @@ h3[class*="type-"]::before {
 .td-main * .td-card-group {
   max-width: 100%;
 }
+
+a.td-page-meta--child {
+  display: none;
+}
