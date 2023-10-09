@@ -13,7 +13,7 @@ CIS Kubernetes Benchmark: Guidance for securing Kubernetes clusters](https://www
 
 By following these steps and customizing the CIS benchmarks configuration in the `values.yaml` file, you can effectively run and assess your Kubernetes cluster’s adherence to the CIS benchmarks and evaluate fatal, info, and warning level findings. To configure KubeClarity for running CIS benchmarks, complete the following steps.
 
-1. Clone or download the KubeClarity repository to your local machine, and open the [`values.yaml`](https://github.com/openclarity/kubeclarity/blob/main/charts/kubeclarity/values.yaml) file in a text editor.
+1. [Clone or download the KubeClarity repository](https://github.com/openclarity/kubeclarity/) to your local machine, and open the [`values.yaml`](https://github.com/openclarity/kubeclarity/blob/main/charts/kubeclarity/values.yaml) file in a text editor.
 1. Locate the `cis-docker-benchmark-scanner` section.
 1. Customize the configuration based on your specific requirements. You can enable or disable specific CIS benchmarks, set thresholds, and define compliance levels.
     <!-- FIXME what/how can be set here? -->
