@@ -1,6 +1,6 @@
 ---
 title: Generate SBOM
-weight: 800
+weight: 700
 ---
 
 KubeClarity exposes SBOM generator integration settings via the `values.yaml` file.

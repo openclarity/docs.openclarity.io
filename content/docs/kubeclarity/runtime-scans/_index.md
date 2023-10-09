@@ -1,4 +1,4 @@
 ---
-title: Runtime scans
-weight: 900
+title: Runtime scan
+weight: 800
 ---

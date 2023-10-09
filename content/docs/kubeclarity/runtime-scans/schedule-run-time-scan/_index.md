@@ -15,7 +15,7 @@ To schedule a runtime scan that runs at a specific time, complete the following 
 
     ![Select namespace](schedule-scan-namespaces.png)
 
-1. (Optional) If you have already configured [CIS benchmarks]({{< relref "/docs/kubeclarity/cis-benchmark/_index.md" >}}), you can select **CIS Docker Benchmark** to enable them for the scheduled scan.
+1. (Optional) If you have already configured [CIS benchmarks]({{< relref "/docs/kubeclarity/runtime-scans/cis-benchmark/_index.md" >}}), you can select **CIS Docker Benchmark** to enable them for the scheduled scan.
 
 1. Set the type of the scan.
 
