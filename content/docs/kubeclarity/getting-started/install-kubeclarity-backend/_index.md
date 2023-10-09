@@ -18,6 +18,12 @@ KubeClarity requires these Kubernetes permissions:
 | List namespaces. | This is required for fetching the target namespaces to scan in K8s runtime scan UI. |
 | Create and delete jobs in cluster scope. | This is required for managing the jobs that scan the target pods in their namespaces. |
 
+If you are installing KubeClarity on AWS, complete the following steps:
+
+1. Make sure that your EKS cluster is 1.23 or higher.
+1. Install the **EBS CSI Driver** EKS add-on. For details, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html).
+1. Configure the EBS CSI Driver with IAMServiceRole and policies. For details, see [Creating the Amazon EBS CSI driver IAM role](https://docs.aws.amazon.com/eks/latest/userguide/csi-iam-role.html).
+
 ## Install using Helm
 
 1. Add the Helm repository.
