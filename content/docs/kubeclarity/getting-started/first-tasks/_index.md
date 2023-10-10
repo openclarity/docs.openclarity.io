@@ -67,24 +67,10 @@ bash              5.1-2+deb11u1                      CVE-2022-3715     HIGH     
 
 ## Export results to KubeClarity backend
 
-To export the CLI results to the KubeClarity backend, use an application ID as defined by the KubeClarity backend.
-You can find the application ID on the **Applications** screen of the UI, or you can use the KubeClarity API.
+To export the CLI results to the KubeClarity backend, complete the following steps.
 
-### Export SBOM
-
-To export the SBOM to the KubeClarity backend, set the `BACKEND_HOST` environment variable and the `-e` flag.
-
-> Note: Until TLS is supported, set `BACKEND_DISABLE_TLS=true`.
-
-```shell
-BACKEND_HOST=<KubeClarity backend address> BACKEND_DISABLE_TLS=true kubeclarity-cli analyze <image> --application-id <application ID> -e -o <SBOM output file>
-```
-
-For example:
-
-```shell
-BACKEND_HOST=localhost:9999 BACKEND_DISABLE_TLS=true kubeclarity-cli analyze nginx:latest --application-id 23452f9c-6e31-5845-bf53-6566b81a2906 -e -o nginx.sbom
-```
+1. {{< include-headless "kubeclarity/get-application-id.md" >}}
+1. {{< include-headless "kubeclarity/export-sbom-scan-results.md" >}}
 
 ### Export vulnerability scan results
 
