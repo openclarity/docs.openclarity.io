@@ -3,6 +3,8 @@ title: Generate SBOM
 weight: 700
 ---
 
+{{< include-headless "kubeclarity/intro-generate-sbom.md" >}}
+
 KubeClarity exposes SBOM generator integration settings via the `values.yaml` file.
 
 {{< include-headless "kubeclarity/supported-sbom-generators.md" >}}

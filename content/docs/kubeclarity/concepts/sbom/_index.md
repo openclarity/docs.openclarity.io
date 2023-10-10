@@ -4,7 +4,7 @@ linktitle: SBOM
 weight: 100
 ---
 
-A software bill of materials (SBOM) is a list of all the components, libraries, and other dependencies that make up a software application, along with information about the versions, licenses, and vulnerabilities associated with each component. They are formal, structured documents detailing the components of a software product and its supply chain relationships.
+{{< include-headless "kubeclarity/intro-generate-sbom.md" >}}
 
 SBOMs are important because organizations increasingly rely on open-source and third-party software components to build and maintain their applications. These components can introduce security vulnerabilities and must be adequately managed and updated. SBOMs help you understand what open-source and third-party components are used in your applications, and identify and address any security vulnerabilities.
 
@@ -45,3 +45,7 @@ KubeClarity formats the merged SBOM to comply with the input requirements of vul
 ## Scan SBOM documents for vulnerabilities
 
 You can feed the generated SBOM documents to vulnerability scanners, which analyze the SBOMs and generate a vulnerability report detailing all known and fixed CVEs of the software components listed by SBOM.
+
+## Generate SBOM
+
+For details on generating SBOMs with KubeClarity, see the {{% xref "/docs/kubeclarity/getting-started/_index.md" %}} and {{% xref "/docs/kubeclarity/sbom/_index.md" %}}.
