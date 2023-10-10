@@ -5,16 +5,9 @@ weight: 400
 
 After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), complete the following tasks to see the basic functionality of KubeClarity, either using the [CLI]({{< relref "/docs/kubeclarity/getting-started/first-tasks/_index.md" >}}), or using the web UI.
 
-<!-- FIXME runtime scan https://techblog.cisco.com/blog/kubeclarity-install-and-test-drive 
- -->
-
 ## Runtime scan
 
-<!-- FIXME what does the runtime scan actually do? -->
-
 To start a [runtime scan]({{< relref "/docs/kubeclarity/concepts/runtime-scans/_index.md" >}}) from the UI, complete the following steps.
-
-<!-- FIXME link to doing that from the cli -->
 
 1. {{< include-headless "kubeclarity/open-ui.md" >}}
 1. From the navigation bar on the left, select **Runtime Scan**.

@@ -3,69 +3,7 @@ title: Generate SBOM
 weight: 100
 ---
 
-<!-- FIXME single-source with the getting started -->
-
-```shell
-kubeclarity-cli analyze <image/directory name> --input-type <dir|file|image(default)> -o <output file or stdout>
-```
-
-For example:
-
-```shell
-kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
-```
-
-Example output:
-
-```shell
-INFO[0000] Called syft analyzer on source registry:nginx:latest  analyzer=syft app=kubeclarity
-INFO[0004] Skipping analyze unsupported source type: image  analyzer=gomod app=kubeclarity
-INFO[0004] Sending successful results                    analyzer=syft app=kubeclarity
-INFO[0004] Got result for job "syft"                     app=kubeclarity
-INFO[0004] Got result for job "gomod"                    app=kubeclarity
-INFO[0004] Skip generating hash in the case of image    
-```
-
-Verify that the `ngnix.sbom` file is generated and explore its contents as in below:
-
-```shell
-head ngnix.sbom
-```
-
-Example output:
-
-```yaml
-{
-  "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:8cca2aa3-1aaa-4e8c-9d44-08e88b1df50d",
-  "version": 1,
-  "metadata": {
-    "timestamp": "2023-05-19T16:27:27-07:00",
-    "tools": [
-      {
-        "vendor": "kubeclarity",
-```
-
-To run also the trivy scanner and merge the output into a single SBOM, run:
-
-```shell
-ANALYZER_LIST="syft gomod trivy" kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
-```
-
-Example output:
-
-```shell
-INFO[0000] Called syft analyzer on source registry:nginx:latest  analyzer=syft app=kubeclarity
-INFO[0004] Called trivy analyzer on source image nginx:latest  analyzer=trivy app=kubeclarity
-INFO[0004] Skipping analyze unsupported source type: image  analyzer=gomod app=kubeclarity
-INFO[0005] Sending successful results                    analyzer=syft app=kubeclarity
-INFO[0005] Sending successful results                    analyzer=trivy app=kubeclarity
-INFO[0005] Got result for job "trivy"                    app=kubeclarity
-INFO[0005] Got result for job "syft"                     app=kubeclarity
-INFO[0005] Got result for job "gomod"                    app=kubeclarity
-INFO[0005] Skip generating hash in the case of image   
-```
+{{< include-headless "kubeclarity/generate-sbom-simple-cli.md" >}}
 
 ## Export scan results to backend
 
@@ -103,3 +41,13 @@ INFO[0005] Skip generating hash in the case of image
 1. Now you can see the exported results on the UI. For the `nginx` image, the **SBOM Analyzers** column now also displays `trivy`.
 
     ![Exported results](multi-sbom-export-ui.png)
+
+## Run multiple generators
+
+You can list the content analyzers to use using the `ANALYZER_LIST` environment variable separated by a space (`ANALYZER_LIST="<analyzer 1 name> <analyzer 2 name>"`). For example:
+
+```shell
+ANALYZER_LIST="syft gomod" kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
+```
+
+{{< include-headless "kubeclarity/supported-sbom-generators.md" >}}

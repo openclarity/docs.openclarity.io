@@ -1,5 +1,5 @@
 ---
-title: First tasks
+title: First tasks - CLI
 weight: 300
 ---
 
@@ -7,23 +7,7 @@ After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity
 
 ## Generate SBOM
 
-To generate the Software Bill of Materials (SBOM), run the following command:
-
-```shell
-kubeclarity-cli analyze <image/directory name> --input-type <dir|file|image(default)> -o <output file or stdout>
-```
-
-For example:
-
-```shell
-kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
-```
-
-You can list the content analyzers to use using the `ANALYZER_LIST` environment variable separated by a space (`ANALYZER_LIST="<analyzer 1 name> <analyzer 2 name>"`). For example:
-
-```shell
-ANALYZER_LIST="syft gomod" kubeclarity-cli analyze --input-type image nginx:latest -o nginx.sbom
-```
+{{< include-headless "kubeclarity/generate-sbom-simple-cli.md" >}}
 
 ## Vulnerability scan
 
