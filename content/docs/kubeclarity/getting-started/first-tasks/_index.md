@@ -3,7 +3,7 @@ title: First tasks - CLI
 weight: 300
 ---
 
-After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), complete the following tasks to see the basic functionality of KubeClarity, either using the CLI, or using the [web UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
+After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), complete the following tasks to see the basic functionality of the KubeClarity CLI.
 
 ## Generate SBOM
 
@@ -21,3 +21,7 @@ To export the CLI results to the KubeClarity backend, complete the following ste
 1. {{< include-headless "kubeclarity/export-sbom-scan-results.md" >}}
 1. {{< include-headless "kubeclarity/export-vulnerability-scan-results.md" >}}
 1. Now you can [see the exported results on the UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md#vulnerability-scan-results-ui" >}}).
+
+## Next step
+
+Check the common tasks you can do using the [web UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
