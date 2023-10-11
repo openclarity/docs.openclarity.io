@@ -9,7 +9,7 @@ weight: 100
 
 1. {{< include-headless "kubeclarity/get-application-id.md" >}}
 1. {{< include-headless "kubeclarity/export-sbom-scan-results.md" >}}
-1. Now you can see the exported results on the UI. For the `nginx` image, the **SBOM Analyzers** column now also displays `trivy`.
+1. Now you can see the exported results on the UI, on the **Dashboard** and the **Packages** pages.
 
     ![Exported results](multi-sbom-export-ui.png)
 

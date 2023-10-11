@@ -20,7 +20,7 @@ To export the CLI results to the KubeClarity backend, complete the following ste
 1. {{< include-headless "kubeclarity/get-application-id.md" >}}
 1. {{< include-headless "kubeclarity/export-sbom-scan-results.md" >}}
 1. {{< include-headless "kubeclarity/export-vulnerability-scan-results.md" >}}
-1. Now you can [see the exported results on the UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md#vulnerability-scan-results-ui" >}}).
+1. Now you can [see the exported results on the UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md#vulnerability-scan-results-ui" >}}), for example, on the **Dashboard** page.
 
 ## Next step
 
