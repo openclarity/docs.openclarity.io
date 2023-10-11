@@ -18,6 +18,8 @@ KubeClarity requires these Kubernetes permissions:
 | List namespaces. | This is required for fetching the target namespaces to scan in K8s runtime scan UI. |
 | Create and delete jobs in cluster scope. | This is required for managing the jobs that scan the target pods in their namespaces. |
 
+### Prerequisites for AWS
+
 If you are installing KubeClarity on AWS, complete the following steps:
 
 1. Make sure that your EKS cluster is 1.23 or higher.
@@ -38,24 +40,32 @@ If you are installing KubeClarity on AWS, complete the following steps:
     helm show values kubeclarity/kubeclarity > values.yaml
     ```
 
-1. Check the configuration in the `values.yaml` file and update the required values if needed.
+1. (Optional) Check the configuration in the `values.yaml` file and update the required values if needed. You can skip this step to use the default configuration.
 
     - To enable and configure the supported SBOM generators and vulnerability scanners, check the `analyzer` and `scanner` configurations under the `vulnerability-scanner` section. You can skip this step to use the default configuration settings.
 
 1. Deploy KubeClarity with Helm.
 
-   ```shell
-   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
-   ```
+    - If you have customized the `values.yaml` file, run:
 
-   Alternatively, for an OpenShift Restricted SCC compatible installation, run:
+        ```shell
+        helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
+        ```
 
-   ```shell
-   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity --set global.openShiftRestricted=true \
-     --set kubeclarity-postgresql.securityContext.enabled=false --set kubeclarity-postgresql.containerSecurityContext.enabled=false \
-     --set kubeclarity-postgresql.volumePermissions.enabled=true --set kubeclarity-postgresql.volumePermissions.securityContext.runAsUser="auto" \
-     --set kubeclarity-postgresql.shmVolume.chmod.enabled=false
-   ```
+    - To use the default configuration, run:
+
+        ```shell
+        helm install --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
+        ```
+
+    - For an OpenShift Restricted SCC compatible installation, run:
+
+        ```shell
+        helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity --set global.openShiftRestricted=true \
+        --set kubeclarity-postgresql.securityContext.enabled=false --set kubeclarity-postgresql.containerSecurityContext.enabled=false \
+        --set kubeclarity-postgresql.volumePermissions.enabled=true --set kubeclarity-postgresql.volumePermissions.securityContext.runAsUser="auto" \
+        --set kubeclarity-postgresql.shmVolume.chmod.enabled=false
+        ```
 
 1. Wait until all the pods are in 'Running' state. Check the output of the following command:
 
@@ -123,7 +133,7 @@ If you are installing KubeClarity on AWS, complete the following steps:
 
     ![KubeClarity dashboard](kubeclarity-dashboard-empty.png)
 
-1. If you also want to try KubeClarity using its command-line tool, {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}. Otherwise, run some [vulnerability scans using the dashboard]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
+1. If you also want to try KubeClarity using its command-line tool, {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}. Otherwise, you can run [runtime scans using the dashboard]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
 
 ## Uninstall using Helm
 
