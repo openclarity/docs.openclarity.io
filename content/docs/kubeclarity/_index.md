@@ -1,6 +1,9 @@
 ---
 title: "KubeClarity"
 weight: 1000
+github_project_repo: "https://github.com/openclarity/kubeclarity/"
+cascade:
+  github_project_repo: "https://github.com/openclarity/kubeclarity/"
 ---
 
 <img alt="KubeClarity Logo" src="/img/logos/KubeClarity-logo-light-bg-horizontal@4x.png">

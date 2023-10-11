@@ -23,7 +23,7 @@ available tags [here](https://github.com/openclarity/kubeclarity/pkgs/container/
 
 <details><summary>Local Compilation</summary><p>
 
-1. Clone the project repo.
+1. [Clone the project repo](https://github.com/openclarity/kubeclarity/).
 1. Run:
 
     ```shell
@@ -34,4 +34,6 @@ available tags [here](https://github.com/openclarity/kubeclarity/pkgs/container/
 
 </p></details>
 
-After you have installed the CLI, complete the [first tasks]({{< relref "/docs/kubeclarity/getting-started/first-tasks/_index.md" >}}).
+## Next step
+
+Check the common tasks you can do using the [web UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).

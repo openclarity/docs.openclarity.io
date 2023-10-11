@@ -1,5 +1,5 @@
 ---
 title: Private registry support
-weight: 800
+weight: 1100
 ---
 

@@ -1,0 +1,1 @@
+Scanning your runtime Kubernetes clusters is essential to proactively detect and address vulnerabilities in real-time, ensuring the security and integrity of your applications and infrastructure. By continuously monitoring and scanning your clusters, you can mitigate risks, prevent potential attacks, and maintain a strong security posture in the dynamic Kubernetes environment.

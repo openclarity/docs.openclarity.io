@@ -18,6 +18,14 @@ KubeClarity requires these Kubernetes permissions:
 | List namespaces. | This is required for fetching the target namespaces to scan in K8s runtime scan UI. |
 | Create and delete jobs in cluster scope. | This is required for managing the jobs that scan the target pods in their namespaces. |
 
+### Prerequisites for AWS
+
+If you are installing KubeClarity on AWS, complete the following steps:
+
+1. Make sure that your EKS cluster is 1.23 or higher.
+1. Install the **EBS CSI Driver** EKS add-on. For details, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html).
+1. Configure the EBS CSI Driver with IAMServiceRole and policies. For details, see [Creating the Amazon EBS CSI driver IAM role](https://docs.aws.amazon.com/eks/latest/userguide/csi-iam-role.html).
+
 ## Install using Helm
 
 1. Add the Helm repository.
@@ -32,24 +40,32 @@ KubeClarity requires these Kubernetes permissions:
     helm show values kubeclarity/kubeclarity > values.yaml
     ```
 
-1. Check the configuration in the `values.yaml` file and update the required values if needed.
+1. (Optional) Check the configuration in the `values.yaml` file and update the required values if needed. You can skip this step to use the default configuration.
 
-    - To enable and configure the supported SBOM generators and vulnerability scanners, check the `analyzer` and `scanner` configurations under the `vulnerability-scanner` section.
+    - To enable and configure the supported SBOM generators and vulnerability scanners, check the `analyzer` and `scanner` configurations under the `vulnerability-scanner` section. You can skip this step to use the default configuration settings.
 
 1. Deploy KubeClarity with Helm.
 
-   ```shell
-   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
-   ```
+    - If you have customized the `values.yaml` file, run:
 
-   Alternatively, for an OpenShift Restricted SCC compatible installation, run:
+        ```shell
+        helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
+        ```
 
-   ```shell
-   helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity --set global.openShiftRestricted=true \
-     --set kubeclarity-postgresql.securityContext.enabled=false --set kubeclarity-postgresql.containerSecurityContext.enabled=false \
-     --set kubeclarity-postgresql.volumePermissions.enabled=true --set kubeclarity-postgresql.volumePermissions.securityContext.runAsUser="auto" \
-     --set kubeclarity-postgresql.shmVolume.chmod.enabled=false
-   ```
+    - To use the default configuration, run:
+
+        ```shell
+        helm install --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity
+        ```
+
+    - For an OpenShift Restricted SCC compatible installation, run:
+
+        ```shell
+        helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity --namespace kubeclarity --set global.openShiftRestricted=true \
+        --set kubeclarity-postgresql.securityContext.enabled=false --set kubeclarity-postgresql.containerSecurityContext.enabled=false \
+        --set kubeclarity-postgresql.volumePermissions.enabled=true --set kubeclarity-postgresql.volumePermissions.securityContext.runAsUser="auto" \
+        --set kubeclarity-postgresql.shmVolume.chmod.enabled=false
+        ```
 
 1. Wait until all the pods are in 'Running' state. Check the output of the following command:
 
@@ -73,11 +89,51 @@ KubeClarity requires these Kubernetes permissions:
    kubectl port-forward --namespace kubeclarity svc/kubeclarity-kubeclarity 9999:8080
    ```
 
-1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/). The KubeClarity dashboard should appear.
+1. (Optional) Install a sample application (sock shop) to run your scans on.
 
-    ![KubeClarity dashboard](/img/vmclarity-ui-1.png)
+    1. Create a namespace for the application.
 
-1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
+        ```shell
+        kubectl create namespace sock-shop
+        ```
+
+    1. Install the application.
+
+        ```shell
+        kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservices-demo/master/deploy/kubernetes/complete-demo.yaml
+        ```
+
+    1. Check that the installation was successful.
+
+        ```shell
+        kubectl get pods --namespace sock-shop
+        ```
+
+        Expected output:
+
+        ```shell
+        NAME                            READY   STATUS    RESTARTS   AGE
+        carts-5dc994cf5b-4rhfj          2/2     Running   0          44h
+        carts-db-556cbbd5fb-64qls       2/2     Running   0          44h
+        catalogue-b7b968c97-b9k8p       2/2     Running   0          44h
+        catalogue-db-f7547dd6-smzk2     2/2     Running   0          44h
+        front-end-848c97475d-b7sl8      2/2     Running   0          44h
+        orders-7d47794476-9fjsx         2/2     Running   0          44h
+        orders-db-bbfb8f8-7ndr6         2/2     Running   0          44h
+        payment-77bd4bbdf6-hkzh7        2/2     Running   0          44h
+        queue-master-6d4cf8c4ff-pzk68   2/2     Running   0          44h
+        rabbitmq-9dd69888f-6lzfh        3/3     Running   0          44h
+        session-db-7d9d77c495-zngsn     2/2     Running   0          44h
+        shipping-67fff9d476-t87jw       2/2     Running   0          44h
+        user-7b667cd8d-q8bg8            2/2     Running   0          44h
+        user-db-5599d45948-vxpq6        2/2     Running   0          44h
+        ```
+
+1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/). The KubeClarity dashboard should appear. KubeClarity UI has no data to report vulnerabilities after a fresh install, so there is no data on the dashboard.
+
+    ![KubeClarity dashboard](kubeclarity-dashboard-empty.png)
+
+1. If you also want to try KubeClarity using its command-line tool, {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}. Otherwise, you can run [runtime scans using the dashboard]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
 
 ## Uninstall using Helm
 
@@ -109,7 +165,7 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
         1. Run the backend using demo data:
 
             ```shell
-            docker run -p 8080:8080 -e FAKE_RUNTIME_SCANNER=true -e FAKE_DATA=true -e ENABLE_DB_INFO_LOGS=true -e DATABASE_DRIVER=LOCAL ghcr.io/openclarity/kubeclarity:test run
+            docker run -p 9999:8080 -e FAKE_RUNTIME_SCANNER=true -e FAKE_DATA=true -e ENABLE_DB_INFO_LOGS=true -e DATABASE_DRIVER=LOCAL ghcr.io/openclarity/kubeclarity:test run
             ```
 
     - Local build:
@@ -131,5 +187,5 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
             FAKE_RUNTIME_SCANNER=true DATABASE_DRIVER=LOCAL FAKE_DATA=true ENABLE_DB_INFO_LOGS=true ./backend/bin/backend run
             ```
 
-1. Open the KubeClarity UI in your browser: [http://localhost:8080/](http://localhost:8080/)
+1. Open the KubeClarity UI in your browser: [http://localhost:9999/](http://localhost:9999/)
 1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.

@@ -1,0 +1,1 @@
+A software bill of materials (SBOM) is a list of all the components, libraries, and other dependencies that make up a software application, along with information about the versions, licenses, and vulnerabilities associated with each component. They are formal, structured documents detailing the components of a software product and its supply chain relationships.
