@@ -1,9 +1,9 @@
 ---
 title: First tasks - UI
-weight: 400
+weight: 300
 ---
 
-After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), complete the following tasks to see the basic functionality of KubeClarity, either using the [CLI]({{< relref "/docs/kubeclarity/getting-started/first-tasks/_index.md" >}}), or using the web UI.
+After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), complete the following tasks to see the basic functionality of KubeClarity web UI.
 
 ## Runtime scan
 
@@ -15,4 +15,4 @@ After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity
 
 ## Next step
 
-Now that you have finished the getting started guide, explore the UI, or check the documentation for other use cases.
+Check the common tasks you can do using the [CLI tool]({{< relref "/docs/kubeclarity/getting-started/first-tasks/_index.md" >}}).

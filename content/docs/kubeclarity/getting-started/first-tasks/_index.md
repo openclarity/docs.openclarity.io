@@ -1,9 +1,9 @@
 ---
 title: First tasks - CLI
-weight: 300
+weight: 400
 ---
 
-After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), complete the following tasks to see the basic functionality of the KubeClarity CLI.
+After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), and completed the [first tasks on the UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}), complete the following tasks to see the basic functionality of the KubeClarity CLI.
 
 ## Generate SBOM
 
@@ -24,4 +24,4 @@ To export the CLI results to the KubeClarity backend, complete the following ste
 
 ## Next step
 
-Check the common tasks you can do using the [web UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
+Now that you have finished the getting started guide, explore the UI, or check the documentation for other use cases.
