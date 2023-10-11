@@ -165,7 +165,7 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
         1. Run the backend using demo data:
 
             ```shell
-            docker run -p 8080:8080 -e FAKE_RUNTIME_SCANNER=true -e FAKE_DATA=true -e ENABLE_DB_INFO_LOGS=true -e DATABASE_DRIVER=LOCAL ghcr.io/openclarity/kubeclarity:test run
+            docker run -p 9999:8080 -e FAKE_RUNTIME_SCANNER=true -e FAKE_DATA=true -e ENABLE_DB_INFO_LOGS=true -e DATABASE_DRIVER=LOCAL ghcr.io/openclarity/kubeclarity:test run
             ```
 
     - Local build:
@@ -187,5 +187,5 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
             FAKE_RUNTIME_SCANNER=true DATABASE_DRIVER=LOCAL FAKE_DATA=true ENABLE_DB_INFO_LOGS=true ./backend/bin/backend run
             ```
 
-1. Open the KubeClarity UI in your browser: [http://localhost:8080/](http://localhost:8080/)
+1. Open the KubeClarity UI in your browser: [http://localhost:9999/](http://localhost:9999/)
 1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.
