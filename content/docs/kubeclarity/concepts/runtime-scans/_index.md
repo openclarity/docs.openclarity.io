@@ -1,7 +1,7 @@
 ---
-title: Kubernetes clusters runtime scans
+title: Kubernetes cluster runtime scan
 weight: 200
-linktitle: Runtime scans
+linktitle: Runtime scan
 ---
 
 {{< include-headless "kubeclarity/intro-runtime-scans.md" >}}
@@ -10,7 +10,7 @@ linktitle: Runtime scans
 
 KubeClarity enhance the runtime scanning experience:
 
-### Faster runtime scans
+### Faster runtime scan
 
 KubeClarity optimizes the scanning process, reducing the time required to detect vulnerabilities. This allows for quicker identification and remediation of potential security risks.
 
@@ -28,6 +28,6 @@ The following figure illustrates the structure of a runtime scanning architectur
 
 ![KubeClarity Runtime Scan Architecture](runtime-scan-architecture.png)
 
-## Perform runtime scans
+## Perform runtime scan
 
 For details on performing runtime scans with KubeClarity, see the {{% xref "/docs/kubeclarity/getting-started/_index.md" %}} and {{% xref "/docs/kubeclarity/runtime-scans/_index.md" %}}.
