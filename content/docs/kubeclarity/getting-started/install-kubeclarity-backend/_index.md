@@ -20,7 +20,7 @@ KubeClarity requires these Kubernetes permissions:
 
 ### Prerequisites for AWS
 
-If you are installing KubeClarity on AWS, complete the following steps:
+If you are installing KubeClarity on AWS, complete the following steps. These are needed because KubeClarity uses a persistent PostgreSQL database, and that requires a volume.
 
 1. Make sure that your EKS cluster is 1.23 or higher.
 1. Install the **EBS CSI Driver** EKS add-on. For details, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html).

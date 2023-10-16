@@ -4,7 +4,7 @@ linktitle: CLI
 weight: 100
 ---
 
-The KubeClarity CLI can read a configuration file that stores credentials for private registries.
+The KubeClarity CLI can read a configuration file that stores credentials for private registries. (For details, on using an external configuration file, see {{% xref "/docs/kubeclarity/external-config-file-cli/_index.md" %}}).
 
 Example registry section of the configuration file:
 
