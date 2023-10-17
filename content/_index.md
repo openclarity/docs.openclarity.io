@@ -22,17 +22,17 @@ OpenClarity is a suite of open source tools for cloud native security and observ
 
 {{< blocks/section color="light" type="row">}}
 {{< cardpane >}}
-  {{% card header="KubeClarity" footer="![KubeClarity logo](./img/logos/kube-clarity-android-chrome-192x192.png)" %}}
+  {{% card header="KubeClarity" %}}
   KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities in container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.
 
   [Read more]({{< relref "/docs/kubeclarity/_index.md" >}})
   {{% /card %}}
-  {{% card header="VMClarity" footer="![VMClarity logo](./img/logos/vm-clarity-android-chrome-192x192.png)" %}}
+  {{% card header="VMClarity" %}}
   VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
 
   [Read more]({{< relref "/docs/_index.md" >}})
   {{% /card %}}
-  {{% card header="APIClarity" footer="![APIClarity logo](./img/logos/api-clarity-android-chrome-192x192.png)" %}}
+  {{% card header="APIClarity" %}}
   APIClarity, an open source cloud native visibility tool for APIs, utilizes a service-mesh framework to capture and analyze API traffic, and identify potential risks.
 
   [Read more](https://apiclarity.io)
