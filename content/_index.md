@@ -40,6 +40,12 @@ OpenClarity is a suite of open source tools for cloud native security and observ
 {{< /cardpane >}}
 {{< /blocks/section >}}
 
+{{< blocks/section color="white" type="row">}}
+
+{{< blocks/carousel title="Key Capabilities" >}}
+
+{{< /blocks/section >}}
+
 {{% blocks/lead image_anchor="top" width="min" %}}
 <div class="main-lead">Interested? Come join us on Slack or check out our Github page!</div>
 {{% /blocks/lead %}}

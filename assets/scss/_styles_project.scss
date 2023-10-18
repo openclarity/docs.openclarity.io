@@ -6,6 +6,9 @@ assets/scss/_styles_project.scss
 
 */
 @import "tocbot";
+@import "_glide-variables";
+@import "_carousel";
+@import "glide.core.min";
 
 .warning-block {
     border-left: 6px solid red;
