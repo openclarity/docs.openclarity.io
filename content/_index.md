@@ -53,22 +53,3 @@ title: Openclarity
 {{< blocks/carousel title="Key Capabilities" >}}
 
 {{< /blocks/section >}}
-
-{{% blocks/lead image_anchor="top" width="min" %}}
-<div class="main-lead">Interested? Come join us on Slack or check out our Github page!</div>
-{{% /blocks/lead %}}
-
-{{< blocks/section color="light" type="row">}}
-{{% blocks/feature icon="fa-lightbulb" title="Learn more about Openclarity!" url="/docs/" %}}
-Read the Openclarity documentation.
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-brands fa-github" title="Contributions welcome!" url="https://github.com/openclarity/" %}}
-New users and developers are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-brands fa-slack" title="Come chat with us!" url="https://outshift.slack.com/messages/vmclarity/" url_text="Join Slack" %}}
-In case you need help, you can find us in our Slack channel.
-{{% /blocks/feature %}}
-
-{{< /blocks/section >}}
