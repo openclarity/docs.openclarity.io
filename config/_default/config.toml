@@ -188,20 +188,18 @@ twitter = "ciscoemerge"
 ###############################################################################
 [menu]
   [[menu.main]]
-    name = "Project page"
-    weight = -110
-    pre = "<i class='fab fa-github pr-2'></i>"
-    url = "https://github.com/openclarity"
-  [[menu.main]]
     name = "Documentation"
-    weight = -100
-    pre = "<i class='fas fa-book pr-2'></i>"
+    weight = 10
     url = "/docs/"
   [[menu.main]]
     name = "Blog"
-    weight = 140
-    pre = "<i class='fas fa-blog pr-2'></i>"
+    weight = 50
     url = "/blog/"
+  [[menu.main]]
+    name = "GitHub Project"
+    weight = 100
+    pre = "<i class='fab fa-github pr-2'></i>"
+    url = "https://github.com/openclarity"
   [[menu.main]]
     name = "Community"
     url = "https://outshift.slack.com/messages/vmclarity"
