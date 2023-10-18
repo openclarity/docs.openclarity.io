@@ -50,6 +50,12 @@ h3[class*="type-"]::before {
   max-width: 100%;
 }
 
+// Hide Create child page links in the sidebar
 a.td-page-meta--child {
+  display: none;
+}
+
+// Hide title in the navbar, because the logo already includes it
+.td-navbar .navbar-brand__name {
   display: none;
 }
