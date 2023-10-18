@@ -2,7 +2,19 @@
 title: Openclarity
 ---
 
-{{< blocks/cover title="Welcome to OpenClarity!" image_anchor="top" width="min" color="teal" >}}
+{{< blocks/cover image_anchor="top" width="min" color="white" >}}
+<!-- FIXME logo vagy avatar
+<img src="/icons/logo.svg" /> -->
+
+<h2 class="hero-header">Openclarity is an open-source platform to enhance security and observability of cloud-native applications and infrastructure.</h2>
+
+<h3 class="hero-subtitle">Openclarity delivers:</h3>
+<ul>
+<li>Agent-less detection and managements of vulnerabilities, exploits, malware and misconfigurations for VMs and Container Images</li>
+<li>Capabilities for runtime scans of Kubernetes and CI/CD pipelines</li>
+<li>Comprehensive API security for internal and third-party APIs</li>
+</ul>
+
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs/" >}}">
 		Learn More <i class="fa-solid fa-circle-right ml-2"></i>
@@ -10,7 +22,6 @@ title: Openclarity
 	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="/docs/user-guide/">
 		Install <i class="fa-brands fa-github ml-2 "></i>
 	</a>
-	<p class="lead mt-5">Open source tools for cloud native security and observability.</p>
 </div>
 {{< /blocks/cover >}}
 
