@@ -14,28 +14,25 @@ title: Openclarity
 </div>
 {{< /blocks/cover >}}
 
-{{% blocks/lead image_anchor="top" width="min" %}}
-<div class="main-lead">
-OpenClarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity.
-</div>
-{{% /blocks/lead %}}
-
-{{< blocks/section color="light" type="row">}}
+{{< blocks/section color="white" type="row">}}
+<!-- FIXME fix background color -->
+<!-- FIXME fix card layout -->
+<h2>Key Benefits</h2>
 {{< cardpane >}}
-  {{% card header="KubeClarity" %}}
-  KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities in container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.
-
-  [Read more]({{< relref "/docs/kubeclarity/_index.md" >}})
+  {{% card %}}
+  ![](/img/key-benefits/icon_protected_1@3x.svg) </br>
+  <h3>Comprehensive Security</h3>
+  Holistic cloud-native threat detection, mitigation and security for VMs, containerized workloads and APIs across all layers of infrastructure
   {{% /card %}}
-  {{% card header="VMClarity" %}}
-  VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
-
-  [Read more]({{< relref "/docs/_index.md" >}})
+  {{% card %}}
+  ![](/img/key-benefits/icon_service_provider_1@3x.svg) </br>
+  <h3>Open Source and Customizable</h3>
+  Organizations can tailor the platform to meet their security and observability requirements. Being open source, Openclarity offers Freedom to innovate for the community.
   {{% /card %}}
-  {{% card header="APIClarity" %}}
-  APIClarity, an open source cloud native visibility tool for APIs, utilizes a service-mesh framework to capture and analyze API traffic, and identify potential risks.
-
-  [Read more](https://apiclarity.io)
+  {{% card %}}
+  ![](/img/key-benefits/icon_cloud_applications_1@3x.svg) </br>
+  <h3>Alignment with Cloud Native Principles</h3>
+  OpenClarity supports modern application architectures, making it a natural fit for organizations embracing cloud native technology
   {{% /card %}}
 {{< /cardpane >}}
 {{< /blocks/section >}}
