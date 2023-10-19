@@ -63,6 +63,26 @@ a.td-page-meta--child {
   display: none;
 }
 
+// Don't use $primary color in navbar
+.td-navbar {
+  background: white;
+
+  // Set header text color to black
+  .nav-link {
+    color: black;
+  }
+
+  .td-search__icon {
+    color: black;
+  }
+
+  .td-search__input::placeholder {
+    color: black;
+  }
+
+}
+
+
 // Set background color of the footer
 .td-footer {
   background: linear-gradient(180deg, #005CAB 0%, #06144D 100%);
