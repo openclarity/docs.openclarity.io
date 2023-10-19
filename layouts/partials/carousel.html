@@ -2,9 +2,9 @@
 
 {{ $caption := .Get "title" }}
 
-<div class="container">
+<div class="container text-center">
   {{ with $caption }}
-    <h2 class="carousel-main-title"> {{ . }} </h2>
+    <h2 class="carousel-main-title text-center p-2"> {{ . }} </h2>
   {{ end }}
   <div class="glide">
     <div class="glide__track" data-glide-el="track">

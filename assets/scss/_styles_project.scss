@@ -83,6 +83,24 @@ a.td-page-meta--child {
 }
 
 
+.hero-card {
+  background: white;
+  width: 50%;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.hero-logo {
+  padding: 20px;
+}
+
+.carousel-main-title {
+  font-size: 3rem;
+}
+.carousel-card-title {
+  font-weight: bold;
+}
+
 // Set background color of the footer
 .td-footer {
   background: linear-gradient(180deg, #005CAB 0%, #06144D 100%);

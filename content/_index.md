@@ -4,9 +4,12 @@ title: Openclarity
 
 {{< blocks/cover image_anchor="top" width="min" color="white" >}}
 <!-- FIXME logo vagy avatar
-<img src="/icons/logo.svg" /> -->
+ -->
+<div class="m-3 p-5 hero-card">
 
-<h2 class="hero-header">Openclarity is an open-source platform to enhance security and observability of cloud-native applications and infrastructure.</h2>
+<img class="py-4" src="/img/color-logo/logo.svg" width="50%"/>
+
+<h2 class="hero-header py-4">Openclarity is an open-source platform to enhance security and observability of cloud-native applications and infrastructure.</h2>
 
 <h3 class="hero-subtitle">Openclarity delivers:</h3>
 <ul>
@@ -23,9 +26,10 @@ title: Openclarity
 		Install <i class="fa-brands fa-github ml-2 "></i>
 	</a>
 </div>
+</div>
 {{< /blocks/cover >}}
 
-{{< blocks/section color="white" type="row">}}
+{{< blocks/section color="info" type="row">}}
 <!-- FIXME fix background color -->
 <!-- FIXME fix card layout -->
 <h2>Key Benefits</h2>
