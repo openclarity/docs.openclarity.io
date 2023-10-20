@@ -3,8 +3,6 @@ title: Openclarity
 ---
 
 {{< blocks/cover image_anchor="top" width="min" color="white" >}}
-<!-- FIXME logo vagy avatar
- -->
 <div class="m-3 p-5 hero-card">
 
 <img class="py-4" src="/img/color-logo/logo.svg" width="50%"/>
@@ -31,8 +29,7 @@ title: Openclarity
 
 {{< blocks/section color="info" type="row">}}
 <!-- FIXME fix background color -->
-<!-- FIXME fix card layout -->
-<h2>Key Benefits</h2>
+<h2 class="py-3">Key Benefits</h2>
 {{< cardpane >}}
   {{% card %}}
   ![](/img/key-benefits/icon_protected_1@3x.svg) </br>

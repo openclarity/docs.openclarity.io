@@ -101,6 +101,12 @@ a.td-page-meta--child {
   font-weight: bold;
 }
 
+// Key-benefit card styling on the main page
+
+.td-home * .td-card {
+  border-radius: 15px !important;
+  padding: 15px;
+}
 // Set background color of the footer
 .td-footer {
   background: linear-gradient(180deg, #005CAB 0%, #06144D 100%);
