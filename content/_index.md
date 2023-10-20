@@ -17,12 +17,10 @@ title: Openclarity
 </ul>
 
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs/" >}}">
-		Learn More <i class="fa-solid fa-circle-right ml-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="/docs/user-guide/">
-		Install <i class="fa-brands fa-github ml-2 "></i>
-	</a>
+  {{< cta-button text="Learn more" url="/docs/" classes="bg-sky-blue text-white" >}}
+
+  {{< cta-button text="Install" url="/docs/getting-started/" classes="bg-black text-white" icon="fa-brands fa-github ml-2" >}}
+
 </div>
 </div>
 {{< /blocks/cover >}}
