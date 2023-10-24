@@ -5,6 +5,6 @@ type: carousel
 
 <p class="carousel-text">Identify vulnerabilities with a comprehensive approach to capture API traffic, conduct security analyses, test API endpoints and uncover security issues in implementation. When OpenAPI specifications are unavailable, Openclarity offers their automatic reconstruction of based on observed API traffic.</p>
 
-<!-- FIXME CTA -->
+{{< cta-button text="Try it now" url="/docs/" classes="bg-sky-blue text-white" >}}
 
 ![API security architecture](/img/carousel/APIsec.png)
