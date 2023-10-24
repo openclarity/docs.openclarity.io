@@ -5,10 +5,6 @@ aliases:
 - /docs/overview/
 ---
 
-<img alt="VMClarity Logo" src="/img/logos/VMClarity-logo-light-bg-horizontal@4x.png">
-
-[![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack)](https://outshift.slack.com/messages/vmclarity)
-
 VMClarity is an open source tool for agentless detection and management of Virtual Machine
 Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
 
