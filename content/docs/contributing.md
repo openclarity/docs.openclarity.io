@@ -1,6 +1,6 @@
 ---
 title: Contributing guide
-weight: 150
+weight: 5000
 ---
 
 ## How to Contribute

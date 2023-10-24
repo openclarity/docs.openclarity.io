@@ -1,6 +1,6 @@
 ---
 title: Project Goals
-weight: 100
+weight: 1000
 ---
 
 - **Increase the adoption of VMClarity**: One of the primary goals of VMClarity
