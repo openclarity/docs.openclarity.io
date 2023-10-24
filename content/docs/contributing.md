@@ -28,7 +28,7 @@ Before reporting a new issue, please ensure that the issue was not already repor
 When creating a new issue, please be sure to include a **title and clear description**, as much relevant information as
 possible, and, if possible, a test case.
 
-**If you discover a security bug, please do not report it through GitHub. Instead, please see security procedures in {{% xref "/docs/security/SECURITY.md" %}}.
+**If you discover a security bug, please do not report it through GitHub. Instead, please see security procedures in {{% xref "/docs/security/security.md" %}}.
 
 ## Development
 

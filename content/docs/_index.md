@@ -77,7 +77,7 @@ For a detailed installation guide, please see [AWS](https://github.com/openclari
 2. Access VMClarity UI in the browser: http://localhost:8080/
 3. Access the [API](api/openapi.yaml) via http://localhost:8080/api
 
-For a detailed UI tour, see {{% xref "/docs/tour/TOUR.md" %}}.
+For a detailed UI tour, see {{% xref "/docs/tour/tour.md" %}}.
 
 ## Overview
 
@@ -114,7 +114,7 @@ These tools include:
 - Rootkits
   - [Chkrootkit](https://github.com/Magentron/chkrootkit)
 
-A high-level architecture overview is available in {{% xref "/docs/architecture/ARCHITECTURE.md" %}}.
+A high-level architecture overview is available in {{% xref "/docs/architecture/architecture.md" %}}.
 
 ## Roadmap
 VMClarity project roadmap is available [here](https://github.com/orgs/openclarity/projects/2/views/7).
