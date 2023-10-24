@@ -20,8 +20,8 @@ title: Openclarity
   {{< cta-button text="Learn more" url="/docs/" classes="bg-sky-blue text-white" >}}
 
   {{< cta-button text="Install" url="/docs/getting-started/" classes="bg-black text-white" icon="fa-brands fa-github ml-2" >}}
-
 </div>
+
 </div>
 {{< /blocks/cover >}}
 
@@ -30,17 +30,17 @@ title: Openclarity
 <h2 class="py-3">Key Benefits</h2>
 {{< cardpane >}}
   {{% card %}}
-  ![](/img/key-benefits/icon_protected_1@3x.svg) </br>
+  ![Comprehensive Security icon](/img/key-benefits/icon_protected_1@3x.svg) </br>
   <h3>Comprehensive Security</h3>
   Holistic cloud-native threat detection, mitigation and security for VMs, containerized workloads and APIs across all layers of infrastructure
   {{% /card %}}
   {{% card %}}
-  ![](/img/key-benefits/icon_service_provider_1@3x.svg) </br>
+  ![Open Source and Customizable icon](/img/key-benefits/icon_service_provider_1@3x.svg) </br>
   <h3>Open Source and Customizable</h3>
   Organizations can tailor the platform to meet their security and observability requirements. Being open source, Openclarity offers Freedom to innovate for the community.
   {{% /card %}}
   {{% card %}}
-  ![](/img/key-benefits/icon_cloud_applications_1@3x.svg) </br>
+  ![Alignment with Cloud Native Principles icon](/img/key-benefits/icon_cloud_applications_1@3x.svg) </br>
   <h3>Alignment with Cloud Native Principles</h3>
   OpenClarity supports modern application architectures, making it a natural fit for organizations embracing cloud native technology
   {{% /card %}}
