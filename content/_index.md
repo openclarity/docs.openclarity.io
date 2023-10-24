@@ -3,7 +3,7 @@ title: Openclarity
 ---
 
 {{< blocks/cover image_anchor="top" width="min" color="white" disable_overlay=true >}}
-<div class="bg-white m-3 p-5 hero-card col-12 col-sm-10 col-md-8 col-lg-6">
+<div class="bg-white p-5 hero-card col-12 col-sm-10 col-md-8 col-lg-6">
 
 <img class="py-4" src="/img/color-logo/logo.svg" width="50%"/>
 

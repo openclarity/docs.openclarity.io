@@ -92,11 +92,15 @@ a.td-page-meta--child {
   padding: 20px;
 }
 
+.lead {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
 .lead .bg-white {
   --bs-bg-opacity: 0.9;
 }
 
-// Key-benefit card styling on the main page
+// Key-capabilities carousel styling on the main page
 
 .carousel-main-title {
   font-size: 3rem;
@@ -104,6 +108,8 @@ a.td-page-meta--child {
 .carousel-card-title {
   font-weight: bold;
 }
+
+// Key-benefit card styling on the main page
 
 .td-home * .td-card {
   border-radius: 15px !important;
