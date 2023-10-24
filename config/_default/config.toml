@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "OpenClarity"
+title = "Openclarity"
 
 # Language settings
 languageCode = "en-us"
@@ -40,8 +40,8 @@ languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.en.params]
-title = "OpenClarity"
-description = "OpenClarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity."
+title = "Openclarity"
+description = "Openclarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity."
 
 [outputs]
     home = ["HTML", "print"]
@@ -66,13 +66,13 @@ twitter = "ciscoemerge"
 
   email = "mailto:place@holder.io"
 
-  copyright = "The OpenClarity Authors"
+  copyright = "The Openclarity Authors"
 
   relativeURLs = true
 
   # Add project name to the header
-  project_name = "OpenClarity"
-  product_name = "OpenClarity"
+  project_name = "Openclarity"
+  product_name = "Openclarity"
 
   latest_version = "0.5.0" # Used in some installation commands
   latest_operator_version = "0.5.0"
@@ -171,7 +171,7 @@ twitter = "ciscoemerge"
     name = "GitHub"
     url = "https://github.com/openclarity"
     icon = "fab fa-github"
-    desc = "Get involved with OpenClarity development"
+    desc = "Get involved with Openclarity development"
   [[params.links.developer]]
     name = "Slack"
     url = "https://outshift.slack.com/messages/vmclarity"

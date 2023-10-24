@@ -3,7 +3,7 @@ title: API Security
 type: carousel
 ---
 
-<p class="carousel-text">Identify vulnerabilities with a comprehensive approach to capture API traffic, conduct security analyses, test API endpoints and uncover security issues in implementation. When OpenAPI specifications are unavailable, OpenClarity offers their automatic reconstruction of based on observed API traffic.</p>
+<p class="carousel-text">Identify vulnerabilities with a comprehensive approach to capture API traffic, conduct security analyses, test API endpoints and uncover security issues in implementation. When OpenAPI specifications are unavailable, Openclarity offers their automatic reconstruction of based on observed API traffic.</p>
 
 <!-- FIXME CTA -->
 

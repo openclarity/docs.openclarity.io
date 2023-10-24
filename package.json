@@ -4,7 +4,7 @@
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:openclarity/docs.openclarity.io",
   "homepage": "https://docs.openclarity.io",
-  "author": "OpenClarity Authors",
+  "author": "Openclarity Authors",
   "license": "Apache-2.0",
   "bugs": "https://github.com/openclarity/docs.openclarity.io/issues",
   "spelling": "cSpell:ignore HTMLTEST precheck postbuild -",

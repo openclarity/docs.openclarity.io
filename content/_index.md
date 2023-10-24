@@ -42,7 +42,7 @@ title: Openclarity
   {{% card %}}
   ![Alignment with Cloud Native Principles icon](/img/key-benefits/icon_cloud_applications_1@3x.svg) </br>
   <h3>Alignment with Cloud Native Principles</h3>
-  OpenClarity supports modern application architectures, making it a natural fit for organizations embracing cloud native technology
+  Openclarity supports modern application architectures, making it a natural fit for organizations embracing cloud native technology
   {{% /card %}}
 {{< /cardpane >}}
 {{< /blocks/section >}}
