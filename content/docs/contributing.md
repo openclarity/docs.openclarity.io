@@ -18,7 +18,7 @@ any real-time space e.g., Slack, Discord, etc.
 
 ## Troubleshooting and Debugging
 
-Please see {{% xref "/docs/user-guide/troubleshooting.md" %}}.
+Please see {{% xref "/docs/vmclarity/user-guide/troubleshooting.md" %}}.
 
 ## Reporting Issues
 
@@ -87,7 +87,7 @@ api` to regenerate the model, client and server code.
 
 ### Testing End to End
 
-For details on how to test VMClarity end to end please see {{% xref "/docs/user-guide/test_e2e.md" %}}.
+For details on how to test VMClarity end to end please see {{% xref "/docs/vmclarity/user-guide/test_e2e.md" %}}.
 
 ## Sending Pull Requests
 
