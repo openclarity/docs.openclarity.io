@@ -33,7 +33,7 @@ golangci-lint rules and config can be viewed in the `.golangcilint` file in the
 root of the repo.
 
 `make fix` is also provided which will resolve lint issues which are
-automaticlly fixable for example format issues.
+automatically fixable for example format issues.
 
 `make license` can be used to validate that all the files in the repo have the
 correctly formatted license header.
