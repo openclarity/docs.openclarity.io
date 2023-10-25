@@ -38,6 +38,7 @@ possible, and, if possible, a test case.
 
 For details on developing or building Openclarity, see the detailed instructions of the individual components:
 
+- [KubeClarity]({{< relref "/docs/kubeclarity/development/_index.md" >}})
 - [VMClarity]({{< relref "/docs/vmclarity/development/_index.md" >}})
 
 ## Sending Pull Requests
