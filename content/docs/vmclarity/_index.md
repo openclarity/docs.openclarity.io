@@ -3,6 +3,9 @@ title: VMClarity
 weight: 5
 aliases:
 - /docs/overview/
+github_project_repo: "https://github.com/openclarity/vmclarity/"
+cascade:
+  github_project_repo: "https://github.com/openclarity/vmclarity/"
 ---
 
 VMClarity is an open source tool for agentless detection and management of Virtual Machine
