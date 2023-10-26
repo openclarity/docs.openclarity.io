@@ -60,13 +60,32 @@ To deploy the VMClarity AWS CloudFormation Stack, complete the following steps.
 
 ## GCP
 
-1. Change directory to `installation/gcp/dm`
-2. Copy `vmclarity-config.example.yaml` to `vmclarity-config.yaml`, update with required values.
-3. Deploy vmclarity using GCP deployment manager
-   ```
+1. Clone the project repository.
+
+    ```shell
+    git clone https://github.com/openclarity/vmclarity.git
+    ```
+
+1. Change into the following directory:
+
+    ```shell
+    cd vmclarity/installation/gcp/dm/
+    ```
+
+1. Copy the example configuration file to a new file
+
+    ```shell
+    cp vmclarity-config.example.yaml vmclarity-config.yaml
+    ```
+
+1. Edit the new configuration file to add required fields. Check the `vmclarity.py.schema` file for other optional parameters.
+1. Deploy vmclarity using GCP deployment manager
+
+   ```shell
    gcloud deployment-manager deployments create <vmclarity deployment name> --config vmclarity-config.yaml
    ```
-4. Once deployed, copy the VMClarity SSH IP address from the CLI output.
+
+1. Once deployed, copy the VMClarity SSH IP address from the CLI output.
 1. [Open the VMClarity UI](#access-ui).
 
 ## Access VMClarity UI {#access-ui}
