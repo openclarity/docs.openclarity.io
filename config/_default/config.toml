@@ -76,6 +76,7 @@ twitter = "ciscoemerge"
 
   latest_version = "0.5.0" # Used in some installation commands
   latest_operator_version = "0.5.0"
+  vmclarity_version = "0.6.0"
 
   ###############################################################################
   # Docsy-theme specific config customizations
