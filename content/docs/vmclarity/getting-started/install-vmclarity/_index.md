@@ -5,13 +5,17 @@ weight: 100
 
 Install the VMClarity backend on the platform of your choice.
 
+- [AWS](#aws)
+- [Azure](#azure)
+- [GCP](#gcp)
+
 ## AWS
 
 For a detailed installation guide, please see [AWS](https://github.com/openclarity/vmclarity/tree/main/installation/aws).
 
-1. Start the CloudFormation [wizard](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=VMClarity&templateURL=https://s3.eu-west-2.amazonaws.com/vmclarity-v0.4.0/VmClarity.cfn), or upload the [latest](https://github.com/openclarity/vmclarity/releases/latest) CloudFormation template 
+1. Start the CloudFormation [wizard](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=VMClarity&templateURL=https://s3.eu-west-2.amazonaws.com/vmclarity-v0.4.0/VmClarity.cfn), or upload the [latest](https://github.com/openclarity/vmclarity/releases/latest) CloudFormation template.
 2. Specify the SSH key to be used to connect to VMClarity under 'KeyName'
-3. Once deployed, copy VmClarity SSH Address from the "Outputs" tab
+3. Once deployed, copy VmClarity SSH Address from the **Outputs** tab.
 1. [Open the VMClarity UI](#access-ui).
 
 ## Azure
