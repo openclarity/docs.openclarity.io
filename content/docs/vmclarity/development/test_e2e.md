@@ -1,6 +1,6 @@
 ---
 title: End-to-End Testing Guide
-weight: 420
+weight: 480
 ---
 
 ## Installing a specific VMClarity build on AWS

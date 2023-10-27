@@ -20,7 +20,7 @@ any real-time space e.g., Slack, Discord, etc.
 
 See the component-specific instructions:
 
-- [VMClarity]({{< relref "/docs/vmclarity/user-guide/troubleshooting.md" >}})
+- [VMClarity]({{< relref "/docs/vmclarity/troubleshooting.md" >}})
 
 ## Reporting Issues
 
