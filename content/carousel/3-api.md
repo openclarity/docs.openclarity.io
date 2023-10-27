@@ -7,4 +7,4 @@ type: carousel
 
 {{< cta-button text="Try it now" url="/docs/" classes="bg-sky-blue text-white" >}}
 
-![API security architecture](/img/carousel/APIsec.png)
+<img src="/img/carousel/APIsec.png" alt="API security architecture" class="img-fluid">
