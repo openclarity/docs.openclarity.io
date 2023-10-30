@@ -1,0 +1,8 @@
+{{ $icon := .Get "icon" }}
+{{ $url := .Get "url" }}
+{{ $text := .Get "text" }}
+{{ $classes := .Get "classes" }}
+
+<a id="cta" href="{{ with $url -}} {{ . }} {{ end -}}" target="_blank" class="btn btn-lg mr-3 mb-4 {{ with $classes -}} {{ . }} {{ end -}}" role="button">
+    {{ with $icon -}}<i class="{{ . }}"></i> {{ end -}}
+    {{ with $text -}}<span>{{ . }}</span>{{ end -}}</a>

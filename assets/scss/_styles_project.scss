@@ -6,6 +6,9 @@ assets/scss/_styles_project.scss
 
 */
 @import "tocbot";
+@import "_glide-variables";
+@import "_carousel";
+@import "glide.core.min";
 
 .warning-block {
     border-left: 6px solid red;
@@ -58,4 +61,68 @@ a.td-page-meta--child {
 // Hide title in the navbar, because the logo already includes it
 .td-navbar .navbar-brand__name {
   display: none;
+}
+
+// Don't use $primary color in navbar
+.td-navbar {
+  background: white;
+
+  // Set header text color to black
+  .nav-link {
+    color: black;
+  }
+
+  .td-search__icon {
+    color: black;
+  }
+
+  .td-search__input::placeholder {
+    color: black;
+  }
+
+}
+
+// Hero styling customizations
+.hero-card {
+  border-radius: 15px;
+  text-align: left;
+}
+
+.hero-logo {
+  padding: 20px;
+}
+
+.lead {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.lead .bg-white {
+  --bs-bg-opacity: 0.9;
+}
+
+// Key-capabilities carousel styling on the main page
+
+.carousel-main-title {
+  font-size: 3rem;
+}
+.carousel-card-title {
+  font-weight: bold;
+}
+
+// Key-benefit card styling on the main page
+
+.td-home * .td-card {
+  border-radius: 15px !important;
+  padding: 15px;
+}
+
+// CTA-related styling
+
+.bg-sky-blue {
+  background: #00BCEB;
+}
+
+// Set background color of the footer
+.td-footer {
+  background: linear-gradient(180deg, #005CAB 0%, #06144D 100%);
 }

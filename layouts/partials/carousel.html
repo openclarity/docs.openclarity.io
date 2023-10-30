@@ -1,0 +1,38 @@
+{{ $carouselList := where .Site.Pages "Type" "carousel" }}
+
+{{ $caption := .Get "title" }}
+
+<div class="container text-center">
+  {{ with $caption }}
+    <h2 class="carousel-main-title text-center p-2"> {{ . }} </h2>
+  {{ end }}
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {{ range $carouselList }}
+        <li class="glide__slide">
+            {{ partial "carousel-card.html" . }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      {{ range $k, $v := $carouselList }}
+      <button class="glide__bullet" data-glide-dir="={{ $k }}"></button>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 1,
+      hoverpause: false,
+      autoplay: 10000
+    }).mount();
+</script>

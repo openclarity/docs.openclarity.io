@@ -1,0 +1,33 @@
+
+
+.glide__bullets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 59px;
+  }
+  
+  .glide__bullet {
+    &:first-child {
+      margin-left: auto;
+    }
+  
+    &:last-child {
+      margin-right: auto;
+    }
+  
+    padding: 0;
+    border: none;
+    height: 2px;
+    width: 40px;
+    background: #13287A;
+    opacity: 0.2;
+    outline: none;
+    cursor: pointer;
+    margin-left: 8px;
+  
+    &--active {
+      opacity: 1;
+    }
+  }
+  

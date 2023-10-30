@@ -8,6 +8,7 @@
 {{/* Height can be one of: auto, min, med, max, full. */}}
 {{ $height := .Get "height" | default "max" }}
 {{ $byline := .Get "byline" | default "" }}
+{{ $disable_overlay := .Get "disable_overlay" | default false }}
 {{ with $promo_image }}
 {{ $promo_image_big := . }}
 {{ $promo_image_small := . }}
@@ -28,7 +29,7 @@
 }
 </style>
 {{ end }}
-<section id="{{ $blockID }}" class="row td-cover-block td-cover-block--height-{{ $height }}{{ if not .Site.Params.ui.navbar_translucent_over_cover_disable }} js-td-cover{{ end }} td-overlay td-overlay--dark -bg-{{ $col_id }}">
+<section id="{{ $blockID }}" class="row td-cover-block td-cover-block--height-{{ $height }}{{ if not .Site.Params.ui.navbar_translucent_over_cover_disable }} js-td-cover{{ end }} {{ if not $disable_overlay }} td-overlay td-overlay--dark {{ end }} -bg-{{ $col_id }} ">
   <div class="container td-overlay__inner">
     <div class="row">
       <div class="col-12">
