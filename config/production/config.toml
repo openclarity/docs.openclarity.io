@@ -1,4 +1,4 @@
-baseurl = "https://docs.openclarity.io/"
+baseurl = "https://openclarity.io/"
 buildDrafts = false
 #googleAnalytics = "G-FIXME"
 
@@ -9,4 +9,4 @@ buildDrafts = false
 
 [params]
 
-url_latest_version = "https://docs.openclarity.io/"
+url_latest_version = "https://openclarity.io/"
