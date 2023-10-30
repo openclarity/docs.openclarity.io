@@ -7,4 +7,4 @@ type: carousel
 
 {{< cta-button text="Try it now" url="/docs/" classes="bg-sky-blue text-white" >}}
 
-![VM security architecture](/img/carousel/VMsec.png)
+<img src="/img/carousel/VMsec.png" alt="VM security architecture" class="img-fluid">

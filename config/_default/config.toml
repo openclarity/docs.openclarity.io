@@ -196,7 +196,7 @@ twitter = "ciscoemerge"
     name = "Blog"
     weight = 50
     url = "https://techblog.cisco.com/tags/openclarity"
-  [[menu.main]]
+[[menu.main]]
     name = "GitHub Project"
     weight = 100
     pre = "<i class='fab fa-github pr-2'></i>"

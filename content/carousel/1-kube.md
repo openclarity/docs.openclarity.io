@@ -7,4 +7,4 @@ type: carousel
 
 {{< cta-button text="Try it now" url="/docs/" classes="bg-sky-blue text-white" >}}
 
-![Kubernetes security architecture](/img/carousel/Kubesec.png)
+<img src="/img/carousel/Kubesec.png" alt="Kubernetes security architecture" class="img-fluid">
