@@ -43,7 +43,7 @@ weight: 200
   - SBOM generation using multiple integrated content analyzers (Syft, cyclonedx-gomod)
   - SBOM/image/directory vulnerability scanning using multiple integrated scanners (Grype, Dependency-track)
   - Merging of SBOM and vulnerabilities across different CI/CD stages
-  - Export results to KubeClarity backend
+  - Export results to Kubernetes Security backend
 - API
   - See {{% xref "/docs/kubeclarity/api/_index.md" %}}.
 

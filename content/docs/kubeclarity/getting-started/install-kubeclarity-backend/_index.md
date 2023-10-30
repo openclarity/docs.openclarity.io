@@ -1,26 +1,26 @@
 ---
-title: Install the KubeClarity backend
+title: Install the Kubernetes Security backend
 linktitle: Install the backend
 weight: 100
 ---
 
-You can install the KubeClarity backend using [Helm](#install-using-helm), or you can [build and run it locally](#build-locally).
+You can install the Kubernetes Security backend using [Helm](#install-using-helm), or you can [build and run it locally](#build-locally).
 
 ## Prerequisites
 
-KubeClarity requires these Kubernetes permissions:
+Kubernetes Security requires these Kubernetes permissions:
 
 | Permission | Reason |
 | ---        | ---    |
 | Read secrets in CREDS_SECRET_NAMESPACE (default: kubeclarity) | This allows you to configure image pull secrets for scanning private image repositories. |
-| Read config maps in the KubeClarity deployment namespace. | This is required for getting the configured template of the scanner job. |
+| Read config maps in the Kubernetes Security deployment namespace. | This is required for getting the configured template of the scanner job. |
 | List pods in cluster scope. | This is required for calculating the target pods that need to be scanned. |
 | List namespaces. | This is required for fetching the target namespaces to scan in K8s runtime scan UI. |
 | Create and delete jobs in cluster scope. | This is required for managing the jobs that scan the target pods in their namespaces. |
 
 ### Prerequisites for AWS
 
-If you are installing KubeClarity on AWS, complete the following steps. These are needed because KubeClarity uses a persistent PostgreSQL database, and that requires a volume.
+If you are installing Kubernetes Security on AWS, complete the following steps. These are needed because Kubernetes Security uses a persistent PostgreSQL database, and that requires a volume.
 
 1. Make sure that your EKS cluster is 1.23 or higher.
 1. Install the **EBS CSI Driver** EKS add-on. For details, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html).
@@ -34,7 +34,7 @@ If you are installing KubeClarity on AWS, complete the following steps. These ar
     helm repo add kubeclarity https://openclarity.github.io/kubeclarity
     ```
 
-1. Save the default KubeClarity chart values.
+1. Save the default Kubernetes Security chart values.
 
     ```shell
     helm show values kubeclarity/kubeclarity > values.yaml
@@ -44,7 +44,7 @@ If you are installing KubeClarity on AWS, complete the following steps. These ar
 
     - To enable and configure the supported SBOM generators and vulnerability scanners, check the `analyzer` and `scanner` configurations under the `vulnerability-scanner` section. You can skip this step to use the default configuration settings.
 
-1. Deploy KubeClarity with Helm.
+1. Deploy Kubernetes Security with Helm.
 
     - If you have customized the `values.yaml` file, run:
 
@@ -83,7 +83,7 @@ If you are installing KubeClarity on AWS, complete the following steps. These ar
     kubeclarity-kubeclarity-sbom-db-6895d97d5d-55jnj        1/1     Running   0          82s
     ```
 
-1. Port-forward to the KubeClarity UI.
+1. Port-forward to the Kubernetes Security UI.
 
    ```shell
    kubectl port-forward --namespace kubeclarity svc/kubeclarity-kubeclarity 9999:8080
@@ -129,15 +129,15 @@ If you are installing KubeClarity on AWS, complete the following steps. These ar
         user-db-5599d45948-vxpq6        2/2     Running   0          44h
         ```
 
-1. Open the KubeClarity UI in your browser at [http://localhost:9999/](http://localhost:9999/). The KubeClarity dashboard should appear. KubeClarity UI has no data to report vulnerabilities after a fresh install, so there is no data on the dashboard.
+1. Open the Kubernetes Security UI in your browser at [http://localhost:9999/](http://localhost:9999/). The Kubernetes Security dashboard should appear. Kubernetes Security UI has no data to report vulnerabilities after a fresh install, so there is no data on the dashboard.
 
-    ![KubeClarity dashboard](kubeclarity-dashboard-empty.png)
+    ![Kubernetes Security dashboard](kubeclarity-dashboard-empty.png)
 
-1. If you also want to try KubeClarity using its command-line tool, {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}. Otherwise, you can run [runtime scans using the dashboard]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
+1. If you also want to try Kubernetes Security using its command-line tool, {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}. Otherwise, you can run [runtime scans using the dashboard]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}).
 
 ## Uninstall using Helm
 
-Later if you have finished experimenting with KubeClarity, you can delete the backend by completing the following steps.
+Later if you have finished experimenting with Kubernetes Security, you can delete the backend by completing the following steps.
 
 1. Helm uninstall
 
@@ -187,5 +187,5 @@ Later if you have finished experimenting with KubeClarity, you can delete the ba
             FAKE_RUNTIME_SCANNER=true DATABASE_DRIVER=LOCAL FAKE_DATA=true ENABLE_DB_INFO_LOGS=true ./backend/bin/backend run
             ```
 
-1. Open the KubeClarity UI in your browser: [http://localhost:9999/](http://localhost:9999/)
+1. Open the Kubernetes Security UI in your browser: [http://localhost:9999/](http://localhost:9999/)
 1. {{% xref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" %}}.

@@ -34,13 +34,13 @@ There are two typical ways to generate SBOM: during the build process, or after 
 
 ## Multiple SBOMs for accuracy
 
-KubeClarity can run multiple SBOM generators in parallel, and unify their results to generate a more accurate document.
+Kubernetes Security can run multiple SBOM generators in parallel, and unify their results to generate a more accurate document.
 
-In such cases, KubeClarity compiles a merged SBOM from multiple open-source analyzers, and delivers a comprehensive SBOM document report. Although KubeClarity does not generate SBOMs, it integrates with popular generators so that a combined document can provide amplified inputs that can be further analyzed using vulnerability scanners. Leveraging multiple SBOM documents can improve visibility into software dependency posture.
+In such cases, Kubernetes Security compiles a merged SBOM from multiple open-source analyzers, and delivers a comprehensive SBOM document report. Although Kubernetes Security does not generate SBOMs, it integrates with popular generators so that a combined document can provide amplified inputs that can be further analyzed using vulnerability scanners. Leveraging multiple SBOM documents can improve visibility into software dependency posture.
 
-KubeClarity formats the merged SBOM to comply with the input requirements of vulnerability scanners before starting vulnerability scans.
+Kubernetes Security formats the merged SBOM to comply with the input requirements of vulnerability scanners before starting vulnerability scans.
 
-> Note: KubeClarity can merge vulnerability scans from various sources like Grype and Trivy to generate a robust vulnerability scan report.
+> Note: Kubernetes Security can merge vulnerability scans from various sources like Grype and Trivy to generate a robust vulnerability scan report.
 
 ## Scan SBOM documents for vulnerabilities
 
@@ -48,4 +48,4 @@ You can feed the generated SBOM documents to vulnerability scanners, which analy
 
 ## Generate SBOM
 
-For details on generating SBOMs with KubeClarity, see the {{% xref "/docs/kubeclarity/getting-started/_index.md" %}} and {{% xref "/docs/kubeclarity/sbom/_index.md" %}}.
+For details on generating SBOMs with Kubernetes Security, see the {{% xref "/docs/kubeclarity/getting-started/_index.md" %}} and {{% xref "/docs/kubeclarity/sbom/_index.md" %}}.

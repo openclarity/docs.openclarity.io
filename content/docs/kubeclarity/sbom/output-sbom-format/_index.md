@@ -14,7 +14,7 @@ The `kubeclarity-cli analyze` command can format the resulting SBOM into differe
 | Syft JSON | syft-json |
 
 {{< warning >}}
-KubeClarity processes CycloneDX internally, the other formats are supported through a conversion. The conversion process can be lossy due to incompatibilities between formats, therefore in some cases not all fields/information are present in the resulting output.
+Kubernetes Security processes CycloneDX internally, the other formats are supported through a conversion. The conversion process can be lossy due to incompatibilities between formats, therefore in some cases not all fields/information are present in the resulting output.
 {{< /warning >}}
 
 To configure the `kubeclarity-cli` to use a format other than the default, the `ANALYZER_OUTPUT_FORMAT` environment variable can be used with the configuration name from above:

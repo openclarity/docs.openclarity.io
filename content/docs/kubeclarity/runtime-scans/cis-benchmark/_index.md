@@ -11,9 +11,9 @@ CIS Kubernetes Benchmark: Guidance for securing Kubernetes clusters](https://www
 
 ## Configure CIS benchmarking
 
-By following these steps and customizing the CIS benchmarks configuration in the `values.yaml` file, you can effectively run and assess your Kubernetes cluster’s adherence to the CIS benchmarks and evaluate fatal, info, and warning level findings. To configure KubeClarity for running CIS benchmarks, complete the following steps.
+By following these steps and customizing the CIS benchmarks configuration in the `values.yaml` file, you can effectively run and assess your Kubernetes cluster’s adherence to the CIS benchmarks and evaluate fatal, info, and warning level findings. To configure Kubernetes Security for running CIS benchmarks, complete the following steps.
 
-1. [Clone or download the KubeClarity repository](https://github.com/openclarity/kubeclarity/) to your local machine, and open the [`values.yaml`](https://github.com/openclarity/kubeclarity/blob/main/charts/kubeclarity/values.yaml) file in a text editor.
+1. [Clone or download the Kubernetes Security repository](https://github.com/openclarity/kubeclarity/) to your local machine, and open the [`values.yaml`](https://github.com/openclarity/kubeclarity/blob/main/charts/kubeclarity/values.yaml) file in a text editor.
 1. Locate the `cis-docker-benchmark-scanner` section.
 1. Customize the configuration based on your specific requirements. You can enable or disable specific CIS benchmarks, set thresholds, and define compliance levels.
     <!-- FIXME what/how can be set here? -->
@@ -43,9 +43,9 @@ By following these steps and customizing the CIS benchmarks configuration in the
     ```
 
 1. Save the changes to the configuration file.
-1. [Deploy the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) in your Kubernetes cluster using the modified `values.yaml` file.
-1. Once KubeClarity is up and running, it automatically applies the configured CIS benchmarks and evaluates your Kubernetes cluster against them.
-1. Monitor the KubeClarity dashboard, or check the generated reports to review your cluster’s compliance with the CIS benchmarks.
+1. [Deploy the Kubernetes Security backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) in your Kubernetes cluster using the modified `values.yaml` file.
+1. Once Kubernetes Security is up and running, it automatically applies the configured CIS benchmarks and evaluates your Kubernetes cluster against them.
+1. Monitor the Kubernetes Security dashboard, or check the generated reports to review your cluster’s compliance with the CIS benchmarks.
 
 ## Enable CIS benchmarks
 

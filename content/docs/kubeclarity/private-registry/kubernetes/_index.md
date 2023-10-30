@@ -4,7 +4,7 @@ linktitle: Kubernetes
 weight: 200
 ---
 
-KubeClarity uses [k8schain](https://github.com/google/go-containerregistry/tree/main/pkg/authn/k8schain#k8schain) for authenticating to the registries. If the necessary service credentials are not discoverable by the k8schain, you can define them as secrets as described below.
+Kubernetes Security uses [k8schain](https://github.com/google/go-containerregistry/tree/main/pkg/authn/k8schain#k8schain) for authenticating to the registries. If the necessary service credentials are not discoverable by the k8schain, you can define them as secrets as described below.
 
 In addition, if service credentials are not located in the `kubeclarity` namespace, set `CREDS_SECRET_NAMESPACE` to `kubeclarity` Deployment.
 
@@ -48,4 +48,4 @@ When using Helm [charts](https://github.com/openclarity/kubeclarity/tree/main/ch
     > Note:
     > - Secret name must be `gcr-sa`
     > - `sa.json` must be the name of the service account json file when generating the secret
-    > - KubeClarity is using [application default credentials](https://developers.google.com/identity/protocols/application-default-credentials). These only work when running KubeClarity from GCP.
+    > - Kubernetes Security is using [application default credentials](https://developers.google.com/identity/protocols/application-default-credentials). These only work when running Kubernetes Security from GCP.

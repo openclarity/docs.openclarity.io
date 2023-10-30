@@ -3,25 +3,25 @@ title: VMKClarity development
 weight: 2000
 ---
 
-## Building KubeClarity
+## Building Kubernetes Security
 
-`make build` will build all of the KubeClarity code and UI.
+`make build` will build all of the Kubernetes Security code and UI.
 
-Makefile targets are provided to compile and build the KubeClarity binaries.
+Makefile targets are provided to compile and build the Kubernetes Security binaries.
 `make build-all-go` can be used to build all of the go components, but also
 specific targets are provided, for example `make cli` and `make backend` to
 build the specific components in isolation.
 
 `make ui` is provided to just build the UI components.
 
-## Building KubeClarity Containers
+## Building Kubernetes Security Containers
 
-`make docker` can be used to build the KubeClarity containers for all of the
+`make docker` can be used to build the Kubernetes Security containers for all of the
 components. Specific targets for example `make docker-cli` and `make
 docker-backend` are also provided.
 
 `make push-docker` is also provided as a shortcut for building and then
-publishing the KubeClarity containers to a registry. You can override the
+publishing the Kubernetes Security containers to a registry. You can override the
 destination registry like:
 
 ```
@@ -60,7 +60,7 @@ api` to regenerate the model, client and server code.
 
 ## Testing End to End
 
-End to end tests will start and exercise a KubeClarity running on the local
+End to end tests will start and exercise a Kubernetes Security running on the local
 container runtime. This can be used locally or in CI. These tests ensure that
 more complex flows such as the CLI exporting results to the API work as
 expected.
@@ -74,10 +74,10 @@ In order to run end-to-end tests locally:
 ```shell
 # Build all docker images
 make docker
-# Replace Values In The KubeClarity Chart:
+# Replace Values In The Kubernetes Security Chart:
 sed -i 's/latest/${{ github.sha }}/g' charts/kubeclarity/values.yaml
 sed -i 's/Always/IfNotPresent/g' charts/kubeclarity/values.yaml
-# Build the KubeClarity CLI
+# Build the Kubernetes Security CLI
 make cli
 # Move the Built CLI into the E2E Test folder
 mv ./cli/bin/cli ./e2e/kubeclarity-cli

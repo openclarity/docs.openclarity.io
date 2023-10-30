@@ -1,14 +1,14 @@
 ---
-title: "KubeClarity"
+title: "Kubernetes Security"
 weight: 1000
 github_project_repo: "https://github.com/openclarity/kubeclarity/"
 cascade:
   github_project_repo: "https://github.com/openclarity/kubeclarity/"
 ---
 
-KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime K8s clusters and CI/CD pipelines for enhanced software supply chain security.
+Kubernetes Security is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime K8s clusters and CI/CD pipelines for enhanced software supply chain security.
 
-![KubeClarity dashboard screenshot](dashboard.png)
+![Kubernetes Security dashboard screenshot](dashboard.png)
 
 ## Why?
 ### SBOM & Vulnerability Detection Challenges
@@ -31,13 +31,13 @@ KubeClarity is a tool for detection and management of Software Bill Of Materials
 - Create a pluggable infrastructure to:
   - Run several content analyzers in parallel
   - Run several vulnerability scanners in parallel
-- Scan and merge results between different CI stages using KubeClarity CLI
+- Scan and merge results between different CI stages using Kubernetes Security CLI
 - Runtime K8s scan to detect vulnerabilities discovered post-deployment
 - Group scanned resources (images/directories) under defined applications to navigate the object tree dependencies (applications, resources, packages, vulnerabilities)
 
 ## Architecture
 
-![KubeClarity architecture diagram](architecture.png)
+![Kubernetes Security architecture diagram](architecture.png)
 
 ## Limitations
 

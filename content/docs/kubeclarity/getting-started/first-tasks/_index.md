@@ -3,7 +3,7 @@ title: First tasks - CLI
 weight: 400
 ---
 
-After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [KubeClarity CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), and completed the [first tasks on the UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}), complete the following tasks to see the basic functionality of the KubeClarity CLI.
+After you have [installed the Kubernetes Security backend]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-backend/_index.md" >}}) and the [Kubernetes Security CLI]({{< relref "/docs/kubeclarity/getting-started/install-kubeclarity-cli/_index.md" >}}), and completed the [first tasks on the UI]({{< relref "/docs/kubeclarity/getting-started/first-tasks-ui/_index.md" >}}), complete the following tasks to see the basic functionality of the Kubernetes Security CLI.
 
 ## Generate SBOM
 
@@ -13,9 +13,9 @@ After you have [installed the KubeClarity backend]({{< relref "/docs/kubeclarity
 
 {{< include-headless "kubeclarity/run-vulnerability-scan-cli.md" >}}
 
-## Export results to KubeClarity backend
+## Export results to Kubernetes Security backend
 
-To export the CLI results to the KubeClarity backend, complete the following steps.
+To export the CLI results to the Kubernetes Security backend, complete the following steps.
 
 1. {{< include-headless "kubeclarity/get-application-id.md" >}}
 1. {{< include-headless "kubeclarity/export-sbom-scan-results.md" >}}

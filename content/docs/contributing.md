@@ -26,7 +26,7 @@ See the component-specific instructions:
 
 Before reporting a new issue, please ensure that the issue was not already reported or fixed by searching through the issues list of the relevant component of Openclarity:
 
-- [KubeClarity](https://github.com/openclarity/kubeclarity/issues)
+- [Kubernetes Security](https://github.com/openclarity/kubeclarity/issues)
 - [VM Security](https://github.com/openclarity/vmclarity/issues)
 
 When creating a new issue, please be sure to include a **title and clear description**, as much relevant information as
@@ -38,7 +38,7 @@ possible, and, if possible, a test case.
 
 For details on developing or building Openclarity, see the detailed instructions of the individual components:
 
-- [KubeClarity]({{< relref "/docs/kubeclarity/development/_index.md" >}})
+- [Kubernetes Security]({{< relref "/docs/kubeclarity/development/_index.md" >}})
 - [VM Security]({{< relref "/docs/vmclarity/development/_index.md" >}})
 
 ## Sending Pull Requests

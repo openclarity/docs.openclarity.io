@@ -3,9 +3,9 @@ title: Install the CLI
 weight: 200
 ---
 
-KubeClarity includes a CLI that can be run locally and is especially useful for CI/CD pipelines. It allows you to analyze images and directories to generate SBOM, and scan it for vulnerabilities. The results can be exported to the KubeClarity backend.
+Kubernetes Security includes a CLI that can be run locally and is especially useful for CI/CD pipelines. It allows you to analyze images and directories to generate SBOM, and scan it for vulnerabilities. The results can be exported to the Kubernetes Security backend.
 
-You can install the KubeClarity CLI using the following methods:
+You can install the Kubernetes Security CLI using the following methods:
 
 <details><summary>Binary Distribution</summary><p>
 

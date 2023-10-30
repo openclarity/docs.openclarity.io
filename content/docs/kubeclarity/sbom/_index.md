@@ -5,7 +5,7 @@ weight: 700
 
 {{< include-headless "kubeclarity/intro-generate-sbom.md" >}}
 
-KubeClarity exposes SBOM generator integration settings via the `values.yaml` file.
+Kubernetes Security exposes SBOM generator integration settings via the `values.yaml` file.
 
 {{< include-headless "kubeclarity/supported-sbom-generators.md" >}}
 
@@ -13,7 +13,7 @@ Trivy has an extensive vulnerability database, which includes CVEs from various 
 
 Syft’s vulnerability database is smaller and primarily focuses on detecting vulnerabilities in Python libraries.
 
-KubeClarity, by default, enables Syft and CycloneDX gomod analyzers. To enable the Trivy scanner, edit the `values. yaml` file like this:
+Kubernetes Security, by default, enables Syft and CycloneDX gomod analyzers. To enable the Trivy scanner, edit the `values. yaml` file like this:
 
 ```yaml
     analyzer:
@@ -29,12 +29,12 @@ KubeClarity, by default, enables Syft and CycloneDX gomod analyzers. To enable t
 
 ## SBOM database
 
-KubeClarity automatically deploys an SBOM database pod and caches the generated SBOMs in the SBOM DB. The database is a lightweight SQLite DB that avoids persistent volume storage overheads. It stores and retrieves SBOM documents in a string format and serves as a caching function for rendering SBOM data. The DB does not store or query JSON objects to parse or query the SBOMs. However, it supports a gzip compression and base64 encoded storage to reduce memory footprint.
+Kubernetes Security automatically deploys an SBOM database pod and caches the generated SBOMs in the SBOM DB. The database is a lightweight SQLite DB that avoids persistent volume storage overheads. It stores and retrieves SBOM documents in a string format and serves as a caching function for rendering SBOM data. The DB does not store or query JSON objects to parse or query the SBOMs. However, it supports a gzip compression and base64 encoded storage to reduce memory footprint.
 
 Here is the corresponding configuration snippet from the `values.yaml` file:
 
 ```yaml
-## KubeClarity SBOM DB Values
+## Kubernetes Security SBOM DB Values
 
 kubeclarity-sbom-db:
   ## Docker Image values.
@@ -56,5 +56,5 @@ kubeclarity-sbom-db:
       memory: "100Mi"
       cpu: "100m"
 
-## End of KubeClarity SBOM DB Values
+## End of Kubernetes Security SBOM DB Values
 ```

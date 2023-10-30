@@ -1,7 +1,7 @@
-To export the generated SBOMs to a running KubeClarity backend pod, use the `-e` flag and the ID as the `<application ID>` value in the following command.
+To export the generated SBOMs to a running Kubernetes Security backend pod, use the `-e` flag and the ID as the `<application ID>` value in the following command.
 
 ```shell
-BACKEND_HOST=<KubeClarity backend address> BACKEND_DISABLE_TLS=true kubeclarity-cli analyze <image> --application-id <application ID> -e -o <SBOM output file>
+BACKEND_HOST=<Kubernetes Security backend address> BACKEND_DISABLE_TLS=true kubeclarity-cli analyze <image> --application-id <application ID> -e -o <SBOM output file>
 ```
 
 For example:
