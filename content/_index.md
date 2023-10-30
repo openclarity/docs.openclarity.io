@@ -26,6 +26,7 @@ title: Openclarity
 {{< /blocks/cover >}}
 
 {{< blocks/section color="info" type="row">}}
+
 <h2 class="py-3">Key Benefits</h2>
 {{< cardpane >}}
   {{% card %}}

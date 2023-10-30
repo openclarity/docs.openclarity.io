@@ -76,6 +76,7 @@ twitter = "ciscoemerge"
 
   latest_version = "0.5.0" # Used in some installation commands
   latest_operator_version = "0.5.0"
+  vmclarity_version = "0.6.0"
 
   ###############################################################################
   # Docsy-theme specific config customizations
@@ -194,8 +195,8 @@ twitter = "ciscoemerge"
   [[menu.main]]
     name = "Blog"
     weight = 50
-    url = "/blog/"
-  [[menu.main]]
+    url = "https://techblog.cisco.com/tags/openclarity"
+[[menu.main]]
     name = "GitHub Project"
     weight = 100
     pre = "<i class='fab fa-github pr-2'></i>"

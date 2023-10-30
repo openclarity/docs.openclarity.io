@@ -4,13 +4,13 @@ weight: 8000
 ---
 
 This document outlines security procedures and general policies for the
-VMClarity project.
+Openclarity project.
 
 ## Reporting a Bug
 
-The VMClarity team and community take all security bugs in
-VMClarity seriously. Thank you for improving the security of
-VMClarity. We appreciate your efforts and responsible disclosure and
+The Openclarity team and community take all security bugs in
+Openclarity seriously. Thank you for improving the security of
+Openclarity. We appreciate your efforts and responsible disclosure and
 will make every effort to acknowledge your contributions.
 
 Report security bugs by emailing `oss-security@cisco.com`.

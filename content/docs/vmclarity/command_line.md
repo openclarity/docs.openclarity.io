@@ -1,5 +1,6 @@
 ---
-title: VMClarity CLI
+title: Common CLI tasks
+linktitle: VMClarity CLI
 weight: 410
 ---
 
