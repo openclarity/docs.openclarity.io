@@ -1,5 +1,5 @@
 ---
-title: VMKClarity development
+title: Kubernetes Security development
 weight: 2000
 ---
 
