@@ -1,4 +1,4 @@
-# docs.openclarity.io
+# openclarity.io
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59e14813-c990-41a0-8662-45c204e6bc6b/deploy-status)](https://app.netlify.com/sites/hugo-openclarity/deploys)
 

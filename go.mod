@@ -1,4 +1,4 @@
-module github.com/openclarity/docs.openclarity.io
+module github.com/openclarity/openclarity.io
 
 go 1.12
 
