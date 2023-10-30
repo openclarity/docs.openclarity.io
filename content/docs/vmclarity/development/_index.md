@@ -1,23 +1,23 @@
 ---
-title: VMClarity development
+title: VM Security development
 weight: 2000
 ---
 
-## Building VMClarity Binaries
+## Building VM Security Binaries
 
-Makefile targets are provided to compile and build the VMClarity binaries.
+Makefile targets are provided to compile and build the VM Security binaries.
 `make build` can be used to build all of the components, but also specific
 targets are provided, for example `make build-cli` and `make build-backend` to
 build the specific components in isolation.
 
-## Building VMClarity Containers
+## Building VM Security Containers
 
-`make docker` can be used to build the VMClarity containers for all of the
+`make docker` can be used to build the VM Security containers for all of the
 components. Specific targets for example `make docker-cli` and `make
 docker-backend` are also provided.
 
 `make push-docker` is also provided as a shortcut for building and then
-publishing the VMClarity containers to a registry. You can override the
+publishing the VM Security containers to a registry. You can override the
 destination registry like:
 
 ```
@@ -58,4 +58,4 @@ api` to regenerate the model, client and server code.
 
 ## Testing End to End
 
-For details on how to test VMClarity end to end please see {{% xref "/docs/vmclarity/development/test_e2e.md" %}}.
+For details on how to test VM Security end to end please see {{% xref "/docs/vmclarity/development/test_e2e.md" %}}.

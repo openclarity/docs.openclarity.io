@@ -1,5 +1,5 @@
 ---
-title: VMClarity development
+title: VMKClarity development
 weight: 2000
 ---
 

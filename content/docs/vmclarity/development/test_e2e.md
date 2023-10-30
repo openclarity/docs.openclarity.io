@@ -3,7 +3,7 @@ title: End-to-End Testing Guide
 weight: 480
 ---
 
-## Installing a specific VMClarity build on AWS
+## Installing a specific VM Security build on AWS
 
 1. Build the containers and publish them to your docker registry
 
@@ -11,7 +11,7 @@ weight: 480
     DOCKER_REGISTRY=<your docker registry> make push-docker
     ```
 
-1. Install VMClarity cloudformation
+1. Install VM Security cloudformation
 
     1. Ensure you have an SSH key pair uploaded to AWS Ec2
     2. Go to **CloudFormation -> Create Stack -> Upload** template.
@@ -21,11 +21,11 @@ weight: 480
         1. Change the Asset Scan Delete Policy to `OnSuccess` or `Never` if debugging scanner VMs is required.
     5. Wait for install to complete
 
-1. Ensure that VMClarity backend is working correctly
+1. Ensure that VM Security backend is working correctly
 
     1. Get the IP address from the CloudFormation stack's Output Tab
     2. `ssh ubuntu@<ip address>`
-    3. Check the VMClarity Logs
+    3. Check the VM Security Logs
 
         ```shell
         sudo journalctl -u vmclarity
@@ -80,13 +80,13 @@ weight: 480
 
     1. Set operationTime to the time you want the scan to run. As long as the time is in the future it can be within seconds.
 
-3. While ssh'd into the VMClarity server run
+3. While ssh'd into the VM Security server run
 
     ```shell
     curl -X POST http://localhost:8080/api/scanConfigs -H 'Content-Type: application/json' -d @scanConfig.json
     ```
 
-4. Check VMClarity logs to ensure that everything is performing as expected
+4. Check VM Security logs to ensure that everything is performing as expected
 
     ```shell
     sudo journalctl -u vmclarity

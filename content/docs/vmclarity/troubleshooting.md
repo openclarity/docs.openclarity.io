@@ -10,9 +10,9 @@ below.
 
 ### Debug Scanner VM on AWS
 
-On AWS VMClarity is configured to create the Scanner VMs with the same key-pair
-that the VMClarity server has. The Scanner VMs run in a private network,
-however the VMClarity Server can be used as a bastion/jump host to reach them
+On AWS VM Security is configured to create the Scanner VMs with the same key-pair
+that the VM Security server has. The Scanner VMs run in a private network,
+however the VM Security Server can be used as a bastion/jump host to reach them
 via SSH.
 
 ```

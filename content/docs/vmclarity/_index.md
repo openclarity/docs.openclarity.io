@@ -1,5 +1,5 @@
 ---
-title: VMClarity
+title: VM Security
 weight: 5
 aliases:
 - /docs/overview/
@@ -8,14 +8,14 @@ cascade:
   github_project_repo: "https://github.com/openclarity/vmclarity/"
 ---
 
-VMClarity is an open source tool for agentless detection and management of Virtual Machine
+VM Security is an open source tool for agentless detection and management of Virtual Machine
 Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
 
-<img src="/img/vmclarity_demo.gif" alt="VMClarity demo" />
+<img src="/img/vmclarity_demo.gif" alt="VM Security demo" />
 
-Join [VMClarity's Slack channel](https://outshift.slack.com/messages/vmclarity) to hear about the latest announcements and upcoming activities. We would love to get your feedback!
+Join [VM Security's Slack channel](https://outshift.slack.com/messages/vmclarity) to hear about the latest announcements and upcoming activities. We would love to get your feedback!
 
-## Why VMClarity?
+## Why VM Security?
 
 Virtual machines (VMs) are the most used service across all hyperscalers. AWS,
 Azure, GCP, and others have virtual computing services that are used not only
@@ -37,11 +37,11 @@ However, there are challenges with assembling and managing these tools yourself:
 - Integration with deployment automation
 - Siloed reporting and visualization
 
-The VMClarity project is focused on unifying detection and management of VM security threats in an agentless manner.
+The VM Security project is focused on unifying detection and management of VM security threats in an agentless manner.
 
 ## Overview
 
-VMClarity uses a pluggable scanning infrastructure to provide:
+VM Security uses a pluggable scanning infrastructure to provide:
 - SBOM analysis
 - Package and OS vulnerability detection
 - Exploit detection
@@ -51,7 +51,7 @@ VMClarity uses a pluggable scanning infrastructure to provide:
 - Rootkit detection
 
 The pluggable scanning infrastructure uses several tools that can be
-enabled/disabled on an individual basis. VMClarity normalizes, merges and
+enabled/disabled on an individual basis. VM Security normalizes, merges and
 provides a robust visualization of the results from these various tools.
 
 These tools include:
@@ -79,4 +79,4 @@ A high-level architecture overview is available in {{% xref "/docs/vmclarity/arc
 
 ## Roadmap
 
-VMClarity project roadmap is available [here](https://github.com/orgs/openclarity/projects/2/views/7).
+VM Security project roadmap is available [here](https://github.com/orgs/openclarity/projects/2/views/7).

@@ -1,6 +1,6 @@
 ---
 title: Common CLI tasks
-linktitle: VMClarity CLI
+linktitle: VM Security CLI
 weight: 410
 ---
 
@@ -11,9 +11,9 @@ weight: 410
 ./cli/bin/vmclarity-cli scan --config ~/testConf.yaml -o outputfile
 ```
 
-If we want to report results to the VMClarity backend, we need to create asset and asset scan object before scan because it requires asset-scan-id
+If we want to report results to the VM Security backend, we need to create asset and asset scan object before scan because it requires asset-scan-id
 
-## Reporting results to VMClarity backend:
+## Reporting results to VM Security backend:
 
 ```
 ASSET_ID=$(./cli/bin/vmclarity-cli asset-create --file assets/dir-asset.json --server http://localhost:8080/api) --jsonpath {.id}
