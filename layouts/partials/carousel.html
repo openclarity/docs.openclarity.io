@@ -1,4 +1,4 @@
-{{ $carouselList := where .Site.Pages "Type" "carousel" }}
+{{ $carouselList := (where .Site.Pages "Type" "carousel").Reverse }}
 
 {{ $caption := .Get "title" }}
 
