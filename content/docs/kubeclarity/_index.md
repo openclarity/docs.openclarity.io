@@ -1,5 +1,5 @@
 ---
-title: "KubeClarity"
+title: "Kubernetes Security"
 weight: 1000
 github_project_repo: "https://github.com/openclarity/kubeclarity/"
 cascade:
@@ -7,6 +7,8 @@ cascade:
 ---
 
 KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime K8s clusters and CI/CD pipelines for enhanced software supply chain security.
+
+KubeClarity is the tool responsible for Kubernetes Security in the Openclarity platform.
 
 ![KubeClarity dashboard screenshot](dashboard.png)
 
