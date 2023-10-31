@@ -1,5 +1,5 @@
 ---
-title: VMClarity
+title: VM Security
 weight: 5
 aliases:
 - /docs/overview/
@@ -8,8 +8,9 @@ cascade:
   github_project_repo: "https://github.com/openclarity/vmclarity/"
 ---
 
-VMClarity is an open source tool for agentless detection and management of Virtual Machine
-Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
+VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
+
+VMClarity is the tool responsible for VM Security in the Openclarity platform.
 
 <img src="/img/vmclarity_demo.gif" alt="VMClarity demo" />
 

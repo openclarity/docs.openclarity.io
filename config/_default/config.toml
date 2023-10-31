@@ -41,7 +41,7 @@ languageName ="English"
 weight = 1
 [languages.en.params]
 title = "Openclarity"
-description = "Openclarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity."
+description = "Openclarity is a suite of open source tools for cloud native security and observability — VM Security, KubeClarity, and APIClarity."
 
 [outputs]
     home = ["HTML", "print"]
