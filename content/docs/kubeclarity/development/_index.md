@@ -1,5 +1,5 @@
 ---
-title: VMClarity development
+title: KubeClarity development
 weight: 2000
 ---
 
