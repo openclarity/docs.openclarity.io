@@ -4,13 +4,13 @@ weight: 8000
 ---
 
 This document outlines security procedures and general policies for the
-Openclarity project.
+OpenClarity project.
 
 ## Reporting a Bug
 
-The Openclarity team and community take all security bugs in
-Openclarity seriously. Thank you for improving the security of
-Openclarity. We appreciate your efforts and responsible disclosure and
+The OpenClarity team and community take all security bugs in
+OpenClarity seriously. Thank you for improving the security of
+OpenClarity. We appreciate your efforts and responsible disclosure and
 will make every effort to acknowledge your contributions.
 
 Report security bugs by emailing `oss-security@cisco.com`.

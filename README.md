@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59e14813-c990-41a0-8662-45c204e6bc6b/deploy-status)](https://app.netlify.com/sites/hugo-openclarity/deploys)
 
-Openclarity documentation portal based on Hugo and Docsy
+OpenClarity documentation portal based on Hugo and Docsy
 
 [Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
 site navigation, structure, and more. This **Docsy Example Project** uses the Docsy

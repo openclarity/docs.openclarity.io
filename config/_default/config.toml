@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Openclarity"
+title = "OpenClarity"
 
 # Language settings
 languageCode = "en-us"
@@ -40,8 +40,8 @@ languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.en.params]
-title = "Openclarity"
-description = "Openclarity is a suite of open source tools for cloud native security and observability — VM Security, Kubernetes Security, and API Security."
+title = "OpenClarity"
+description = "OpenClarity is a suite of open source tools for cloud native security and observability — VM Security, Kubernetes Security, and API Security."
 
 [outputs]
     home = ["HTML", "print"]
@@ -50,7 +50,7 @@ description = "Openclarity is a suite of open source tools for cloud native secu
 
 [social]
 # Used as twitter:site in page metadata
-twitter = "ciscoemerge"
+twitter = "outshiftbycisco"
 
 [markup]
   [markup.goldmark]
@@ -66,13 +66,13 @@ twitter = "ciscoemerge"
 
   email = "mailto:place@holder.io"
 
-  copyright = "The Openclarity Authors"
+  copyright = "The OpenClarity Authors"
 
   relativeURLs = true
 
   # Add project name to the header
-  project_name = "Openclarity"
-  product_name = "Openclarity"
+  project_name = "OpenClarity"
+  product_name = "OpenClarity"
 
   latest_version = "0.5.0" # Used in some installation commands
   latest_operator_version = "0.5.0"
@@ -159,7 +159,7 @@ twitter = "ciscoemerge"
   #  desc = "Discussion and help from your fellow users"
   #[[params.links.user]]
   #  name ="Twitter"
-  #  url = "https://twitter.com/ciscoemerge"
+  #  url = "https://twitter.com/outshiftbycisco"
   #  icon = "fab fa-twitter"
   #  desc = "Follow us on Twitter to get the latest news!"
   #[[params.links.user]]
@@ -172,7 +172,7 @@ twitter = "ciscoemerge"
     name = "GitHub"
     url = "https://github.com/openclarity"
     icon = "fab fa-github"
-    desc = "Get involved with Openclarity development"
+    desc = "Get involved with OpenClarity development"
   [[params.links.developer]]
     name = "Slack"
     url = "https://outshift.slack.com/messages/vmclarity"
