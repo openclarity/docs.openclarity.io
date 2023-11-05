@@ -5,7 +5,7 @@ weight: 5000
 
 ## How to Contribute
 
-Thanks for your interest in contributing to Openclarity! Here are a few general guidelines on contributing and
+Thanks for your interest in contributing to OpenClarity! Here are a few general guidelines on contributing and
 reporting bugs that we ask you to review. Following these guidelines helps to communicate that you respect the time of
 the contributors managing and developing this open source project. In return, they should reciprocate that respect in
 addressing your issue, assessing changes, and helping you finalize your pull requests. In that spirit of mutual respect,
@@ -24,7 +24,7 @@ See the component-specific instructions:
 
 ## Reporting Issues
 
-Before reporting a new issue, please ensure that the issue was not already reported or fixed by searching through the issues list of the relevant component of Openclarity:
+Before reporting a new issue, please ensure that the issue was not already reported or fixed by searching through the issues list of the relevant component of OpenClarity:
 
 - [KubeClarity](https://github.com/openclarity/kubeclarity/issues)
 - [VMClarity](https://github.com/openclarity/vmclarity/issues)
@@ -36,7 +36,7 @@ possible, and, if possible, a test case.
 
 ## Development
 
-For details on developing or building Openclarity, see the detailed instructions of the individual components:
+For details on developing or building OpenClarity, see the detailed instructions of the individual components:
 
 - [KubeClarity]({{< relref "/docs/kubeclarity/development/_index.md" >}})
 - [VMClarity]({{< relref "/docs/vmclarity/development/_index.md" >}})
@@ -51,13 +51,13 @@ reserve breaking changes until the next major version release.
 
 ## Other Ways to Contribute
 
-We welcome anyone that wants to contribute to Openclarity to triage and reply to open issues to help troubleshoot
+We welcome anyone that wants to contribute to OpenClarity to triage and reply to open issues to help troubleshoot
 and fix existing bugs. Here is what you can do:
 
 - Help ensure that existing issues follows the recommendations from the _[Reporting Issues](#reporting-issues)_ section,
   providing feedback to the issue's author on what might be missing.
-- Review and update the Openclarity documentation with up-to-date instructions and code samples.
-- Review existing pull requests, and testing patches against real existing applications that use Openclarity.
+- Review and update the OpenClarity documentation with up-to-date instructions and code samples.
+- Review existing pull requests, and testing patches against real existing applications that use OpenClarity.
 - Write a test, or add a missing test case to an existing test.
 
-Thanks again for your interest on contributing to Openclarity!
+Thanks again for your interest on contributing to OpenClarity!
