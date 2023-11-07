@@ -24,8 +24,8 @@ APIClarity is structured in a modular architecture, which allows to easily add n
     - List of API endpoints that are observed but marked as deprecated in the specs, i.e. _Zombie APIs_;
     - List of difference between of the APIs observed and their documented specification.
 
-- [**Trace Analyzer**](./backend/pkg/modules/internal/traceanalyzer/README.md) This module analyzes path, headers and body of API requests and responses to discover potential security issues, such as weak authentications, exposure of sensitive information, potential Broken Object Level Authorizations (BOLA) etc.
-- [**BFLA Detector**](./backend/pkg/modules/internal/bfla/README.md) This module detects potential Broken Function Level Authorization. In particular it observes the API interactions and build an authorization model that captures what clients are supposed to be authorized to make the various API calls. Based on such authorization model it then signals violations which may represent potential issues in the API authorization procedures.
+- [**Trace Analyzer**](https://github.com/openclarity/apiclarity/tree/master/backend/pkg/modules/internal/traceanalyzer/README.md) This module analyzes path, headers and body of API requests and responses to discover potential security issues, such as weak authentications, exposure of sensitive information, potential Broken Object Level Authorizations (BOLA) etc.
+- [**BFLA Detector**](https://github.com/openclarity/apiclarity/tree/master/backend/pkg/modules/internal/bfla/README.md) This module detects potential Broken Function Level Authorization. In particular it observes the API interactions and build an authorization model that captures what clients are supposed to be authorized to make the various API calls. Based on such authorization model it then signals violations which may represent potential issues in the API authorization procedures.
 - **Fuzzer** This module actively tests API endpoints based on their specification attempting in discovering security issues in the API server implementation.
 
 ## Supported traffic source integrations
