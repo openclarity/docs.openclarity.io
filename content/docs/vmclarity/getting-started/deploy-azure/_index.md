@@ -1,6 +1,6 @@
 ---
 title: Deploy on Azure
-weight: 200
+weight: 110
 ---
 
 ## Prerequisites
@@ -52,3 +52,5 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 <p align="center" width="100%">
     <img width="50%" src="azure-deploy-output.png">
 </p>
+
+6. [Open the VMClarity UI](/docs/vmclarity/getting-started/install-vmclarity#access-ui).
