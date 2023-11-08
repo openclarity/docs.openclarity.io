@@ -12,7 +12,7 @@ Use APIClarity to compare your OpenAPI specification to its state at runtime. Fo
 
 Cloud native applications use and expose APIs, which have been the source of many highly publicized cyber-attacks and breaches. APIClarity improves your API visibility and your applications security posture.
 
-APIClarity is the tool responsible for API Security in the Openclarity platform.
+APIClarity is the tool responsible for API Security in the [OpenClarity platform](https://openclarity.io).
 
 ## Why APIClarity?
 
