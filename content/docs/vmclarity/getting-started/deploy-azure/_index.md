@@ -47,4 +47,8 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 
 4. Review and create the deployment.
 
-5. [TBC] Once deployed, copy the VMClarity SSH address from the Outputs tab.
+5. [TBC] Once the deployment is successful, copy the VMClarity SSH address from the Outputs tab.
+
+<p align="center" width="100%">
+    <img width="50%" src="azure-deploy-output.png">
+</p>
