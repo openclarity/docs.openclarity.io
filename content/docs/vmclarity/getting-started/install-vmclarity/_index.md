@@ -8,7 +8,7 @@ Install the VMClarity backend on the platform of your choice.
 - [AWS](#aws)
 - [Azure](#azure)
 - [GCP](#gcp)
-- [Docker](#docker)
+- [Docker](/docs/vmclarity/getting-started/deploy-docker/)
 
 ## AWS
 
@@ -88,37 +88,6 @@ To deploy the VMClarity AWS CloudFormation Stack, complete the following steps.
 
 1. Once deployed, copy the VMClarity SSH IP address from the CLI output.
 1. [Open the VMClarity UI](#access-ui).
-
-## Docker
-
-To run VMClarity in Docker on your local machine, complete the following steps.
-
-1. Clone the project repository and navigate to the `/installation/docker` folder.
-
-    ```shell
-    git clone https://github.com/openclarity/vmclarity.git
-    cd vmclarity/installation/docker
-    ```
-
-1. Run the following command to start every control plane element with a docker compose file.
-
-    ```shell
-    docker compose --project-name vmclarity --file docker-compose.yml up -d --wait --remove-orphans
-    ```
-
-    > Note: The `image_override.env` file enables you to use the images you build yourself. You can override parameters in the `docker-compose.yml` by passing a custom env file to the `docker compose up` command via the `--env-file` flag. The `/installation/docker/image_override.env` file contains an example overriding all the container images.
-
-1. After Docker has set up the services, you should be able to see the running control plane containers in Docker desktop and start sending HTTP requests to the API server.
-
-    ![Docker desktop](vmclarity-docker.png)
-
-1. [Open the VMClarity UI](#access-ui).
-
-After you have finished experimenting, you can stop the containers by running:
-
-```shell
-docker compose --project-name vmclarity --file docker-compose.yml down --remove-orphans
-```
 
 ## Access VMClarity UI {#access-ui}
 
