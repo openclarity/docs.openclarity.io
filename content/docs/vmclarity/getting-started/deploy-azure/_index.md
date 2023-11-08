@@ -18,6 +18,10 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 
 2. Fill out the required project and instance details in the Basics tab.
 
+<p align="center" width="100%">
+    <img width="50%" src="azure-template-basics.png">
+</p>
+
 | Parameter                             | Required | Description                                                                                          |
 |---------------------------------------|----------|------------------------------------------------------------------------------------------------------|
 | Subscription                          | True     | Azure subscription where resources will be billed.                                                   |
@@ -29,18 +33,18 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 | VMClarity Scanner VMs Size            | True     | The size of the VMClarity Scanner Virtual Machines.                                                  |
 | Security Type                         | False    | Security Type of the VMClarity Server Virtual Machine, e.g. `TrustedLaunch` (default) or `Standard`. |
 
-<p align="center" width="100%">
-    <img width="75%" src="azure-template-basics.png">
-</p>
-
-**[TODO center table]**
-**[TODO next sections]**
-
-3. To run a specific VMClarity version, go to the Advanced tab and select the Container Images that should be used for each service.
+3. In the Advanced tab, modify the Container Image for each service if a specific VMClarity version is required. Then, select the delete policy and the database.
 
 <p align="center" width="100%">
-    <img width="75%" src="azure-template-advanced.png">
+    <img width="50%" src="azure-template-advanced.png">
 </p>
+
+| Parameter                             | Required | Description                                                                                               |
+|---------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
+| *Service* Container Image             | True     | Docker Container Image to use for each service.                                                           |
+| Asset Scan Delete Policy              | True     | Delete Policy for resources created when performing an asset scan, e.g. `Always`, `OnSuccess` or `Never`. |
+| Database To Use                       | True     | Database type to use, e.g. `SQLite`, `PostgreSQL` or `External PostgreSQL`.                               |
 
 4. Review and create the deployment.
+
 5. [TBC] Once deployed, copy the VMClarity SSH address from the Outputs tab.
