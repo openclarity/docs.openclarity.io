@@ -1,6 +1,6 @@
 ---
 title: Deploy on Docker
-weight: 100
+weight: 110
 ---
 
 ## Prerequisites
