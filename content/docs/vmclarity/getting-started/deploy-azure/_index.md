@@ -8,9 +8,9 @@ weight: 110
 * Have an Azure subscription.
 * Create a SSH public key for Linux. Please follow [these instructions for Linux and Mac users](https://learn.microsoft.com/en-gb/azure/virtual-machines/linux/mac-create-ssh-keys?WT.mc_id=Portal-fx) or [these for Windows users](https://learn.microsoft.com/en-gb/azure/virtual-machines/linux/ssh-from-windows). Once a RSA private key is created, convert it to a SSH2 public key with:
 
-```sh
-ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
-```
+    ```sh
+    ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
+    ```
 
 ## Deployment steps
 
@@ -18,9 +18,9 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 
 2. Fill out the required project and instance details in the Basics tab.
 
-<p align="center" width="100%">
-    <img width="50%" src="azure-template-basics.png">
-</p>
+    <p align="center" width="100%">
+        <img width="50%" src="azure-template-basics.png">
+    </p>
 
 | Parameter                             | Required | Description                                                                                          |
 |---------------------------------------|----------|------------------------------------------------------------------------------------------------------|
@@ -35,9 +35,9 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 
 3. In the Advanced tab, modify the Container Image for each service if a specific VMClarity version is required. Then, select the delete policy and the database.
 
-<p align="center" width="100%">
-    <img width="50%" src="azure-template-advanced.png">
-</p>
+    <p align="center" width="100%">
+        <img width="50%" src="azure-template-advanced.png">
+    </p>
 
 | Parameter                             | Required | Description                                                                                               |
 |---------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
@@ -49,8 +49,8 @@ ssh-keygen -e -f ~/.ssh/id_rsa.pub > ~/.ssh/id_rsa2.pub
 
 5. [TBC] Once the deployment is successful, copy the VMClarity SSH address from the Outputs tab.
 
-<p align="center" width="100%">
-    <img width="50%" src="azure-deploy-output.png">
-</p>
+    <p align="center" width="100%">
+        <img width="50%" src="azure-deploy-output.png">
+    </p>
 
 6. [Open the VMClarity UI](/docs/vmclarity/getting-started/install-vmclarity#access-ui).
