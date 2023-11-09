@@ -34,7 +34,9 @@ To run VMClarity in Docker on a local machine, complete the following steps.
 
 4. Open the VMClarity UI in your browser at [http://localhost:80/](http://localhost:80/).
 
-5. Stop the running containers.
+1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
+
+1. After you've finished your tasks, stop the running containers.
 
     ```shell
     docker compose --project-name vmclarity --file docker-compose.yml down --remove-orphans

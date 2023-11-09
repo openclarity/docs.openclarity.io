@@ -8,7 +8,7 @@ Install the VMClarity backend on the platform of your choice.
 - [AWS](#aws)
 - [Azure](#azure)
 - [GCP](#gcp)
-- [Docker](/docs/vmclarity/getting-started/deploy-docker/)
+- [Docker]({{< relref "/docs/vmclarity/getting-started/deploy-docker/_index.md" >}})
 
 ## AWS
 
