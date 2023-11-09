@@ -11,7 +11,7 @@ weight: 110
 
 To run VMClarity in Docker on a local machine, complete the following steps.
 
-1. Get the latest VMClarity release.
+1. Download the latest VMClarity release.
 
     ```shell
     wget https://github.com/openclarity/vmclarity/releases/download/v{{< param "latest_version" >}}/docker-compose-v{{< param "latest_version" >}}.tar.gz
@@ -61,7 +61,9 @@ To run VMClarity in Docker on a local machine, complete the following steps.
 
 1. Open the VMClarity UI in your browser at [http://localhost:80/](http://localhost:80/).
 
-    ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
+    <p align="center" width="100%">
+        <img width="75%" src="/img/vmclarity-ui-1.png">
+    </p>
 
 1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
 
