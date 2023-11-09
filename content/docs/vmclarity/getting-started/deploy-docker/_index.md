@@ -14,15 +14,15 @@ To run VMClarity in Docker on a local machine, complete the following steps.
 1. Get the latest VMClarity release.
 
     ```shell
-    wget https://github.com/openclarity/vmclarity/releases/download/v0.6.0/docker-compose-v0.6.0.tar.gz
+    wget https://github.com/openclarity/vmclarity/releases/download/v{{< param "latest_version" >}}/docker-compose-v{{< param "latest_version" >}}.tar.gz
     ```
 
 1. Create a new directory, extract the files and navigate to the directory.
 
     ```shell
-    mkdir docker-compose-v0.6.0
-    tar -xvzf docker-compose-v0.6.0.tar.gz -C docker-compose-v0.6.0
-    cd docker-compose-v0.6.0
+    mkdir docker-compose-v{{< param "latest_version" >}}
+    tar -xvzf docker-compose-v{{< param "latest_version" >}}.tar.gz -C docker-compose-v{{< param "latest_version" >}}
+    cd docker-compose-v{{< param "latest_version" >}}
     ```
 
 1. Start every control plane element with the docker compose file.
