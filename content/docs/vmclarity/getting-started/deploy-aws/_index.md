@@ -18,6 +18,13 @@ The public subnet (`VmClarityServerSubnet`) hosts the VMClarity Server (`VmClari
 
 The private subnet (`VmClarityScannerSubnet`) hosts the VM snapshot instances (EC2) that are scanned for security vulnerabilities.
 
+## Prerequisites
+
+* Have an AWS account.
+* Create an [EC2 key pair](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-keypair.html).
+
+## Deployment steps
+
 To deploy the VMClarity AWS CloudFormation Stack, complete the following steps.
 
 1. Log in to the AWS CloudFormation console.
