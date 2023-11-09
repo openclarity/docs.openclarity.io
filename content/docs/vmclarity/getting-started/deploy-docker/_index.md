@@ -24,6 +24,26 @@ To run VMClarity in Docker on a local machine, complete the following steps.
     docker compose --project-name vmclarity --file docker-compose.yml up -d --wait --remove-orphans
     ```
 
+    The output should be similar to:
+
+    ```
+    [+] Running 14/14
+    ⠿ Network vmclarity                        Created                                                       0.2s
+    ⠿ Volume "vmclarity_grype-server-db"       Created                                                       0.0s
+    ⠿ Volume "vmclarity_apiserver-db-data"     Created                                                       0.0s
+    ⠿ Container vmclarity-orchestrator-1       Healthy                                                      69.7s
+    ⠿ Container vmclarity-yara-rule-server-1   Healthy                                                      17.6s
+    ⠿ Container vmclarity-exploit-db-server-1  Healthy                                                      17.7s
+    ⠿ Container vmclarity-swagger-ui-1         Healthy                                                       7.8s
+    ⠿ Container vmclarity-trivy-server-1       Healthy                                                      26.7s
+    ⠿ Container vmclarity-uibackend-1          Healthy                                                      17.6s
+    ⠿ Container vmclarity-ui-1                 Healthy                                                       7.7s
+    ⠿ Container vmclarity-freshclam-mirror-1   Healthy                                                       7.8s
+    ⠿ Container vmclarity-grype-server-1       Healthy                                                      37.3s
+    ⠿ Container vmclarity-gateway-1            Healthy                                                       7.7s
+    ⠿ Container vmclarity-apiserver-1          Healthy                                                      17.7s
+    ```
+
     Please note that the `image_override.env` file enables you to use the images you build yourself. You can override parameters in the `docker-compose.yml` by passing a custom env file to the `docker compose up` command via the `--env-file` flag. The `/installation/docker/image_override.env` file contains an example overriding all the container images.
 
 3. Check the running containers in the Docker desktop.
@@ -33,6 +53,8 @@ To run VMClarity in Docker on a local machine, complete the following steps.
     </p>
 
 4. Open the VMClarity UI in your browser at [http://localhost:80/](http://localhost:80/).
+
+    ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
 
 1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
 
