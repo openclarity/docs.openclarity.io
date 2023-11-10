@@ -19,19 +19,19 @@ installing and configuring gcloud check the [official installation guide](https:
     curl -sSfL https://github.com/openclarity/vmclarity/releases/download/v0.6.0/gcp-deployment-v0.6.0.tar.gz --output - | tar -xzvf -
     ```
 
-2. Change into the extracted directory.
+1. Change into the extracted directory.
 
     ```shell
     cd gcp-deployment-v0.6.0
     ```
 
-3. Copy the example configuration file and rename it.
+1. Copy the example configuration file and rename it.
 
     ```shell
     cp vmclarity-config.example.yaml vmclarity-config.yaml
     ```
 
-4. The following table contains all the fields that can be set in the `vmclarity-config.yaml` file. You have to set at
+1. The following table contains all the fields that can be set in the `vmclarity-config.yaml` file. You have to set at
    least the required ones.
 
    | Field                           | Required | Default                                                              | Description                                                                         |
@@ -60,7 +60,7 @@ installing and configuring gcloud check the [official installation guide](https:
    | `externalDBHost`                |          |                                                                      | Hostname or IP for the external DB. Only required if the DatabaseToUse is External. |
    | `externalDBPort`                |          |                                                                      | Port for the external DB. Only required if the DatabaseToUse is External.           |
 
-5. Deploy VMClarity using gcloud deployment-manager.
+1. Deploy VMClarity using gcloud deployment-manager.
 
    ```shell
    gcloud deployment-manager deployments create <vmclarity deployment name> --config vmclarity-config.yaml
@@ -75,10 +75,10 @@ installing and configuring gcloud check the [official installation guide](https:
    gcloud compute ssh --project=<project id> --zone=<zone name> <name of your VM> -- -NL 8080:localhost:80
    ```
 
-2. Open the VMClarity UI in your browser at [http://localhost:8080](http://localhost:8080).
+1. Open the VMClarity UI in your browser at [http://localhost:8080](http://localhost:8080).
 
     <p align="center" width="100%">
         <img width="75%" src="/img/vmclarity-ui-1.png">
     </p>
 
-3. (Optional) If needed, you can access the API at [http://localhost:8080/api](http://localhost:8080/api). For details on the API, see {{% xref "/docs/vmclarity/api/_index.md" %}}.
+1. (Optional) If needed, you can access the API at [http://localhost:8080/api](http://localhost:8080/api). For details on the API, see {{% xref "/docs/vmclarity/api/_index.md" %}}.
