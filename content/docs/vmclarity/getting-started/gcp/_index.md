@@ -1,17 +1,17 @@
 ---
-title: Installing on GCP
-weight: 300
+title: Deploy on GCP
+weight: 120
 ---
 
 These instructions are for installing VMClarity on [GCP (Google Cloud Platform)](https://cloud.google.com).
 
-### Prerequisites
+## Prerequisites
 
 VMClarity on GCP can be installed currently via the CLI, so you have to have
 [gcloud](https://cloud.google.com/sdk/gcloud) on your computer available beforehand. For further instructions about
 installing and configuring gcloud check the [official installation guide](https://cloud.google.com/sdk/docs/install).
 
-### Installation instructions
+## Installation instructions
 
 1. Download the newest GCP deployment release from GitHub and extract it to any location.
 
@@ -66,7 +66,7 @@ installing and configuring gcloud check the [official installation guide](https:
    gcloud deployment-manager deployments create <vmclarity deployment name> --config vmclarity-config.yaml
    ```
 
-### Access VMClarity UI
+## Access VMClarity UI
 
 1. Open an SSH tunnel to the VMClarity server with gcloud. For further information on how to create an SSH connection
    with gcloud to one of your instances check the [official page](https://cloud.google.com/compute/docs/connect/standard-ssh#gcloud).
