@@ -16,13 +16,13 @@ installing and configuring gcloud check the [official installation guide](https:
 1. Download the newest GCP deployment release from GitHub and extract it to any location.
 
     ```shell
-    curl -sSfL https://github.com/openclarity/vmclarity/releases/download/v0.6.0/gcp-deployment-v0.6.0.tar.gz --output - | tar -xzvf -
+    curl -sSfL https://github.com/openclarity/vmclarity/releases/download/v{{< param "latest_version" >}}/gcp-deployment-v{{< param "latest_version" >}}.tar.gz --output - | tar -xzvf -
     ```
 
 1. Change into the extracted directory.
 
     ```shell
-    cd gcp-deployment-v0.6.0
+    cd gcp-deployment-v{{< param "latest_version" >}}
     ```
 
 1. Copy the example configuration file and rename it.
