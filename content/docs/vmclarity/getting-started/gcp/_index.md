@@ -72,11 +72,13 @@ installing and configuring gcloud check the [official installation guide](https:
    with gcloud to one of your instances check the [official page](https://cloud.google.com/compute/docs/connect/standard-ssh#gcloud).
 
    ```shell
-   gcloud compute ssh --project=<project id> --zone=<zone name> <name of you VM> -- -NL 8080:localhost:80
+   gcloud compute ssh --project=<project id> --zone=<zone name> <name of your VM> -- -NL 8080:localhost:80
    ```
 
 2. Open the VMClarity UI in your browser at [http://localhost:8080](http://localhost:8080).
 
-   ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
+    <p align="center" width="100%">
+        <img width="75%" src="/img/vmclarity-ui-1.png">
+    </p>
 
 3. (Optional) If needed, you can access the API at [http://localhost:8080/api](http://localhost:8080/api). For details on the API, see {{% xref "/docs/vmclarity/api/_index.md" %}}.
