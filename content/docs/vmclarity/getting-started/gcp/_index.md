@@ -1,27 +1,28 @@
 ---
 title: Deploy on GCP
-weight: 120
+weight: 110
 ---
-
-These instructions are for installing VMClarity on [GCP (Google Cloud Platform)](https://cloud.google.com).
 
 ## Prerequisites
 
-VMClarity on GCP can be installed currently via the CLI, so you have to have
-[gcloud](https://cloud.google.com/sdk/gcloud) on your computer available beforehand. For further instructions about
-installing and configuring gcloud check the [official installation guide](https://cloud.google.com/sdk/docs/install).
+You can install VMClarity using the CLI, so you have to have [gcloud](https://cloud.google.com/sdk/gcloud) on your
+computer available beforehand. For details on installing and configuring gcloud, see the [official installation guide](https://cloud.google.com/sdk/docs/install).
 
-## Installation instructions
+## Deployment steps
+
+To install VMClarity on [Google Cloud Platform (GCP)](https://cloud.google.com), complete the following steps.
 
 1. Download the newest GCP deployment release from GitHub and extract it to any location.
 
     ```shell
-    curl -sSfL https://github.com/openclarity/vmclarity/releases/download/v{{< param "latest_version" >}}/gcp-deployment-v{{< param "latest_version" >}}.tar.gz --output - | tar -xzvf -
+    wget https://github.com/openclarity/vmclarity/releases/download/v{{< param "latest_version" >}}/gcp-deployment-v{{< param "latest_version" >}}.tar.gz
     ```
 
-1. Change into the extracted directory.
+1. Create a new directory, extract the files and navigate to the directory.
 
     ```shell
+    mkdir gcp-deployment-v{{< param "latest_version" >}}
+    tar -xvzf gcp-deployment-v{{< param "latest_version" >}}.tar.gz -C gcp-deployment-v{{< param "latest_version" >}}
     cd gcp-deployment-v{{< param "latest_version" >}}
     ```
 
@@ -77,8 +78,8 @@ installing and configuring gcloud check the [official installation guide](https:
 
 1. Open the VMClarity UI in your browser at [http://localhost:8080](http://localhost:8080).
 
-    <p align="center" width="100%">
-        <img width="75%" src="/img/vmclarity-ui-1.png">
-    </p>
+   ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
 
 1. (Optional) If needed, you can access the API at [http://localhost:8080/api](http://localhost:8080/api). For details on the API, see {{% xref "/docs/vmclarity/api/_index.md" %}}.
+
+1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
