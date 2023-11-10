@@ -80,6 +80,4 @@ To install VMClarity on [Google Cloud Platform (GCP)](https://cloud.google.com),
 
    ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
 
-1. (Optional) If needed, you can access the API at [http://localhost:8080/api](http://localhost:8080/api). For details on the API, see {{% xref "/docs/vmclarity/api/_index.md" %}}.
-
 1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
