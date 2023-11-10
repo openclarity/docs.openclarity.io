@@ -12,7 +12,9 @@ The following figure shows the basic AWS resources that the VMClarity CloudForma
 - a VPC with a public and private subnet, and
 - an AWS Internet Gateway (IGW) and NAT Gateway (NGW) into the VPC.
 
-![VMClarity CloudFormation resources](vmclarity-cf-basic.svg)
+    <p align="center" width="100%">
+        <img width="75%" src="vmclarity-cf-basic.svg">
+    </p>
 
 The public subnet (`VmClarityServerSubnet`) hosts the VMClarity Server (`VmClarityServer`) EC2 instance. The VMClarity server houses the scanning configuration, the UI, and other control components. The EC2 instance is assigned an external IPv4 address (EIP) for SSH and web UI access.
 
