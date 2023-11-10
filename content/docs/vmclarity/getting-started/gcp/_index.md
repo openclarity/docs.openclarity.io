@@ -34,31 +34,31 @@ installing and configuring gcloud check the [official installation guide](https:
 1. The following table contains all the fields that can be set in the `vmclarity-config.yaml` file. You have to set at
    least the required ones.
 
-   | Field                           | Required | Default                                                              | Description                                                                         |
-   |---------------------------------|----------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-   | `zone`                          | **yes**  |                                                                      | The Zone to locate the VMClarity server.                                            |
-   | `machineType`                   | **yes**  |                                                                      | The machine type for the VMClarity server.                                          |
-   | `region`                        | **yes**  |                                                                      | The region to locate VMClarity.                                                     |
-   | `scannerMachineType`            |          | `e2-standard-2`                                                      | Machine type to use for the Scanner instances.                                      |
-   | `scannerSourceImage`            |          | `projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammy-v20230630` | Source image to use for the Scanner instances.                                      |
-   | `databaseToUse`                 |          | `SQLite`                                                             | The database that VMClarity should use.                                             |
-   | `apiserverContainerImage`       |          | `ghcr.io/openclarity/vmclarity-apiserver:latest`                     | The container image to use for the apiserver.                                       |
-   | `orchestratorContainerImage`    |          | `ghcr.io/openclarity/vmclarity-orchestrator:latest`                  | The container image to use for the orchestrator.                                    |
-   | `uiContainerImage`              |          | `ghcr.io/openclarity/vmclarity-ui:latest`                            | The container image to use for the ui.                                              |
-   | `uibackendContainerImage`       |          | `ghcr.io/openclarity/vmclarity-ui-backend:latest`                    | The container image to use for the uibackend.                                       |
-   | `scannerContainerImage`         |          | `ghcr.io/openclarity/vmclarity-cli:latest`                           | The container image to use for the scanner.                                         |
-   | `exploitDBServerContainerImage` |          | `ghcr.io/openclarity/exploit-db-server:v0.2.4`                       | The container image to use for the exploit db server.                               |
-   | `trivyServerContainerImage`     |          | `docker.io/aquasec/trivy:0.41.0`                                     | The container image to use for the trivy server.                                    |
-   | `grypeServerContainerImage`     |          | `ghcr.io/openclarity/grype-server:v0.7.0`                            | The container image to use for the grype server.                                    |
-   | `freshclamMirrorContainerImage` |          | `ghcr.io/openclarity/freshclam-mirror:v0.2.0`                        | The container image to use for the fresh clam mirror server.                        |
-   | `postgresqlContainerImage`      |          | `docker.io/bitnami/postgresql:12.14.0-debian-11-r28`                 | The container image to use for the postgresql server.                               |
-   | `assetScanDeletePolicy`         |          | `Always`                                                             | When asset scans should be cleaned up after scanning.                               |
-   | `postgresDBPassword`            |          |                                                                      | Postgres DB password. Only required if DatabaseToUse is Postgresql.                 |
-   | `externalDBName`                |          |                                                                      | DB to use in the external DB. Only required if DatabaseToUse is External.           |
-   | `externalDBUsername`            |          |                                                                      | Username for the external DB. Only required if the DatabaseToUse is External.       |
-   | `externalDBPassword`            |          |                                                                      | Password for the external DB. Only required if the DatabaseToUse is External.       |
-   | `externalDBHost`                |          |                                                                      | Hostname or IP for the external DB. Only required if the DatabaseToUse is External. |
-   | `externalDBPort`                |          |                                                                      | Port for the external DB. Only required if the DatabaseToUse is External.           |
+   | Field                           | Required | Default                                                                     | Description                                                                         |
+   |---------------------------------|----------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+   | `zone`                          | **yes**  |                                                                             | The Zone to locate the VMClarity server.                                            |
+   | `machineType`                   | **yes**  |                                                                             | The machine type for the VMClarity server.                                          |
+   | `region`                        | **yes**  |                                                                             | The region to locate VMClarity.                                                     |
+   | `scannerMachineType`            |          | `e2-standard-2`                                                             | Machine type to use for the Scanner instances.                                      |
+   | `scannerSourceImage`            |          | `projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammy-v20230630`        | Source image to use for the Scanner instances.                                      |
+   | `databaseToUse`                 |          | `SQLite`                                                                    | The database that VMClarity should use.                                             |
+   | `apiserverContainerImage`       |          | `ghcr.io/openclarity/vmclarity-apiserver:{{< param "latest_version" >}}`    | The container image to use for the apiserver.                                       |
+   | `orchestratorContainerImage`    |          | `ghcr.io/openclarity/vmclarity-orchestrator:{{< param "latest_version" >}}` | The container image to use for the orchestrator.                                    |
+   | `uiContainerImage`              |          | `ghcr.io/openclarity/vmclarity-ui:{{< param "latest_version" >}}`           | The container image to use for the ui.                                              |
+   | `uibackendContainerImage`       |          | `ghcr.io/openclarity/vmclarity-ui-backend:{{< param "latest_version" >}}`   | The container image to use for the uibackend.                                       |
+   | `scannerContainerImage`         |          | `ghcr.io/openclarity/vmclarity-cli:{{< param "latest_version" >}}`          | The container image to use for the scanner.                                         |
+   | `exploitDBServerContainerImage` |          | `ghcr.io/openclarity/exploit-db-server:v0.2.4`                              | The container image to use for the exploit db server.                               |
+   | `trivyServerContainerImage`     |          | `docker.io/aquasec/trivy:0.41.0`                                            | The container image to use for the trivy server.                                    |
+   | `grypeServerContainerImage`     |          | `ghcr.io/openclarity/grype-server:v0.7.0`                                   | The container image to use for the grype server.                                    |
+   | `freshclamMirrorContainerImage` |          | `ghcr.io/openclarity/freshclam-mirror:v0.2.0`                               | The container image to use for the fresh clam mirror server.                        |
+   | `postgresqlContainerImage`      |          | `docker.io/bitnami/postgresql:12.14.0-debian-11-r28`                        | The container image to use for the postgresql server.                               |
+   | `assetScanDeletePolicy`         |          | `Always`                                                                    | When asset scans should be cleaned up after scanning.                               |
+   | `postgresDBPassword`            |          |                                                                             | Postgres DB password. Only required if DatabaseToUse is Postgresql.                 |
+   | `externalDBName`                |          |                                                                             | DB to use in the external DB. Only required if DatabaseToUse is External.           |
+   | `externalDBUsername`            |          |                                                                             | Username for the external DB. Only required if the DatabaseToUse is External.       |
+   | `externalDBPassword`            |          |                                                                             | Password for the external DB. Only required if the DatabaseToUse is External.       |
+   | `externalDBHost`                |          |                                                                             | Hostname or IP for the external DB. Only required if the DatabaseToUse is External. |
+   | `externalDBPort`                |          |                                                                             | Port for the external DB. Only required if the DatabaseToUse is External.           |
 
 1. Deploy VMClarity using gcloud deployment-manager.
 
