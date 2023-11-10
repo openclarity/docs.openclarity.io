@@ -19,7 +19,7 @@ weight: 110
 2. Fill out the required project and instance details in the Basics tab.
 
     <p align="center" width="100%">
-        <img width="50%" src="azure-template-basics.png">
+        <img width="75%" src="azure-template-basics.png">
     </p>
 
 | Parameter                             | Required | Description                                                                                          |
@@ -36,7 +36,7 @@ weight: 110
 3. In the Advanced tab, modify the Container Image for each service if a specific VMClarity version is required. Then, select the delete policy and the database.
 
     <p align="center" width="100%">
-        <img width="50%" src="azure-template-advanced.png">
+        <img width="75%" src="azure-template-advanced.png">
     </p>
 
 | Parameter                             | Required | Description                                                                                               |
@@ -47,10 +47,10 @@ weight: 110
 
 4. Review and create the deployment.
 
-5. [TBC] Once the deployment is successful, copy the VMClarity SSH address from the Outputs tab.
+5. Once the deployment is completed successfully, copy the VMClarity SSH address from the Outputs tab.
 
     <p align="center" width="100%">
-        <img width="50%" src="azure-deploy-output.png">
+        <img width="75%" src="azure-deploy-output.png">
     </p>
 
 6. [Open the VMClarity UI](/docs/vmclarity/getting-started/install-vmclarity#access-ui).
