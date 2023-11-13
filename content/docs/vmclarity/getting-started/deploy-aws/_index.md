@@ -29,14 +29,24 @@ The private subnet (`VmClarityScannerSubnet`) hosts the VM snapshot instances (E
 
 To deploy the VMClarity AWS CloudFormation Stack, complete the following steps.
 
-1. Log in to the AWS CloudFormation console.
+1. Download the latest VMClarity release.
 
-    - Click [here](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=VMClarity&templateURL=https://s3.eu-west-2.amazonaws.com/vmclarity-v{{< param "latest_version" >}}/VmClarity.cfn) to start the VMClarity CloudFormation Stack wizard.
-    - Alternatively, you can:
+    ```shell
+    wget https://github.com/openclarity/vmclarity/releases/download/v{{< param "latest_version" >}}/aws-cloudformation-v{{< param "latest_version" >}}.tar.gz
+    ```
 
-        1. Download the `aws-cloudformation-v{{< param "latest_version" >}}.tar.gz` asset from the [VMClarity releases page](https://github.com/openclarity/vmclarity/releases), or copy the [AWS CloudFormation template file](https://github.com/openclarity/vmclarity/blob/main/installation/aws/VmClarity.cfn) from the project repository to deploy the latest development code.
-        1. Go to the AWS CloudFormation service page, then select **Create Stack > With New Resources (standard)**.
-        1. Check **Template is ready** and **Upload a template file**, then click **Upload a template file/Choose file**.
+    Alternatively, copy the [AWS CloudFormation template file](https://github.com/openclarity/vmclarity/blob/main/installation/aws/VmClarity.cfn) from the project repository to deploy the latest development code and skip the next step.
+
+1. Create a new directory and extract the files.
+
+    ```shell
+    mkdir aws-cloudformation-v{{< param "latest_version" >}}
+    tar -xvzf aws-cloudformation-v{{< param "latest_version" >}}.tar.gz -C aws-cloudformation-v{{< param "latest_version" >}}
+    ```
+
+1. Log in to the AWS CloudFormation console and go to the AWS CloudFormation Stacks section, then select **Create Stack > With New Resources (standard)**.
+
+1. Check **Template is ready** and **Upload a template file**, then click **Upload a template file/Choose file** and upload the previously downloaded CFN template file.
 
     <p align="center" width="100%">
         <img width="100%" src="aws-cfn-template.png">
