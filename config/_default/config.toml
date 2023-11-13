@@ -201,7 +201,7 @@ twitter = "outshiftbycisco"
     url = "https://github.com/openclarity"
   [[menu.main]]
     name = "Community"
-    url = "https://outshift.slack.com/messages/vmclarity"
+    url = "/docs/community/"
     pre = "<i class='fab fa-slack pr-2'></i>"
     weight = 150
 
