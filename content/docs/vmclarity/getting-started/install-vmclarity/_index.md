@@ -6,7 +6,7 @@ weight: 100
 Install the VMClarity backend on the platform of your choice.
 
 - [AWS](#aws)
-- [Azure]({{< relref "/docs/vmclarity/getting-started/azure/_index.md" >}})
+- [Azure]({{< relref "/docs/vmclarity/getting-started/deploy-azure/_index.md" >}})
 - [GCP]({{< relref "/docs/vmclarity/getting-started/gcp/_index.md" >}})
 - [Docker]({{< relref "/docs/vmclarity/getting-started/deploy-docker/_index.md" >}})
 
