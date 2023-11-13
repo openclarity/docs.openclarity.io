@@ -7,7 +7,7 @@ Install the VMClarity backend on the platform of your choice.
 
 - [AWS](#aws)
 - [Azure](#azure)
-- [GCP](#gcp)
+- [GCP]({{< relref "/docs/vmclarity/getting-started/gcp/_index.md" >}})
 - [Docker]({{< relref "/docs/vmclarity/getting-started/deploy-docker/_index.md" >}})
 
 ## AWS
@@ -57,36 +57,6 @@ To deploy the VMClarity AWS CloudFormation Stack, complete the following steps.
 1. Click the [![Deploy To Azure](https://docs.microsoft.com/en-us/azure/templates/media/deploy-to-azure.svg)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenclarity%2Fvmclarity%2Fazure_installer%2Finstallation%2Fazure%2Fvmclarity.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenclarity%2Fvmclarity%2Fazure_installer%2Finstallation%2Fazure%2Fvmclarity-UI.json) button.
 2. Fill out the required fields in the wizard
 3. Once deployed, copy the VMClarity SSH address from the Outputs tab
-1. [Open the VMClarity UI](#access-ui).
-
-## GCP
-
-1. Clone the project repository.
-
-    ```shell
-    git clone https://github.com/openclarity/vmclarity.git
-    ```
-
-1. Change into the following directory:
-
-    ```shell
-    cd vmclarity/installation/gcp/dm/
-    ```
-
-1. Copy the example configuration file to a new file
-
-    ```shell
-    cp vmclarity-config.example.yaml vmclarity-config.yaml
-    ```
-
-1. Edit the new configuration file to add required fields. Check the `vmclarity.py.schema` file for other optional parameters.
-1. Deploy vmclarity using GCP deployment manager
-
-   ```shell
-   gcloud deployment-manager deployments create <vmclarity deployment name> --config vmclarity-config.yaml
-   ```
-
-1. Once deployed, copy the VMClarity SSH IP address from the CLI output.
 1. [Open the VMClarity UI](#access-ui).
 
 ## Access VMClarity UI {#access-ui}
