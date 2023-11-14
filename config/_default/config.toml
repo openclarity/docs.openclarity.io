@@ -96,7 +96,7 @@ twitter = "outshiftbycisco"
   url_latest_version = "/"
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo = "https://github.com/openclarity/openclarity.io"
+  github_repo = "https://github.com/openclarity/docs.openclarity.io"
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
   github_project_repo = "https://github.com/openclarity"
 
@@ -201,7 +201,7 @@ twitter = "outshiftbycisco"
     url = "https://github.com/openclarity"
   [[menu.main]]
     name = "Community"
-    url = "https://outshift.slack.com/messages/vmclarity"
+    url = "/docs/community/"
     pre = "<i class='fab fa-slack pr-2'></i>"
     weight = 150
 
