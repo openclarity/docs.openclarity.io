@@ -45,7 +45,7 @@ docker compose --project-name vmclarity --file docker-compose.yml up -d --wait -
 
 After Docker has set up the services, you should be able to see the running control plane containers in your Docker desktop and start sending HTTP requests to the apiserver.
 
-![Docker desktop](https://hackmd.io/_uploads/r19eUd6ep.png)
+![Docker desktop](featured-image.png)
 
 ### Cost Estimation preview:
 One of the most exciting additions in this release is the Cost Estimation capability. As a user, **you can now get a preliminary cost estimation before initiating a security scan** with VMClarity. This invaluable feature helps you plan and budget your security assessments more effectively, ensuring you have a clear understanding of the financial implications before taking action.
