@@ -5,8 +5,9 @@ weight: 110
 
 ## Prerequisites
 
-You can install VMClarity using the CLI, so you have to have [gcloud](https://cloud.google.com/sdk/gcloud) on your
+* You can install VMClarity using the CLI, so you have to have [gcloud](https://cloud.google.com/sdk/gcloud) on your
 computer available beforehand. For details on installing and configuring gcloud, see the [official installation guide](https://cloud.google.com/sdk/docs/install).
+* If you have already installed VMClarity before and want to reinstall it, you have to manually [restore deleted roles](#restore-deleted-roles) that were created during the previous installation.
 
 ## Deployment steps
 
@@ -81,3 +82,19 @@ To install VMClarity on [Google Cloud Platform (GCP)](https://cloud.google.com),
    ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
 
 1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
+
+## Uninstall VMClarity
+
+1. You can uninstall VMClarity using the gcloud manager.
+
+   ```shell
+   gcloud deployment-manager deployments delete <vmclarity deployment name>
+   ```
+
+## Restore deleted roles
+
+1. Go to the roles tab in the [IAM & Admin page](https://console.cloud.google.com/iam-admin/roles) on GCP and search for VMClarity in the filter input.
+
+1. Now manually undelete the Discoverer Snapshotter and Scanner roles to set their statuses from Deleted to Enabled.
+
+   ![Undelete roles](/img/vmclarity-gcp-undelete-roles.png)
