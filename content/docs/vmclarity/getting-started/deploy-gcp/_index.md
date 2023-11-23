@@ -93,7 +93,7 @@ To install VMClarity on [Google Cloud Platform (GCP)](https://cloud.google.com),
 
 ## Restore deleted roles
 
-1. Go to the roles tab in the [IAM & Admin page](https://console.cloud.google.com/iam-admin/roles) on GCP and search for VMClarity in the filter input.
+1. On the [IAM & Admin page](https://console.cloud.google.com/iam-admin/roles) on GCP, open the **Roles tab**, then search for VMClarity in the filter input.
 
 1. Now manually undelete the Discoverer Snapshotter and Scanner roles to set their statuses from Deleted to Enabled.
 
