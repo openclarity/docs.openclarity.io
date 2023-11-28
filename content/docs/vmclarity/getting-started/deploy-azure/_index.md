@@ -55,4 +55,12 @@ weight: 110
         <img width="75%" src="azure-deploy-output.png">
     </p>
 
-1. [Open the VMClarity UI]({{< relref "/docs/vmclarity/getting-started/install-vmclarity/_index.md#access-ui" >}}).
+1. {{< include-headless "vmclarity/ssh-tunnel-to-server.md" >}}
+
+1. Access the VMClarity UI.
+
+    {{< include-headless "vmclarity/access-ui.md" >}}
+
+## Next steps
+
+Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
