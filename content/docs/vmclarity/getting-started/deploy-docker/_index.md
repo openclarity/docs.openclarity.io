@@ -59,18 +59,20 @@ To run VMClarity in Docker on a local machine, complete the following steps.
         <img width="75%" src="vmclarity-docker.png">
     </p>
 
-1. After you've finished your tasks, stop the running containers.
-
-    ```shell
-    docker compose --project-name vmclarity --file docker-compose.yml down --remove-orphans
-    ```
-
-## Access VMClarity UI
-
-1. Navigate to [http://localhost:8080/](http://localhost:8080/) in your browser.
+1. Access the VMClarity UI. Navigate to [http://localhost:8080/](http://localhost:8080/) in your browser.
 
     <p align="center" width="100%">
         <img width="75%" src="/img/vmclarity-ui-1.png">
     </p>
 
-1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
+## Next steps
+
+Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
+
+## Stop the containers
+
+1. After you've finished your tasks, stop the running containers.
+
+    ```shell
+    docker compose --project-name vmclarity --file docker-compose.yml down --remove-orphans
+    ```

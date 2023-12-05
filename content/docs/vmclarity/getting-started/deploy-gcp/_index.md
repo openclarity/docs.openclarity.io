@@ -68,8 +68,6 @@ To install VMClarity on [Google Cloud Platform (GCP)](https://cloud.google.com),
    gcloud deployment-manager deployments create <vmclarity deployment name> --config vmclarity-config.yaml
    ```
 
-## Access VMClarity UI
-
 1. Open an SSH tunnel to the VMClarity server with gcloud. For further information on how to create an SSH connection
    with gcloud to one of your instances check the [official page](https://cloud.google.com/compute/docs/connect/standard-ssh#gcloud).
 
@@ -77,11 +75,13 @@ To install VMClarity on [Google Cloud Platform (GCP)](https://cloud.google.com),
    gcloud compute ssh --project=<project id> --zone=<zone name> <name of your VM> -- -NL 8080:localhost:80
    ```
 
-1. Open the VMClarity UI in your browser at [http://localhost:8080](http://localhost:8080).
+1. Access the VMClarity UI.
 
-   ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
+    {{< include-headless "vmclarity/access-ui.md" >}}
 
-1. Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
+## Next steps
+
+Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
 
 ## Uninstall VMClarity
 

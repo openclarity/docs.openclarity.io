@@ -70,4 +70,12 @@ To deploy the VMClarity AWS CloudFormation Stack, complete the following steps.
         <img width="100%" src="aws-vmclarity-ssh.png">
     </p>
 
-1. [Open the VMClarity UI](/docs/vmclarity/getting-started/install-vmclarity#access-ui).
+1. {{< include-headless "vmclarity/ssh-tunnel-to-server.md" >}}
+
+1. Access the VMClarity UI.
+
+    {{< include-headless "vmclarity/access-ui.md" >}}
+
+## Next steps
+
+Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
