@@ -126,3 +126,38 @@ a.td-page-meta--child {
 .td-footer {
   background: linear-gradient(180deg, #005CAB 0%, #06144D 100%);
 }
+
+// Blog cards styling for the blog list page
+
+.td-blog * .td-card {
+  border-radius: 15px !important;
+  padding: 15px;
+}
+
+.td-blog * .text-decoration-none {
+  text-decoration: none;
+}
+
+.td-blog * .taxonomy-title {
+  font-size: small;
+}
+
+.blog-card-author {
+  font-size: small;
+  font-weight: 300;
+}
+
+.blog-card-title {
+  font-size: medium;
+  font-weight: 600;
+  color: black;
+}
+
+.blog-card-text {
+  font-size: medium;
+  color: rgb(107, 107, 107);
+}
+
+.blog-card-footer {
+  font-size: small;
+}
