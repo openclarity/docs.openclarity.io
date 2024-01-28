@@ -1,0 +1,31 @@
+<div class="td-card card p-2 border me-4">
+    <div class="card-body">
+        {{ partial "featured-image.html" (dict "p" . "w" 250 "h" 125 "class" "float-start me-4 d-none d-md-block") -}}
+        {{ with .Params.author  -}}
+        <!-- FIXME author-image -->
+        <div class="blog-card-author">
+            {{ . | markdownify -}}
+          </div>
+        {{ end -}}
+        <a href="{{ .RelPermalink }}" class="text-decoration-none">
+        {{ with .Title -}}
+          <div class="blog-card-title py-2">
+            {{ . | markdownify -}}
+          </div>
+        {{ end -}}
+        </a>
+        <a href="{{ .RelPermalink }}" class="text-decoration-none">
+        {{ with .Summary -}}
+          <p class="blog-card-text">
+            {{ . | truncate 160 -}}
+          </p>
+        {{ end -}}
+        </a>
+        {{ with .Date -}}
+          <div class="blog-card-text blog-card-metadata">
+            {{ . | time.Format ":date_medium" }}
+          </div>
+        {{ end -}}
+        {{ partial "taxonomy_terms_article_wrapper.html" . -}}
+    </div>
+</div>
