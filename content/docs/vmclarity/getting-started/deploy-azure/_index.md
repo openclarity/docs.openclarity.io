@@ -24,16 +24,16 @@ weight: 110
 
     You can set the following parameters:
 
-    | Parameter                             | Required | Description                                                                                          |
-    |---------------------------------------|----------|------------------------------------------------------------------------------------------------------|
-    | Subscription                          | True     | Azure subscription where resources will be billed.                                                   |
-    | Region                                | False    | Azure region where resources will be deployed.                                                       |
-    | VMClarity Deploy Postfix              | True     | Postfix for Azure resource group name (e.g. `vmclarity-<postfix>`).                                  |
-    | VMClarity Server SSH Username         | True     | SSH Username for the VMClarity Server Virtual Machine.                                               |
-    | VMClarity Server SSH Public Key       | True     | SSH Public Key for the VMClarity Server Virtual Machine.                                             |
-    | VMClarity Server VM Size              | True     | The size of the VMClarity Server Virtual Machine.                                                    |
-    | VMClarity Scanner VMs Size            | True     | The size of the VMClarity Scanner Virtual Machines.                                                  |
-    | Security Type                         | False    | Security Type of the VMClarity Server Virtual Machine, e.g. `TrustedLaunch` (default) or `Standard`. |
+    | Parameter                             | Required | Description                                                                                               |
+    |---------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
+    | Subscription                          | True     | Azure subscription where resources will be billed.                                                        |
+    | Region                                | False    | Azure region where resources will be deployed.                                                            |
+    | VMClarity Deploy Postfix              | True     | Postfix for Azure resource group name (e.g. `vmclarity-<postfix>`).                                       |
+    | VMClarity Server SSH Username         | True     | SSH Username for the VMClarity Server Virtual Machine.                                                    |
+    | VMClarity Server SSH Public Key       | True     | SSH Public Key for the VMClarity Server Virtual Machine. Paste the contents of `~/.ssh/id_rsa2.pub` here. |
+    | VMClarity Server VM Size              | True     | The size of the VMClarity Server Virtual Machine.                                                         |
+    | VMClarity Scanner VMs Size            | True     | The size of the VMClarity Scanner Virtual Machines.                                                       |
+    | Security Type                         | False    | Security Type of the VMClarity Server Virtual Machine, e.g. `TrustedLaunch` (default) or `Standard`.      |
 
 1. (Optional) In the **Advanced** tab, modify the **Container Image** for each service if a specific VMClarity version is required. Then, select the delete policy and the database.
 
