@@ -6,11 +6,17 @@ weight: 110
 ## Prerequisites
 
 * Install a tool to run local Kubernetes clusters. Here, [Kind](https://kind.sigs.k8s.io/) is used as the default option for creating a local cluster.
-* Install a package manager. Here, [Helm](https://helm.sh/) is used as the default installer.
+* Install [Helm](https://helm.sh/) to install the application.
 
 ## Deployment steps
 
 To deploy VMClarity to your Kubernetes cluster, complete the following steps.
+
+1. Create a Kubernetes cluster.
+
+    ```shell
+    kind create cluster --name vmclarity-k8s
+    ```
 
 1. Ensure the Kubernetes cluster is up and running. If you're using kind, you can check the status of your clusters with the following command:
 
@@ -18,10 +24,10 @@ To deploy VMClarity to your Kubernetes cluster, complete the following steps.
     kind get clusters
     ````
 
-1. Use Helm to install VMClarity. Run the following command, making sure to replace installation/kubernetes/helm/vmclarity with the correct path to the VMClarity Helm chart:
+1. Use Helm to install VMClarity. Run the following command:
 
     ```shell
-    helm install vmclarity installation/kubernetes/helm/vmclarity \
+    helm install vmclarity oci://ghcr.io/openclarity/charts/vmclarity --version 0.6.0 \ 
         --namespace vmclarity --create-namespace \
         --set orchestrator.provider=kubernetes \
         --set orchestrator.serviceAccount.automountServiceAccountToken=true \
