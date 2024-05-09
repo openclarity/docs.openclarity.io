@@ -6,7 +6,7 @@ weight: 110
 ## Prerequisites
 
 * Install a tool to run local Kubernetes clusters. Here, [Kind](https://kind.sigs.k8s.io/) is used as the default option for creating a local cluster.
-* Install [Helm](https://helm.sh/) to install the application.
+* [Helm](https://helm.sh/) to install VMClarity.
 
 ## Deployment steps
 
@@ -57,3 +57,17 @@ To deploy VMClarity to your Kubernetes cluster, complete the following steps.
 ## Next steps
 
 Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
+
+## Clean up steps
+
+1. Uninstall VMClarity with Helm. Run the following command:
+
+    ```shell
+    helm uninstall vmclarity --namespace vmclarity
+    ```
+
+1. Delete the Kubernetes cluster.
+
+    ```shell
+    kind delete clusters vmclarity-k8s
+    ```
