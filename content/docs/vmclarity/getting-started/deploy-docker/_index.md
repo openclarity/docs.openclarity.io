@@ -69,7 +69,7 @@ To run VMClarity in Docker on a local machine, complete the following steps.
 
 Complete the {{% xref "/docs/vmclarity/getting-started/first-tasks/_index.md" %}}.
 
-## Stop the containers
+## Clean up steps
 
 1. After you've finished your tasks, stop the running containers.
 
