@@ -29,7 +29,7 @@ The private subnet (`VmClarityScannerSubnet`) hosts the VM snapshot instances (E
 
 To deploy the VMClarity AWS CloudFormation Stack, you can:
 
-- click [this quick-create link](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=VMClarity&templateURL=https://vmclarity-cfn.s3.eu-central-1.amazonaws.com/0.6.0/VmClarity.cfn) to navigate directly to the AWS CloudFormation console and jump to the wizard instructions, or 
+- click [this quick-create link](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=VMClarity&templateURL=https://vmclarity-cfn.s3.eu-central-1.amazonaws.com/{{< param "latest_version" >}}/VmClarity.cfn) to navigate directly to the AWS CloudFormation console and jump to the wizard instructions, or 
 - complete the following steps.
 
 1. Download the latest VMClarity release.
