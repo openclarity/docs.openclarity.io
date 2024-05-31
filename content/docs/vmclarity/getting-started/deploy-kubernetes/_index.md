@@ -27,11 +27,10 @@ To deploy VMClarity to your Kubernetes cluster, complete the following steps.
 1. Use Helm to install VMClarity. Run the following command:
 
     ```shell
-    helm install vmclarity oci://ghcr.io/openclarity/charts/vmclarity --version {{< param "latest_version" >}} \ 
+    helm install vmclarity oci://ghcr.io/openclarity/charts/vmclarity --version {{< param "latest_version" >}} \
         --namespace vmclarity --create-namespace \
         --set orchestrator.provider=kubernetes \
-        --set orchestrator.serviceAccount.automountServiceAccountToken=true \
-        --set exploitDBServer.containerSecurityContext.enabled=false
+        --set orchestrator.serviceAccount.automountServiceAccountToken=true
     ```
 
 1. Verify that all the VMClarity pods have been successfully deployed by executing the following command:
