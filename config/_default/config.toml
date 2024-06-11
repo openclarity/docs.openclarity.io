@@ -193,7 +193,7 @@ twitter = "outshiftbycisco"
   [[menu.main]]
     name = "Blog"
     weight = 50
-    url = "https://techblog.cisco.com/tags/openclarity"
+    url = "https://outshift.cisco.com/blog/search/openclarity"
 [[menu.main]]
     name = "GitHub Project"
     weight = 100
