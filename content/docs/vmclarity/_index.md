@@ -70,7 +70,7 @@ These tools include:
   - [gitleaks](https://github.com/gitleaks/gitleaks)
 - Malware
   - [ClamAV](https://github.com/Cisco-Talos/clamav)
-  - [YARA]((https://virustotal.github.io/yara/)) (Available in version 0.6.0 and later)
+  - [YARA](https://virustotal.github.io/yara/) (Available in version 0.6.0 and later)
 - Misconfiguration
   - [Lynis](https://github.com/CISOfy/lynis)
 - Rootkits
