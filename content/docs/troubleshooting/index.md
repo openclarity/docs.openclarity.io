@@ -3,16 +3,16 @@ title: Troubleshooting and Debugging
 weight: 35
 ---
 
-## How to debug the Scanner VMs
+## How to Debug the Scanner VMs
 
 How to debug the Scanner VMs can differ per provider these are documented
 below.
 
 ### Debug Scanner VM on AWS
 
-On AWS VMClarity is configured to create the Scanner VMs with the same key-pair
-that the VMClarity server has. The Scanner VMs run in a private network,
-however the VMClarity Server can be used as a bastion/jump host to reach them
+On AWS OpenClarity is configured to create the Scanner VMs with the same key-pair
+that the OpenClarity server has. The Scanner VMs run in a private network,
+however the OpenClarity Server can be used as a bastion/jump host to reach them
 via SSH.
 
 ```

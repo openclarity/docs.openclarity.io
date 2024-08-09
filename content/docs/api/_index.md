@@ -1,5 +1,5 @@
 ---
-title: API reference
+title: API Reference
 weight: 30
 type: "swagger"
 ---

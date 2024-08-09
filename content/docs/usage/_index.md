@@ -1,4 +1,4 @@
 ---
-title: Usage
+title: Using OpenClarity
 weight: 15
 ---

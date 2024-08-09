@@ -1,5 +1,5 @@
 ---
-title: Software bill of materials
+title: Software Bill of Materials
 linktitle: SBOM
 weight: 100
 ---
@@ -10,7 +10,7 @@ SBOMs are important because organizations increasingly rely on open source and t
 
 Under specific scenarios, generating and publishing SBOMs is mandatory for compliance with regulations and industry standards that require organizations to disclose the use of open source and third-party software in their products.
 
-## SBOM standards
+## SBOM Standards
 
 There are several related standards, for example, CycloneDX, SPDX, SWID.
 
@@ -18,7 +18,7 @@ There are several related standards, for example, CycloneDX, SPDX, SWID.
 
 CycloneDX is an open source standard for creating software bill of materials files. It is like SPDX in that it documents the components and licenses associated with a software package, but it is specifically designed for use in software supply chain security. CycloneDX is a more lightweight format compared to SPDX, which is intended to be more detailed. CycloneDX format is supported by OWASP.
 
-## SBOM architecture
+## SBOM Architecture
 
 A typical SBOM architecture can be laid out as a tree-like dependency graph with the following key elements:
 
@@ -26,26 +26,22 @@ A typical SBOM architecture can be laid out as a tree-like dependency graph with
 - Dependency mapping: A map of relationships between different components and libraries, showing how they depend on each other and how changes to one may impact the other.
 - License management: It should also include information about the licenses of the components and libraries used to ensure that the software complies with legal and ethical obligations.
 
-## SBOM generators
+## SBOM Generators
 
 There are two typical ways to generate SBOM: during the build process, or after the build and deployment using a Software Composition Analysis tool. Trivy and Syft are two noteworthy open source generators among many other generators, including open source and commercial. Both use CycloneDX format. It is also important to note that not all SBOMs can be generated equally. Each generator may pick up a few language libraries better than the others based on its implementation. It might take multiple runs through a few different types of generators to draw comprehensive insights.
 
 {{< include-headless "kubeclarity/supported-sbom-generators.md" >}}
 
-## Multiple SBOMs for accuracy
+## Multiple SBOMs for Accuracy
 
-KubeClarity can run multiple SBOM generators in parallel, and unify their results to generate a more accurate document.
+OpenClarity can run multiple SBOM generators in parallel, and unify their results to generate a more accurate document.
 
-In such cases, KubeClarity compiles a merged SBOM from multiple open source analyzers, and delivers a comprehensive SBOM document report. Although KubeClarity does not generate SBOMs, it integrates with popular generators so that a combined document can provide amplified inputs that can be further analyzed using vulnerability scanners. Leveraging multiple SBOM documents can improve visibility into software dependency posture.
+In such cases, OpenClarity compiles a merged SBOM from multiple open source analyzers, and delivers a comprehensive SBOM document report. Although OpenClarity does not generate SBOMs, it integrates with popular generators so that a combined document can provide amplified inputs that can be further analyzed using vulnerability scanners. Leveraging multiple SBOM documents can improve visibility into software dependency posture.
 
-KubeClarity formats the merged SBOM to comply with the input requirements of vulnerability scanners before starting vulnerability scans.
+OpenClarity formats the merged SBOM to comply with the input requirements of vulnerability scanners before starting vulnerability scans.
 
-> Note: KubeClarity can merge vulnerability scans from various sources like Grype and Trivy to generate a robust vulnerability scan report.
+> Note: OpenClarity can merge vulnerability scans from various sources like Grype and Trivy to generate a robust vulnerability scan report.
 
-## Scan SBOM documents for vulnerabilities
+## Scan SBOM Documents for Vulnerabilities
 
 You can feed the generated SBOM documents to vulnerability scanners, which analyze the SBOMs and generate a vulnerability report detailing all known and fixed CVEs of the software components listed by SBOM.
-
-## Generate SBOM
-
-For details on generating SBOMs with KubeClarity, see the {{% xref "/docs/archive/kubeclarity/getting-started/_index.md" %}} and {{% xref "/docs/archive/kubeclarity/sbom/_index.md" %}}.

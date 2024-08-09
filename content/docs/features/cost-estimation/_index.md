@@ -1,10 +1,11 @@
 ---
-title: Cost estimation
+title: Cost Estimation
+wight: 400
 ---
 
 Available in version 0.6.0 and later. Currently, this feature is exclusively available on AWS.
 
-You can get a preliminary cost estimation before initiating a security scan with VMClarity. This helps you plan and budget your security assessments more effectively, ensuring that you have a clear understanding of the financial implications before taking action.
+You can get a preliminary cost estimation before initiating a security scan with OpenClarity. This helps you plan and budget your security assessments more effectively, ensuring that you have a clear understanding of the financial implications before taking action.
 
 To start a new estimation, complete the following steps.
 

@@ -1,8 +1,6 @@
 ---
-title: Getting started
+title: Getting Started
 weight: 5
-aliases:
-- /docs/vmclarity/getting-started/install-vmclarity/
 ---
 
-This chapter guides you through the installation of the VMClarity backend and the CLI, and shows you the most common tasks that you can perform with VMClarity.
+The following sections describe the installation of the OpenClarity backend and the CLI, and show you the most common tasks that you can perform with OpenClarity.
