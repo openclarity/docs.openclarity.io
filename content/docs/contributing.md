@@ -1,5 +1,5 @@
 ---
-title: Contributing guide
+title: Contributing Guide
 weight: 50
 ---
 
@@ -20,26 +20,17 @@ any real-time space e.g., Slack, Discord, etc.
 
 See the component-specific instructions:
 
-- [VMClarity]({{< relref "/docs/troubleshooting.md" >}})
+- [Scanner VMs]({{< relref "/docs/troubleshooting.md" >}})
 
 ## Reporting Issues
 
-Before reporting a new issue, please ensure that the issue was not already reported or fixed by searching through the issues list of the relevant component of OpenClarity:
-
-- [KubeClarity](https://github.com/openclarity/kubeclarity/issues)
-- [VMClarity](https://github.com/openclarity/vmclarity/issues)
+Before reporting a new issue, please ensure that the issue was not already reported or fixed by searching through the issues list of [OpenClarity](https://github.com/openclarity/openclarity/issues).
 
 When creating a new issue, please be sure to include a **title and clear description**, as much relevant information as
 possible, and, if possible, a test case.
 
 **If you discover a security bug, please do not report it through GitHub. Instead, please see security procedures in {{% xref "/docs/security.md" %}}.**
 
-## Development
-
-For details on developing or building OpenClarity, see the detailed instructions of the individual components:
-
-- [KubeClarity]({{< relref "/docs/archive/kubeclarity/development/_index.md" >}})
-- [VMClarity]({{< relref "/docs/archive/vmclarity/development/_index.md" >}})
 
 ## Sending Pull Requests
 

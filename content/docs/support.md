@@ -3,7 +3,7 @@ title: Support
 weight: 45
 ---
 
-## Community support
+## Community Support
 
 If you encounter problems while using OpenClarity that the documentation does not address, you can [open an issue](https://github.com/openclarity/) in the repository of the relevant component or talk to us on [Slack](https://outshift.slack.com/messages/vmclarity).
 

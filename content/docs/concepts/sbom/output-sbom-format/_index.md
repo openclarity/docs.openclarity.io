@@ -1,5 +1,5 @@
 ---
-title: SBOM output format
+title: SBOM Output Format
 weight: 800
 ---
 

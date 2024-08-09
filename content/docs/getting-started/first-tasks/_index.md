@@ -1,5 +1,5 @@
 ---
-title: First tasks on the UI
+title: First Tasks on the UI
 weight: 200
 ---
 
@@ -17,7 +17,7 @@ weight: 200
 
     <img src="/img/vmclarity-scan-setup-1.png" alt="VMClarity Scan Setup - Step 1" title="VMClarity Scan Setup Step 1" />
 
-1. Follow the steps of the **New scan config** wizard to name the scan, and identify the AWS scope (region, VPC, security groups, etc). The following example shows the AWS us-east-2 region, a specific VPC, and the `vmclarity-demo-vm` EC2
+1. Follow the steps of the **New scan config** wizard to name the scan, and identify the AWS scope (region, VPC, security groups, etc). The following example shows the AWS us-east-2 region, a specific VPC, and the `vmclarity-demo-vm` EC2.
 
     <img src="/img/vmclarity-scan-setup-2.png" alt="VMClarity Scan Setup - Step 2" title="VMClarity Scan Setup Step 2" />
 
@@ -33,7 +33,7 @@ weight: 200
 
     <img src="/img/vmclarity-scan-config-summary.png" alt="VMClarity Scan Config Summary" title="VMClarity Scan Config Summary" />
 
-1. Once a scan is finished, you can browse around the various VMClarity UI features and investigate the security scan reports.
+1. Once a scan is finished, you can browse around the various OpenClarity UI features and investigate the security scan reports.
 
     <img src="/img/vmclarity-scan-list.png" alt="VMClarity Scan List" title="VMClarity Scan List" />
 

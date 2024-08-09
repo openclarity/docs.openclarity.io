@@ -5,9 +5,13 @@ weight: 200
 
 ## Configure your first scan
 
-1. Open the UI.
 
-    {{< include-headless "vmclarity/access-ui.md" >}}
+1. Open the VMClarity UI in your browser at [http://localhost:8080/](http://localhost:8080/). The dashboard opens.
+
+    ![VMClarity UI Dashboard](/img/vmclarity-ui-1.png)
+
+1. (Optional) If needed, you can access the API at[http://localhost:8080/api](http://localhost:8080/api). For details on the API, see {{% xref "/docs/api/_index.md" %}}.
+
 
 1. Click on the **Scans** icon. In the Scans window, you can create a new scan configuration.
 

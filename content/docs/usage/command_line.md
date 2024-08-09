@@ -1,19 +1,19 @@
 ---
 title: Common CLI tasks
-linktitle: VMClarity CLI
+linktitle: OpenClarity CLI
 weight: 410
 ---
 
-## Initiate a scan using the CLI
+## Initiate a Scan Using the CLI
 
-## Reporting results into file:
+## Reporting Results into File:
 ```
 ./cli/bin/vmclarity-cli scan --config ~/testConf.yaml -o outputfile
 ```
 
-If we want to report results to the VMClarity backend, we need to create asset and asset scan object before scan because it requires asset-scan-id
+If we want to report results to the OpenClarity backend, we need to create asset and asset scan object before scan because it requires asset-scan-id
 
-## Reporting results to VMClarity backend:
+## Reporting Results to OpenClarity Backend:
 
 ```
 ASSET_ID=$(./cli/bin/vmclarity-cli asset-create --file assets/dir-asset.json --server http://localhost:8080/api) --jsonpath {.id}

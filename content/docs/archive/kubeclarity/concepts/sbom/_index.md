@@ -30,8 +30,13 @@ A typical SBOM architecture can be laid out as a tree-like dependency graph with
 
 There are two typical ways to generate SBOM: during the build process, or after the build and deployment using a Software Composition Analysis tool. Trivy and Syft are two noteworthy open source generators among many other generators, including open source and commercial. Both use CycloneDX format. It is also important to note that not all SBOMs can be generated equally. Each generator may pick up a few language libraries better than the others based on its implementation. It might take multiple runs through a few different types of generators to draw comprehensive insights.
 
-{{< include-headless "kubeclarity/supported-sbom-generators.md" >}}
+KubeClarity content analyzer integrates with the following SBOM generators:
 
+- [Syft](https://github.com/anchore/syft)
+- [Cyclonedx-gomod](https://github.com/CycloneDX/cyclonedx-gomod)
+- [Trivy](https://github.com/aquasecurity/trivy)
+
+ 
 ## Multiple SBOMs for accuracy
 
 KubeClarity can run multiple SBOM generators in parallel, and unify their results to generate a more accurate document.
