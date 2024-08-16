@@ -54,4 +54,4 @@ the configured analysis on the mounted snapshot, and report the results to the
 OpenClarity API. These results are then processed by the OpenClarity backend into
 findings.
 
-![OpenClarity Architecture Overview](/img/vmclarity-arch-20230725.svg)
+![OpenClarity Architecture Overview](/img/carousel/VMSec.png)
