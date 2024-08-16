@@ -1,6 +1,6 @@
 ---
 ---
-To start a [runtime scan]({{< relref "/docs/kubeclarity/concepts/runtime-scans/_index.md" >}}), complete the following steps.
+To start a [runtime scan]({{< relref "/docs/features/kubernetes-runtime-scans/_index.md" >}}), complete the following steps.
 
 1. {{< include-headless "kubeclarity/open-ui.md" >}}
 1. From the navigation bar on the left, select **Runtime Scan**.
