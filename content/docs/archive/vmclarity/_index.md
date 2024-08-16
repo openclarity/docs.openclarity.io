@@ -76,7 +76,7 @@ These tools include:
 - Rootkits
   - [Chkrootkit](https://github.com/Magentron/chkrootkit)
 
-A high-level architecture overview is available in {{% xref "/docs/vmclarity/architecture/architecture.md" %}}.
+A high-level architecture overview is available in {{% xref "/docs/archive/vmclarity/architecture/architecture.md" %}}.
 
 ## Roadmap
 
