@@ -7,34 +7,38 @@ weight: 200
 
 1. Open the UI.
 
-    {{< include-headless "vmclarity/access-ui.md" >}}
+   {{< include-headless "vmclarity/access-ui.md" >}}
 
-1. Click on the **Scans** icon. In the Scans window, you can create a new scan configuration.
+2. Click on the **Scans** icon. In the Scans window, you can create a new scan configuration.
 
-    <img src="/img/vmclarity-ui-2.png" alt="VMClarity UI Scan" title="VMClarity UI Scan" />
+    <img src="/img/openclarity-ui-2.png" alt="OpenClarity UI Scan" title="OpenClarity UI Scan" />
 
-1. Click **New scan configuration**.
+3. Click **New scan configuration**.
 
-    <img src="/img/vmclarity-scan-setup-1.png" alt="VMClarity Scan Setup - Step 1" title="VMClarity Scan Setup Step 1" />
+    <img src="/img/openclarity-scan-setup-1.png" alt="OpenClarity Scan Setup - Step 1" title="OpenClarity Scan Setup Step 1" />
 
-1. Follow the steps of the **New scan config** wizard to name the scan, and identify the AWS scope (region, VPC, security groups, etc). The following example shows the AWS us-east-2 region, a specific VPC, and the `vmclarity-demo-vm` EC2.
+4. Follow the steps of the **New scan config** wizard to name the scan, and optionally narrow the scope down with an
+   OData query.
 
-    <img src="/img/vmclarity-scan-setup-2.png" alt="VMClarity Scan Setup - Step 2" title="VMClarity Scan Setup Step 2" />
+    <img src="/img/openclarity-scan-setup-2.png" alt="OpenClarity Scan Setup - Step 2" title="OpenClarity Scan Setup Step 2" />
 
-1. Enable the scan types you want to perform.
+5. Enable the scan types you want to perform.
 
-    <img src="/img/vmclarity-scan-setup-3.png" alt="VMClarity Scan Setup - Step 3" title="VMClarity Scan Setup Step 3" />
+    <img src="/img/openclarity-scan-setup-3.png" alt="OpenClarity Scan Setup - Step 3" title="OpenClarity Scan Setup Step 3" />
 
-1. Select the time and/or frequency of the scans. To run the scan immediately, select **Now**.
+6. Select the time and/or frequency of the scans. To run the scan immediately, select **Now**.
 
-    <img src="/img/vmclarity-scan-setup-4.png" alt="VMClarity Scan Setup - Step 4" title="VMClarity Scan Setup Step 4" />
+    <img src="/img/openclarity-scan-setup-4.png" alt="OpenClarity Scan Setup - Step 4" title="OpenClarity Scan Setup Step 4" />
 
-1. Click **Save**. The new scan appears on the **Scan Configurations** tab.
+7. Optionally, adjust the number of scanners to run in parallel and whether to use spot instances on cloud providers, or
+   not.
 
-    <img src="/img/vmclarity-scan-config-summary.png" alt="VMClarity Scan Config Summary" title="VMClarity Scan Config Summary" />
+    <img src="/img/openclarity-scan-setup-5.png" alt="OpenClarity Scan Setup - Step 5" title="OpenClarity Scan Setup Step 5" />
 
-1. Once a scan is finished, you can browse around the various OpenClarity UI features and investigate the security scan reports.
+8. Click **Save**. The new scan appears on the **Scan Configurations** tab.
 
-    <img src="/img/vmclarity-scan-list.png" alt="VMClarity Scan List" title="VMClarity Scan List" />
+    <img src="/img/openclarity-scan-config-summary.png" alt="OpenClarity Scan Config Summary" title="OpenClarity Scan Config Summary" />
 
-    <img src="/img/vmclarity-dashboard-data.png" alt="VMClarity Dashboard with Findings" title="VMClarity Dashboard with Findings" />
+9. Once a scan is finished, you can browse around the various OpenClarity UI features and investigate the security scan reports.
+
+   <img src="/img/openclarity-dashboard-data.png" alt="OpenClarity Dashboard with Findings" title="OpenClarity Dashboard with Findings" />
