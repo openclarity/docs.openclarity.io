@@ -11,34 +11,34 @@ weight: 200
 
 2. Click on the **Scans** icon. In the Scans window, you can create a new scan configuration.
 
-    <img src="/img/openclarity-ui-2.png" alt="OpenClarity UI Scan" title="OpenClarity UI Scan" />
+    <img src="/img/openclarity-ui-2.png" alt="OpenClarity UI Scan" title="OpenClarity UI Scan" width="500px" />
 
 3. Click **New scan configuration**.
 
-    <img src="/img/openclarity-scan-setup-1.png" alt="OpenClarity Scan Setup - Step 1" title="OpenClarity Scan Setup Step 1" />
+    <img src="/img/openclarity-scan-setup-1.png" alt="OpenClarity Scan Setup - Step 1" title="OpenClarity Scan Setup Step 1" width="500px" />
 
 4. Follow the steps of the **New scan config** wizard to name the scan, and optionally narrow the scope down with an
    OData query.
 
-    <img src="/img/openclarity-scan-setup-2.png" alt="OpenClarity Scan Setup - Step 2" title="OpenClarity Scan Setup Step 2" />
+    <img src="/img/openclarity-scan-setup-2.png" alt="OpenClarity Scan Setup - Step 2" title="OpenClarity Scan Setup Step 2" width="500px" />
 
 5. Enable the scan types you want to perform.
 
-    <img src="/img/openclarity-scan-setup-3.png" alt="OpenClarity Scan Setup - Step 3" title="OpenClarity Scan Setup Step 3" />
+    <img src="/img/openclarity-scan-setup-3.png" alt="OpenClarity Scan Setup - Step 3" title="OpenClarity Scan Setup Step 3" width="500px" />
 
 6. Select the time and/or frequency of the scans. To run the scan immediately, select **Now**.
 
-    <img src="/img/openclarity-scan-setup-4.png" alt="OpenClarity Scan Setup - Step 4" title="OpenClarity Scan Setup Step 4" />
+    <img src="/img/openclarity-scan-setup-4.png" alt="OpenClarity Scan Setup - Step 4" title="OpenClarity Scan Setup Step 4" width="500px" />
 
 7. Optionally, adjust the number of scanners to run in parallel and whether to use spot instances on cloud providers, or
    not.
 
-    <img src="/img/openclarity-scan-setup-5.png" alt="OpenClarity Scan Setup - Step 5" title="OpenClarity Scan Setup Step 5" />
+    <img src="/img/openclarity-scan-setup-5.png" alt="OpenClarity Scan Setup - Step 5" title="OpenClarity Scan Setup Step 5" width="500px" />
 
 8. Click **Save**. The new scan appears on the **Scan Configurations** tab.
 
-    <img src="/img/openclarity-scan-config-summary.png" alt="OpenClarity Scan Config Summary" title="OpenClarity Scan Config Summary" />
+    <img src="/img/openclarity-scan-config-summary.png" alt="OpenClarity Scan Config Summary" title="OpenClarity Scan Config Summary" width="1000px" />
 
 9. Once a scan is finished, you can browse around the various OpenClarity UI features and investigate the security scan reports.
 
-   <img src="/img/openclarity-dashboard-data.png" alt="OpenClarity Dashboard with Findings" title="OpenClarity Dashboard with Findings" />
+   <img src="/img/openclarity-dashboard-data.png" alt="OpenClarity Dashboard with Findings" title="OpenClarity Dashboard with Findings" width="1000px" />
