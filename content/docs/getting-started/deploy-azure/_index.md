@@ -28,11 +28,11 @@ weight: 110
     |---------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
     | Subscription                          | True     | Azure subscription where resources will be billed.                                                        |
     | Region                                | False    | Azure region where resources will be deployed.                                                            |
-    | VMClarity Deploy Postfix            | True     | Postfix for Azure resource group name (e.g. `vmclarity-<postfix>`).                                       |
-    | VMClarity Server SSH Username       | True     | SSH Username for the OpenClarity Server Virtual Machine.                                                    |
-    | VMClarity Server SSH Public Key     | True     | SSH Public Key for the OpenClarity Server Virtual Machine. Paste the contents of `~/.ssh/id_rsa2.pub` here. |
-    | VMClarity Server VM Size            | True     | The size of the OpenClarity Server Virtual Machine.                                                         |
-    | VMClarity Scanner VMs Size          | True     | The size of the OpenClarity Scanner Virtual Machines.                                                       |
+    | OpenClarity Deploy Postfix            | True     | Postfix for Azure resource group name (e.g. `openclarity-<postfix>`).                                       |
+    | OpenClarity Server SSH Username       | True     | SSH Username for the OpenClarity Server Virtual Machine.                                                    |
+    | OpenClarity Server SSH Public Key     | True     | SSH Public Key for the OpenClarity Server Virtual Machine. Paste the contents of `~/.ssh/id_rsa2.pub` here. |
+    | OpenClarity Server VM Size            | True     | The size of the OpenClarity Server Virtual Machine.                                                         |
+    | OpenClarity Scanner VMs Size          | True     | The size of the OpenClarity Scanner Virtual Machines.                                                       |
     | Security Type                         | False    | Security Type of the OpenClarity Server Virtual Machine, e.g. `TrustedLaunch` (default) or `Standard`.      |
 
 1. (Optional) In the **Advanced** tab, modify the **Container Image** for each service if a specific OpenClarity version is required. Then, select the delete policy and the database.
