@@ -49,6 +49,8 @@ However, there are challenges with assembling and managing these tools yourself:
 
 The OpenClarity project is focused on unifying detection and management of VM security threats in an agentless manner.
 
+For more information on the capabilities of OpenClarity, see [Features](docs/features/_index.md).
+
 ## Getting Started
 
 For step-by-step guidance on how to deploy OpenClarity across different environments, including AWS, Azure, GCP, and Docker, see [Getting Started](docs/getting-started/_index.md) and choose your preferred provider for detailed deployment instructions.
