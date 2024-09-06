@@ -5,7 +5,7 @@ weight: 45
 
 ## Community Support
 
-If you encounter problems while using OpenClarity that the documentation does not address, you can [open an issue](https://github.com/openclarity/) in the repository of the relevant component or talk to us on [Slack](https://outshift.slack.com/messages/vmclarity).
+If you encounter problems while using OpenClarity that the documentation does not address, you can [open an issue](https://github.com/openclarity/) in the repository of the relevant component or talk to us on [Slack](https://outshift.slack.com/messages/openclarity).
 
 Before reporting a new issue, please ensure that the issue was not already reported or fixed by searching through our issue tracker.
 
