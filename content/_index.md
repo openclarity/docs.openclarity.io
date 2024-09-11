@@ -11,7 +11,7 @@ title: OpenClarity
 
 <h3 class="hero-subtitle">OpenClarity delivers:</h3>
 <ul>
-<li>Agent-less detection and managements of vulnerabilities, exploits, malware and misconfigurations for VMs and Container Images</li>
+<li>Agent-less detection and management of vulnerabilities, exploits, malware, and misconfigurations for VMs and Container Images</li>
 <li>Capabilities for runtime scans of Kubernetes and CI/CD pipelines</li>
 <li>Comprehensive API security for internal and third-party APIs</li>
 </ul>
@@ -19,7 +19,8 @@ title: OpenClarity
 <div class="mx-auto">
   {{< cta-button text="Learn more" url="/docs/" classes="bg-sky-blue text-white" >}}
 
-  {{< cta-button text="Install" url="/docs/getting-started/" classes="bg-black text-white" icon="fa-brands fa-github ml-2" >}}
+  {{< cta-button text="Try it now" url="/docs/getting-started/" classes="bg-sky-blue text-white" >}}
+
 </div>
 
 </div>
@@ -49,6 +50,9 @@ title: OpenClarity
 
 {{< blocks/section color="white" type="row">}}
 
-{{< blocks/carousel title="Key Capabilities" >}}
+<h2 class="py-3" style="text-align: center;">Architecture</h2>
+
+<img src="/img/carousel/VMsec.png" alt="VM security architecture" class="img-fluid"  style="width: 1000px; display: block; margin-left: auto; margin-right: auto; border: 1px solid; border-radius: 15px;">
+
 
 {{< /blocks/section >}}

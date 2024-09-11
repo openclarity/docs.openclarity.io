@@ -8,7 +8,7 @@ This section provides a sample configuration for scanner families supported by t
 
 The configuration is used to define which scanners to run, what inputs to scan, and the configuration for each scanner.
 
-```
+```yaml
 # SBOM (Software Bill of Materials) scanner family
 sbom:
   enabled: false # Enable or disable SBOM scanner family

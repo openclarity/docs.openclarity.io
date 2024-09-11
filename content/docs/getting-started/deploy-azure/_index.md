@@ -60,7 +60,7 @@ weight: 110
 1. Access the OpenClarity UI.
 
     {{< include-headless "vmclarity/access-ui.md" >}}
-
+ 
 ## Next steps
 
 Complete the {{% xref "/docs/getting-started/first-tasks/_index.md" %}}.
