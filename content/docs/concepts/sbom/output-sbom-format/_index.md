@@ -3,7 +3,7 @@ title: SBOM Output Format
 weight: 800
 ---
 
-The `openclarity-cli analyze` command can format the resulting SBOM into different formats to integrate with another system. The supported formats are:
+The `openclarity-cli scan` command can format the resulting SBOM into different formats to integrate with another system. The supported formats are:
 
 | Format | Configuration Name |
 | --- | --- |
