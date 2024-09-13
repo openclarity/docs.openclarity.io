@@ -35,3 +35,5 @@ EOF
 # Run scan
 openclarity-cli scan --config config.yml
 ```
+
+For more information the CLI configuration, see the [Example CLI Configuration]({{< relref "/docs/usage/command_line/cli_reference.md" >}}).
