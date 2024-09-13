@@ -19,7 +19,7 @@ title: OpenClarity
 <div class="mx-auto">
   {{< cta-button text="Learn more" url="/docs/" classes="bg-sky-blue text-white" >}}
 
-  {{< cta-button text="Try it now" url="/docs/getting-started/" classes="bg-sky-blue text-white" >}}
+  {{< cta-button text="Try it now" url="/docs/getting-started/" classes="bg-black text-white" >}}
 
 </div>
 
