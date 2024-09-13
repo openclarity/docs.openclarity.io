@@ -50,7 +50,7 @@ To deploy OpenClarity to your Kubernetes cluster, complete the following steps.
 1. Access the OpenClarity UI by navigating to [http://localhost:8080/](http://localhost:8080/) in your web browser.
 
     <p align="center" width="100%">
-        <img width="75%" src="/img/vmclarity-ui-1.png">
+        <img width="75%" src="/img/opnclarity-ui-1.png">
     </p>
 
 ## Next steps

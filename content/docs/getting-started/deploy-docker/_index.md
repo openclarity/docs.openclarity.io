@@ -62,7 +62,7 @@ To run OpenClarity in Docker on a local machine, complete the following steps.
 1. Access the OpenClarity UI. Navigate to [http://localhost:8080/](http://localhost:8080/) in your browser.
 
     <p align="center" width="100%">
-        <img width="75%" src="/img/vmclarity-ui-1.png">
+        <img width="75%" src="/img/openclarity-ui-1.png">
     </p>
 
 ## Next steps
