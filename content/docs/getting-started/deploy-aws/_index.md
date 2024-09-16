@@ -16,9 +16,9 @@ The following figure shows the basic AWS resources that the OpenClarity CloudFor
         <img width="75%" src="vmclarity-cf-basic.svg">
     </p>
 
-The public subnet (`VmClarityServerSubnet`) hosts the OpenClarity Server (`VmClarityServer`) EC2 instance. The OpenClarity server houses the scanning configuration, the UI, and other control components. The EC2 instance is assigned an external IPv4 address (EIP) for SSH and web UI access.
+The public subnet (`OpenClarityServerSubnet`) hosts the OpenClarity Server (`OpenClarityServer`) EC2 instance. The OpenClarity server houses the scanning configuration, the UI, and other control components. The EC2 instance is assigned an external IPv4 address (EIP) for SSH and web UI access.
 
-The private subnet (`VmClarityScannerSubnet`) hosts the VM snapshot instances (EC2) that are scanned for security vulnerabilities.
+The private subnet (`OpenClarityScannerSubnet`) hosts the VM snapshot instances (EC2) that are scanned for security vulnerabilities.
 
 ## Prerequisites
 

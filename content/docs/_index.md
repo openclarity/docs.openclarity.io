@@ -10,7 +10,7 @@ OpenClarity is an open source tool for agentless detection and management of Vir
 Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.
 
 
-Join [OpenClarity's Slack channel](https://outshift.slack.com/messages/vmclarity) to hear about the latest announcements and upcoming activities. We would love to get your feedback!
+Join [OpenClarity's Slack channel](https://outshift.slack.com/messages/openclarity) to hear about the latest announcements and upcoming activities. We would love to get your feedback!
 
 ## Table of Contents<!-- omit in toc -->
 
@@ -48,6 +48,8 @@ However, there are challenges with assembling and managing these tools yourself:
 - Siloed reporting and visualization.
 
 The OpenClarity project is focused on unifying detection and management of VM security threats in an agentless manner.
+
+For more information on the capabilities of OpenClarity, see [Features](docs/features/_index.md).
 
 ## Getting Started
 

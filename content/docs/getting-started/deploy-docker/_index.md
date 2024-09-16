@@ -28,27 +28,27 @@ To run OpenClarity in Docker on a local machine, complete the following steps.
 1. Start every control plane element with the docker compose file.
 
     ```shell
-    docker compose --project-name vmclarity --file docker-compose.yml up -d --wait --remove-orphans
+    docker compose --project-name openclarity --file docker-compose.yml up -d --wait --remove-orphans
     ```
 
     The output should be similar to:
 
     ```
     [+] Running 14/14
-    ⠿ Network vmclarity                        Created                                                       0.2s
-    ⠿ Volume "vmclarity_grype-server-db"       Created                                                       0.0s
-    ⠿ Volume "vmclarity_apiserver-db-data"     Created                                                       0.0s
-    ⠿ Container vmclarity-orchestrator-1       Healthy                                                      69.7s
-    ⠿ Container vmclarity-yara-rule-server-1   Healthy                                                      17.6s
-    ⠿ Container vmclarity-exploit-db-server-1  Healthy                                                      17.7s
-    ⠿ Container vmclarity-swagger-ui-1         Healthy                                                       7.8s
-    ⠿ Container vmclarity-trivy-server-1       Healthy                                                      26.7s
-    ⠿ Container vmclarity-uibackend-1          Healthy                                                      17.6s
-    ⠿ Container vmclarity-ui-1                 Healthy                                                       7.7s
-    ⠿ Container vmclarity-freshclam-mirror-1   Healthy                                                       7.8s
-    ⠿ Container vmclarity-grype-server-1       Healthy                                                      37.3s
-    ⠿ Container vmclarity-gateway-1            Healthy                                                       7.7s
-    ⠿ Container vmclarity-apiserver-1          Healthy                                                      17.7s
+    ⠿ Network openclarity                        Created                                                       0.2s
+    ⠿ Volume "openclarity_grype-server-db"       Created                                                       0.0s
+    ⠿ Volume "openclarity_apiserver-db-data"     Created                                                       0.0s
+    ⠿ Container openclarity-orchestrator-1       Healthy                                                      69.7s
+    ⠿ Container openclarity-yara-rule-server-1   Healthy                                                      17.6s
+    ⠿ Container openclarity-exploit-db-server-1  Healthy                                                      17.7s
+    ⠿ Container openclarity-swagger-ui-1         Healthy                                                       7.8s
+    ⠿ Container openclarity-trivy-server-1       Healthy                                                      26.7s
+    ⠿ Container openclarity-uibackend-1          Healthy                                                      17.6s
+    ⠿ Container openclarity-ui-1                 Healthy                                                       7.7s
+    ⠿ Container openclarity-freshclam-mirror-1   Healthy                                                       7.8s
+    ⠿ Container openclarity-grype-server-1       Healthy                                                      37.3s
+    ⠿ Container openclarity-gateway-1            Healthy                                                       7.7s
+    ⠿ Container openclarity-apiserver-1          Healthy                                                      17.7s
     ```
 
     Please note that the `image_override.env` file enables you to use the images you build yourself. You can override parameters in the `docker-compose.yml` by passing a custom env file to the `docker compose up` command via the `--env-file` flag. The `/installation/docker/image_override.env` file contains an example overriding all the container images.
@@ -62,7 +62,7 @@ To run OpenClarity in Docker on a local machine, complete the following steps.
 1. Access the OpenClarity UI. Navigate to [http://localhost:8080/](http://localhost:8080/) in your browser.
 
     <p align="center" width="100%">
-        <img width="75%" src="/img/vmclarity-ui-1.png">
+        <img width="75%" src="/img/openclarity-ui-1.png">
     </p>
 
 ## Next steps
@@ -74,5 +74,5 @@ Complete the {{% xref "/docs/getting-started/first-tasks/_index.md" %}}.
 1. After you've finished your tasks, stop the running containers.
 
     ```shell
-    docker compose --project-name vmclarity --file docker-compose.yml down --remove-orphans
+    docker compose --project-name openclarity --file docker-compose.yml down --remove-orphans
     ```

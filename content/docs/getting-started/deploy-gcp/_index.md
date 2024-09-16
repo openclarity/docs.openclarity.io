@@ -30,10 +30,10 @@ To install OpenClarity on [Google Cloud Platform (GCP)](https://cloud.google.com
 1. Copy the example configuration file and rename it.
 
     ```shell
-    cp vmclarity-config.example.yaml vmclarity-config.yaml
+    cp openclarity-config.example.yaml openclarity-config.yaml
     ```
 
-1. The following table contains all the fields that can be set in the `vmclarity-config.yaml` file. You have to set at
+1. The following table contains all the fields that can be set in the `openclarity-config.yaml` file. You have to set at
    least the required ones.
 
    | Field                           | Required | Default                                                                     | Description                                                                         |
@@ -44,11 +44,11 @@ To install OpenClarity on [Google Cloud Platform (GCP)](https://cloud.google.com
    | `scannerMachineType`            |          | `e2-standard-2`                                                             | Machine type to use for the Scanner instances.                                      |
    | `scannerSourceImage`            |          | `projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammy-v20230630`        | Source image to use for the Scanner instances.                                      |
    | `databaseToUse`                 |          | `SQLite`                                                                    | The database that OpenClarity should use.                                             |
-   | `apiserverContainerImage`       |          | `ghcr.io/openclarity/vmclarity-apiserver:{{< param "latest_version" >}}`    | The container image to use for the apiserver.                                       |
-   | `orchestratorContainerImage`    |          | `ghcr.io/openclarity/vmclarity-orchestrator:{{< param "latest_version" >}}` | The container image to use for the orchestrator.                                    |
-   | `uiContainerImage`              |          | `ghcr.io/openclarity/vmclarity-ui:{{< param "latest_version" >}}`           | The container image to use for the ui.                                              |
-   | `uibackendContainerImage`       |          | `ghcr.io/openclarity/vmclarity-ui-backend:{{< param "latest_version" >}}`   | The container image to use for the uibackend.                                       |
-   | `scannerContainerImage`         |          | `ghcr.io/openclarity/vmclarity-cli:{{< param "latest_version" >}}`          | The container image to use for the scanner.                                         |
+   | `apiserverContainerImage`       |          | `ghcr.io/openclarity/openclarity-apiserver:{{< param "latest_version" >}}`    | The container image to use for the apiserver.                                       |
+   | `orchestratorContainerImage`    |          | `ghcr.io/openclarity/openclarity-orchestrator:{{< param "latest_version" >}}` | The container image to use for the orchestrator.                                    |
+   | `uiContainerImage`              |          | `ghcr.io/openclarity/openclarity-ui:{{< param "latest_version" >}}`           | The container image to use for the ui.                                              |
+   | `uibackendContainerImage`       |          | `ghcr.io/openclarity/openclarity-ui-backend:{{< param "latest_version" >}}`   | The container image to use for the uibackend.                                       |
+   | `scannerContainerImage`         |          | `ghcr.io/openclarity/openclarity-cli:{{< param "latest_version" >}}`          | The container image to use for the scanner.                                         |
    | `exploitDBServerContainerImage` |          | `ghcr.io/openclarity/exploit-db-server:v0.2.4`                              | The container image to use for the exploit db server.                               |
    | `trivyServerContainerImage`     |          | `docker.io/aquasec/trivy:0.41.0`                                            | The container image to use for the trivy server.                                    |
    | `grypeServerContainerImage`     |          | `ghcr.io/openclarity/grype-server:v0.7.0`                                   | The container image to use for the grype server.                                    |
@@ -65,7 +65,7 @@ To install OpenClarity on [Google Cloud Platform (GCP)](https://cloud.google.com
 1. Deploy OpenClarity using gcloud deployment-manager.
 
    ```shell
-   gcloud deployment-manager deployments create <vmclarity deployment name> --config vmclarity-config.yaml
+   gcloud deployment-manager deployments create <openclarity deployment name> --config openclarity-config.yaml
    ```
 
 1. Open an SSH tunnel to the OpenClarity server with gcloud. For further information on how to create an SSH connection
@@ -88,7 +88,7 @@ Complete the {{% xref "/docs/getting-started/first-tasks/_index.md" %}}.
 1. You can uninstall OpenClarity using the gcloud manager.
 
    ```shell
-   gcloud deployment-manager deployments delete <vmclarity deployment name>
+   gcloud deployment-manager deployments delete <openclarity deployment name>
    ```
 
 ## Restore deleted roles

@@ -173,7 +173,7 @@ twitter = "outshiftbycisco"
     desc = "Get involved with OpenClarity development"
   [[params.links.developer]]
     name = "Slack"
-    url = "https://outshift.slack.com/messages/vmclarity"
+    url = "https://outshift.slack.com/messages/openclarity"
     icon = "fab fa-slack"
     desc = "Chat with the project developers"
   #[[params.links.developer]]

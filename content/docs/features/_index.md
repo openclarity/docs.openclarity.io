@@ -3,6 +3,8 @@ title: Features
 weight: 20
 ---
 
+OpenClarity provides a wide range of features for asset scanning and discovery:
+
 - Dashboard
   - Fixable vulnerabilities per severity
   - Top 5 vulnerable elements (applications, resources, packages)
@@ -45,6 +47,51 @@ weight: 20
   - Export results to OpenClarity backend
 - API
   - See the {{% xref "/docs/api/_index.md" %}}.
+
+
+## Runtime environment
+
+The following table lists all supported environments and asset types that can be discovered and scanned by OpenClarity.
+
+| Environment | Asset Type                                                         | Scope                             | 
+|-------------|--------------------------------------------------------------------|-----------------------------------|
+| Docker      | Containers, Container Images                                       | Docker Daemon                     |
+| Kubernetes  | Containers, Container Images                                       | Cluster                           | 
+| AWS         | Virtual machines                                                   | All VMs accessible by credentials | 
+| Azure       | Virtual machines                                                   | All VMs accessible by credentials | 
+| GCP         | Virtual machines                                                   | All VMs accessible by credentials | 
+| Local (OS)  | Containers, Container Images, Container Image Archives, Filesystem | All assets accessible by OS       | 
+
+## Scanning 
+
+The following table lists all supported scanners that can be used when performing a scan on an asset, such as a container image or a directory.
+
+|                                                           | VMClarity | KubeClarity | OpenClarity |
+|-----------------------------------------------------------|-----------|-------------|-------------|
+| **SBOM generation and analysis**                          | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Syft                             | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Trivy                            | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; cyclonedx-gomod                  | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Windows Registry                 | ✅         | ❌           | ✅         |
+| **Vulnerability detection**                               | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Grype                            | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Trivy                            | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Dependency Track                 | ❌         | ✅           | ❌         |
+| **Exploits**                                              | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; ExploitDB                        | ✅         | ❌           | ✅         |
+| **Secrets**                                               | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Gitleaks                         | ✅         | ❌           | ✅         |
+| **Malware**                                               | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; ClamAV                           | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Yara                             | ✅         | ❌           | ✅         |
+| **Misconfiguration**                                      | ✅         | ✅           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Lynis                            | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; CIS Docker Benchmark             | ✅         | ✅           | ✅         |
+| **Rootkits**                                              | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; Chrootkit                        | ✅         | ❌           | ✅         |
+| **Plugins**                                               | ✅         | ❌           | ✅         |
+| &nbsp;&nbsp;&nbsp;&nbsp; KICS                             | ✅         | ❌           | ✅         | 
+
 
 ## Integrated SBOM Generators and Vulnerability Scanners
 
