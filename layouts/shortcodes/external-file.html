@@ -3,7 +3,7 @@
   {{ with .Err }}
     {{ errorf "%s" . }}
   {{ else }}
-{{ .Content }}
+{{ .Content | safeHTML }}
   {{ end }}
 {{ else }}
   {{ errorf "Unable to get remote resource." }}
