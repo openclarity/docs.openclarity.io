@@ -29,7 +29,7 @@ The private subnet (`OpenClarityScannerSubnet`) hosts the VM snapshot instances 
 
 To deploy the OpenClarity AWS CloudFormation Stack, you can:
 
-- click [this quick-create link](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=VMClarity&templateURL=https://vmclarity-cfn.s3.eu-central-1.amazonaws.com/{{< param "latest_version" >}}/VmClarity.cfn) to navigate directly to the AWS CloudFormation console and jump to the wizard instructions, or 
+- click [this quick-create link](https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?stackName=OpenClarity&templateURL=https://openclarity-cfn.s3.eu-central-1.amazonaws.com/{{< param "latest_version" >}}/OpenClarity.cfn) to navigate directly to the AWS CloudFormation console and jump to the wizard instructions, or 
 - complete the following steps.
 
 1. Download the latest OpenClarity release.
