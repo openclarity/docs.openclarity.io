@@ -74,7 +74,7 @@ twitter = "outshiftbycisco"
   project_name = "OpenClarity"
   product_name = "OpenClarity"
 
-  latest_version = "0.7.2" # Used in some installation commands
+  latest_version = "1.0.0" # Used in some installation commands
 
   ###############################################################################
   # Docsy-theme specific config customizations

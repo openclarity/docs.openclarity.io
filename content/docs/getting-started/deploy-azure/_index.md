@@ -14,7 +14,7 @@ weight: 110
 
 ## Deployment steps
 
-1. Click [here](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenclarity%2Fvmclarity%2Fmain%2Finstallation%2Fazure%2Fvmclarity.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenclarity%2Fvmclarity%2Fmain%2Finstallation%2Fazure%2Fvmclarity-UI.json) to deploy OpenClarity's custom template.
+1. Click [here](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenclarity%2Fopenclarity%2Fmain%2Finstallation%2Fazure%2Fopenclarity.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fopenclarity%2Fopenclarity%2Fmain%2Finstallation%2Fazure%2Fopenclarity-UI.json) to deploy OpenClarity's custom template.
 
 1. Fill out the required **Project details** and **Instance details** in the **Basics** tab.
 
